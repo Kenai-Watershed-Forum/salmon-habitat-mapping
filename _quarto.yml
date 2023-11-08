@@ -1,23 +1,36 @@
 project:
   type: book
+  output-dir: docs
 
 book:
-  title: "salmon_habitat_mapping"
-  author: "Norah Jones"
-  date: "11/6/2023"
+  title: "Salmon Habitat Mapping in the Central Kenai Peninsula 2021-2023"
+  author: "Benjamin Meyer, Kenai Watershed Forum"
+  date: "11/15/2023"
+  page-navigation: true
   chapters:
     - index.qmd
     - intro.qmd
     - summary.qmd
     - references.qmd
 
+repo-url: https://github.com/Kenai-Watershed-Forum/salmon-habitat-mapping
+repo-actions: [edit]
+search: true
+downloads: [docx]
+
 bibliography: references.bib
 
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
+  #pdf:
+  #  documentclass: scrreprt
+  docx:
+    toc: true
+    toc-depth: 2
+    toc-title: Table of contents
+    number-sections: true
+    highlight-style: github
 
 editor: visual
 
