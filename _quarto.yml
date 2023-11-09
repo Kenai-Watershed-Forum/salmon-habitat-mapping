@@ -10,7 +10,10 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
+    - methods.qmd
+    - results.qmd
+    - discussion.qmd
+    - future_directions.qmd
     - references.qmd
 
 repo-url: https://github.com/Kenai-Watershed-Forum/salmon-habitat-mapping

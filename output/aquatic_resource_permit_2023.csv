@@ -1,0 +1,178 @@
+Location ID (optional),Latitude (decimal degrees),Longitude (decimal degrees),Datum,Coordinate determination method,Name of water body,Date,Observer name (the first and last name of the person handling fish),Fish collection method,Species,Life stage,Length (mm) (NO estimates or ranges),Length method,Weight (g),Sex,Age,Age method (sample type),ADF&G GCL,Additional count (1),Disposition (1),Additional count (2),Disposition (2),Anesthesia/ Sedative Used (Leave blank if none used),Comments
+Beaver Creek MT #10,60.617139,-151.092254,,,Beaver Creek MT #10,2023-06-01T00:00:00Z,Benjamin Meyer,Minnow Trap,ninespine stickleback,NA,40,NA,NA,,,,,0,ID'ed and Released,,,,Total length on photo in solocater
+Beaver Creek MT #10,60.617139,-151.092254,,,Beaver Creek MT #10,2023-06-01T00:00:00Z,Benjamin Meyer,Minnow Trap,ninespine stickleback,NA,NA,NA,NA,,,,,4,ID'ed and Released,,,,NULL
+Moose River Trib 1.5,60.558075,-150.691734,,,Moose River Trib 1.5,2023-07-11T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,70,NA,NA,,,,,4,ID'ed and Released,,,,NULL
+Moose River Trib 1.5,60.558075,-150.691734,,,Moose River Trib 1.5,2023-07-11T00:00:00Z,Benjamin Meyer,Minnow Trap,Dolly Varden,juvenile,80,NA,NA,,,,,2,ID'ed and Released,,,,NULL
+Moose River Trib 1.5,60.558075,-150.691734,,,Moose River Trib 1.5,2023-07-11T00:00:00Z,Benjamin Meyer,Minnow Trap,coho,parr,70,NA,NA,,,,,0,ID'ed and Released,,,,"Probably coho, but had trouble identifying right awau"
+Soldotna Creek Mouth,60.48339,-151.0581319,,,Soldotna Creek Mouth,2023-05-31T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,15,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.48339,-151.0581319,,,Soldotna Creek Mouth,2023-05-31T00:00:00Z,Benjamin Meyer,Minnow Trap,Dolly Varden,juvenile,NA,NA,NA,,,,,1,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.48339,-151.0581319,,,Soldotna Creek Mouth,2023-05-31T00:00:00Z,Benjamin Meyer,Minnow Trap,slimy sculpin,NA,NA,NA,NA,,,,,6,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.48339,-151.0581319,,,Soldotna Creek Mouth,2023-05-31T00:00:00Z,Benjamin Meyer,Minnow Trap,rainbow trout,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Unnamed Kenai Trib 1.1,60.518324,-150.865283,,,Unnamed Kenai Trib 1.1,2023-07-16T00:00:00Z,Benjamin Meyer,NA,Dolly Varden,juvenile,80,NA,NA,,,,,0,ID'ed and Released,,,,1689379200
+Unnamed Kenai Trib 1.1,60.518324,-150.865283,,,Unnamed Kenai Trib 1.1,2023-07-16T00:00:00Z,Benjamin Meyer,NA,coho salmon,parr,70,NA,NA,,,,,0,ID'ed and Released,,,,1689379200
+Unnamed Kenai Trib 1.1,60.518324,-150.865283,,,Unnamed Kenai Trib 1.1,2023-07-16T00:00:00Z,Benjamin Meyer,NA,Dolly Varden,juvenile,100,NA,NA,,,,,1,ID'ed and Released,,,,1689465600
+Unnamed Kenai Trib 1.1,60.518324,-150.865283,,,Unnamed Kenai Trib 1.1,2023-07-16T00:00:00Z,Benjamin Meyer,NA,coho salmon,parr,70,NA,NA,,,,,1,ID'ed and Released,,,,1689465600
+Unnamed Kenai Trib 1.1,60.518324,-150.865283,,,Unnamed Kenai Trib 1.1,2023-07-16T00:00:00Z,Benjamin Meyer,NA,Dolly Varden,juvenile,90,NA,NA,,,,,14,ID'ed and Released,,,,Average
+Unnamed Kenai Trib 1.1,60.518324,-150.865283,,,Unnamed Kenai Trib 1.1,2023-07-16T00:00:00Z,Benjamin Meyer,NA,coho salmon,parr,70,NA,NA,,,,,3,ID'ed and Released,,,,Average
+Unnamed Kenai Trib 1.2,60.51828,-150.86191,,,Unnamed Kenai Trib 1.2,2023-07-15T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,70,NA,NA,,,,,1,ID'ed and Released,,,,2 coho
+Unnamed Kenai Trib 1.2,60.51828,-150.86191,,,Unnamed Kenai Trib 1.2,2023-07-15T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,2 coho
+Unnamed Kenai Trib 1.2,60.51828,-150.86191,,,Unnamed Kenai Trib 1.2,2023-07-15T00:00:00Z,Benjamin Meyer,Minnow Trap,Dolly Varden,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Candlelight - Downstream,60.56958,-151.19272,,,Candlelight - Downstream,2023-07-14T00:00:00Z,Benjamin Meyer,Minnow Trap,Alaska blackfish,unknown,NA,NA,NA,,,,,0,ID'ed and Released,,,,Non-native
+East Mackey Lake,60.535273,-150.9913,,,East Mackey Lake,2023-07-24T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,juvenile,NA,NA,NA,,,,,9,ID'ed and Released,,,,Bucket
+East Mackey Lake,60.535273,-150.9913,,,East Mackey Lake,2023-07-24T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,juvenile,NA,NA,NA,,,,,29,ID'ed and Released,,,,Bucket
+East Mackey Lake,60.535273,-150.9913,,,East Mackey Lake,2023-07-24T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,juvenile,NA,NA,NA,,,,,23,ID'ed and Released,,,,NULL
+East Mackey Lake,60.535273,-150.9913,,,East Mackey Lake,2023-07-24T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,juvenile,NA,NA,NA,,,,,34,ID'ed and Released,,,,NULL
+Dolly Varden Way - Upstream,60.527702,-150.984574,,,Dolly Varden Way - Upstream,2023-07-24T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,juvenile,NA,NA,NA,,,,,7,ID'ed and Released,,,,NULL
+Dolly Varden Way - Upstream,60.527702,-150.984574,,,Dolly Varden Way - Upstream,2023-07-24T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,Bucket
+Dolly Varden Way - Downstream,60.52771,-150.984454,,,Dolly Varden Way - Downstream,2023-07-25T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,juvenile,NA,NA,NA,,,,,19,ID'ed and Released,,,,1690243200
+Derks Lake Outlet,60.530884,-150.971561,,,Derks Lake Outlet,2023-07-25T00:00:00Z,Benjamin Meyer,Minnow Trap,coho,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,Ziploc bag
+Derks Lake Outlet,60.530884,-150.971561,,,Derks Lake Outlet,2023-07-25T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,juvenile,NA,NA,NA,,,,,39,ID'ed and Released,,,,NULL
+Derks Lake Outlet,60.530884,-150.971561,,,Derks Lake Outlet,2023-07-25T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,Ziploc bag
+Derks Lake Outlet,60.530884,-150.971561,,,Derks Lake Outlet,2023-07-25T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,juvenile,NA,NA,NA,,,,,119,ID'ed and Released,,,,NULL
+Tree Lake,60.559184,-150.918389,,,Tree Lake,2023-07-28T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,approx 2 year old
+Tree Lake,60.559184,-150.918389,,,Tree Lake,2023-07-28T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,juvenile,NA,NA,NA,,,,,74,ID'ed and Released,,,,NULL
+Upper Soldotna Creek 1,60.555804,-150.922823,,,Upper Soldotna Creek 1,2023-07-28T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,Event 1
+Upper Soldotna Creek 1,60.555804,-150.922823,,,Upper Soldotna Creek 1,2023-07-28T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,Event 2
+Upper Soldotna Creek 1,60.555804,-150.922823,,,Upper Soldotna Creek 1,2023-07-28T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,13,ID'ed and Released,,,,Event 2; several pictures
+Upper Soldotna Creek 1,60.555804,-150.922823,,,Upper Soldotna Creek 1,2023-07-28T00:00:00Z,Benjamin Meyer,Minnow Trap,Dolly Varden,juvenile,NA,NA,NA,,,,,4,ID'ed and Released,,,,Event 2
+Upper Soldotna Creek 1,60.555804,-150.922823,,,Upper Soldotna Creek 1,2023-07-28T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,juvenile,NA,NA,NA,,,,,35,ID'ed and Released,,,,Event 2
+Upper Soldotna Creek 1,60.555804,-150.922823,,,Upper Soldotna Creek 1,2023-07-28T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,Event 2
+Mackey Lakes Crossing - Upstream,60.525146,-151.002331,,,Mackey Lakes Crossing - Upstream,2023-07-25T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,juvenile,NA,NA,NA,,,,,27,ID'ed and Released,,,,Event 2; no photo
+Lower Soldotna Creek,60.483401,-151.057672,,,Lower Soldotna Creek,2023-08-07T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Lower Soldotna Creek,60.483401,-151.057672,,,Lower Soldotna Creek,2023-08-07T00:00:00Z,Benjamin Meyer,Minnow Trap,Chinook salmon,juvenile,80,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Lower Soldotna Creek,60.483401,-151.057672,,,Lower Soldotna Creek,2023-08-07T00:00:00Z,Benjamin Meyer,Minnow Trap,Chinook salmon,juvenile,80,NA,NA,,,,,0,ID'ed and Released,,,,est. size
+Lower Soldotna Creek,60.483401,-151.057672,,,Lower Soldotna Creek,2023-08-07T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,70,NA,NA,,,,,1,ID'ed and Released,,,,est. size
+Lower Soldotna Creek,60.483401,-151.057672,,,Lower Soldotna Creek,2023-08-07T00:00:00Z,Benjamin Meyer,Minnow Trap,sculpin-unspecified,NA,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Lower Soldotna Creek,60.483401,-151.057672,,,Lower Soldotna Creek,2023-08-07T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,40,NA,NA,,,,,3,ID'ed and Released,,,,est. size
+WalMart Creek,60.565614,-151.221325,,,WalMart Creek,2023-08-09T00:00:00Z,Benjamin Meyer,Minnow Trap,"salmonid, unspecified",juvenile,NA,NA,NA,,,,,1,ID'ed and Released,,,,2 fish found dead in trap; possibly coho
+WalMart Creek,60.565614,-151.221325,,,WalMart Creek,2023-08-09T00:00:00Z,Benjamin Meyer,Minnow Trap,Alaska blackfish,juvenile,NA,NA,NA,,,,,1,ID'ed and Released,,,,NULL
+WalMart Creek,60.565614,-151.221325,,,WalMart Creek,2023-08-09T00:00:00Z,Benjamin Meyer,Minnow Trap,Alaska blackfish,parr,NA,NA,NA,,,,,5,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-06-22T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,juvenile,NA,NA,NA,,,,,15,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-06-22T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-06-22T00:00:00Z,Benjamin Meyer,Minnow Trap,sculpin-unspecified,juvenile,NA,NA,NA,,,,,15,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-06-22T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,juvenile,NA,NA,NA,,,,,9,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-06-29T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,juvenile,NA,NA,NA,,,,,14,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-06-29T00:00:00Z,Benjamin Meyer,Minnow Trap,sculpin-unspecified,juvenile,NA,NA,NA,,,,,9,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-06-29T00:00:00Z,Benjamin Meyer,Minnow Trap,rainbow trout,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-06-29T00:00:00Z,Benjamin Meyer,Minnow Trap,threespine stickleback,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-07-13T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,12,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-07-13T00:00:00Z,Benjamin Meyer,Minnow Trap,sculpin-unspecified,NA,NA,NA,NA,,,,,2,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-07-13T00:00:00Z,Benjamin Meyer,Minnow Trap,Chinook salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-07-20T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,juvenile,NA,NA,NA,,,,,14,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-07-20T00:00:00Z,Benjamin Meyer,Minnow Trap,sculpin-unspecified,juvenile,NA,NA,NA,,,,,8,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-07-20T00:00:00Z,Benjamin Meyer,Minnow Trap,rainbow trout,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-07-20T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-07-27T00:00:00Z,Benjamin Meyer,Minnow Trap,Chinook salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-07-27T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,16,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-07-27T00:00:00Z,Benjamin Meyer,Minnow Trap,sculpin-unspecified,juvenile,NA,NA,NA,,,,,4,ID'ed and Released,,,,NULL
+Soldotna Creek Mouth,60.4832023,-151.0580149,,,Soldotna Creek Mouth,2023-07-27T00:00:00Z,Benjamin Meyer,Minnow Trap,rainbow trout,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,rainbow trout,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,rainbow trout,juvenile,NA,NA,NA,,,,,1,ID'ed and Released,,,,NULL
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,stickleback-unspecified,NA,NA,NA,NA,,,,,3,ID'ed and Released,,,,NULL
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,rainbow trout,juvenile,NA,NA,NA,,,,,2,ID'ed and Released,,,,NULL
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,stickleback-unspecified,NA,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,stickleback-unspecified,NA,NA,NA,NA,,,,,134,ID'ed and Released,,,,estimated count
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,NULL
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,rainbow trout,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,stickleback-unspecified,NA,NA,NA,NA,,,,,14,ID'ed and Released,,,,NULL
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,NULL
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,stickleback-unspecified,NA,NA,NA,NA,,,,,3,ID'ed and Released,,,,NULL
+Mackey Lakes Culvet - Downstream,60.525225,-151.00211,,,Mackey Lakes Culvet - Downstream,2023-08-25T00:00:00Z,Benjamin Meyer,NA,stickleback-unspecified,NA,NA,NA,NA,,,,,19,ID'ed and Released,,,,NULL
+Savena Lake Trib,60.556954,-150.999102,,,Savena Lake Trib,2023-08-25T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,Age 1
+Savena Lake Trib,60.556954,-150.999102,,,Savena Lake Trib,2023-08-25T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Savena Lake Trib,60.556954,-150.999102,,,Savena Lake Trib,2023-08-25T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Savena Lake Trib,60.556954,-150.999102,,,Savena Lake Trib,2023-08-25T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Savena Lake Trib,60.556954,-150.999102,,,Savena Lake Trib,2023-08-25T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,2 coho
+Savena Lake Trib,60.556954,-150.999102,,,Savena Lake Trib,2023-08-25T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Savena Lake Trib,60.556954,-150.999102,,,Savena Lake Trib,2023-08-25T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,2 coho
+Savena Lake Trib,60.556954,-150.999102,,,Savena Lake Trib,2023-08-25T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Savena Lake Trib,60.556954,-150.999102,,,Savena Lake Trib,2023-08-25T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,14,ID'ed and Released,,,,NULL
+Savena Lake Trib,60.556954,-150.999102,,,Savena Lake Trib,2023-08-25T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,2,ID'ed and Released,,,,NULL
+West Mackey Lake,60.523376,-151.007324,,,West Mackey Lake,2023-08-26T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,64,ID'ed and Released,,,,estimate
+West Mackey Lake,60.523376,-151.007324,,,West Mackey Lake,2023-08-26T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,120,Fork,NA,,,,,0,ID'ed and Released,,,,"prob age 2, two photos. estimated fork length."
+West Mackey Lake,60.523376,-151.007324,,,West Mackey Lake,2023-08-26T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,69,ID'ed and Released,,,,NULL
+West Mackey Lake,60.523376,-151.007324,,,West Mackey Lake,2023-08-26T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,100,NA,NA,,,,,0,ID'ed and Released,,,,2 photos. estimated fork length.
+West Mackey Lake,60.523376,-151.007324,,,West Mackey Lake,2023-08-26T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,14,ID'ed and Released,,,,NULL
+West Mackey Lake,60.523376,-151.007324,,,West Mackey Lake,2023-08-26T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,100,NA,NA,,,,,0,ID'ed and Released,,,,2 photos. estimated fork length.
+West Mackey Lake,60.523376,-151.007324,,,West Mackey Lake,2023-08-26T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,49,ID'ed and Released,,,,NULL
+West Fork Beaver Creek Bridge - Upstream,60.640639,-151.084047,,,West Fork Beaver Creek Bridge - Upstream,2023-09-06T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+West Fork Beaver Creek Bridge - Upstream,60.640639,-151.084047,,,West Fork Beaver Creek Bridge - Upstream,2023-09-06T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+West Fork Beaver Creek Bridge - Upstream,60.640639,-151.084047,,,West Fork Beaver Creek Bridge - Upstream,2023-09-06T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,2 photos of same fish; smolting?
+Summit Lake Outlet,60.642345,-149.493959,,,Summit Lake Outlet,2023-09-04T00:00:00Z,Benjamin Meyer,Minnow Trap,rainbow trout,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Summit Lake Outlet,60.642345,-149.493959,,,Summit Lake Outlet,2023-09-04T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Summit Lake Outlet,60.642345,-149.493959,,,Summit Lake Outlet,2023-09-04T00:00:00Z,Benjamin Meyer,Minnow Trap,rainbow trout,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,Lake trout? 3 photos
+Summit Lake Outlet,60.642345,-149.493959,,,Summit Lake Outlet,2023-09-04T00:00:00Z,Benjamin Meyer,Minnow Trap,rainbow trout,juvenile,NA,NA,NA,,,,,2,ID'ed and Released,,,,Lake trout? 2 photos
+Moose River Trib 2.1,60.559255,-150.745044,,,Moose River Trib 2.1,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,2 photos
+Moose River Trib 2.1,60.559255,-150.745044,,,Moose River Trib 2.1,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,1 photo
+Moose River Trib 2.1,60.559255,-150.745044,,,Moose River Trib 2.1,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,Dolly Varden,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Moose River Trib 2.2,60.560386,-150.753078,,,Moose River Trib 2.2,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,Dolly Varden,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,Event 1
+Moose River Trib 2.2,60.560386,-150.753078,,,Moose River Trib 2.2,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,Dolly Varden,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,Event 1
+Moose River Trib 2.2,60.560386,-150.753078,,,Moose River Trib 2.2,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,Event 2; 2 photos
+Moose River Trib 2.2,60.560386,-150.753078,,,Moose River Trib 2.2,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,Dolly Varden,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,Event 2; 1 photo
+Moose River Trib 2.2,60.560386,-150.753078,,,Moose River Trib 2.2,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,Event 2; 1 photo
+Moose River Trib 2.2,60.560386,-150.753078,,,Moose River Trib 2.2,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,Event 2; 1 photo
+Moose River Trib 2.2,60.560386,-150.753078,,,Moose River Trib 2.2,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,Event 2; 1 photo
+Moose River Trib 2.3,60.560942,-150.74669,,,Moose River Trib 2.3,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,3,ID'ed and Released,,,,2 photos
+Moose River Trib 2.3,60.560942,-150.74669,,,Moose River Trib 2.3,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,NULL
+Moose River Trib 2.3,60.560942,-150.74669,,,Moose River Trib 2.3,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,2 photos
+Moose River Trib 2.3,60.560942,-150.74669,,,Moose River Trib 2.3,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,2,ID'ed and Released,,,,1 photo
+Moose River Trib 2.3,60.560942,-150.74669,,,Moose River Trib 2.3,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,NULL
+Moose River Trib 2.3,60.560942,-150.74669,,,Moose River Trib 2.3,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Moose River Trib 2.3,60.560942,-150.74669,,,Moose River Trib 2.3,2023-09-05T00:00:00Z,Benjamin Meyer,Minnow Trap,Dolly Varden,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,1 photo
+Forestner Culvert - Upstream,60.523834,-150.806872,,,Forestner Culvert - Upstream,2023-09-08T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,NULL
+Forestner Culvert - Upstream,60.523834,-150.806872,,,Forestner Culvert - Upstream,2023-09-08T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,3,ID'ed and Released,,,,NULL
+Forestner Culvert - Upstream,60.523834,-150.806872,,,Forestner Culvert - Upstream,2023-09-08T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,1 photo; nymph in photo
+Forestner Culvert - Downstream,60.523868,-150.806821,,,Forestner Culvert - Downstream,2023-09-08T00:00:00Z,Benjamin Meyer,Minnow Trap,Dolly Varden,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Forestner Culvert - Downstream,60.523868,-150.806821,,,Forestner Culvert - Downstream,2023-09-08T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,2 photos
+Forestner Culvert - Downstream,60.523868,-150.806821,,,Forestner Culvert - Downstream,2023-09-08T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,NULL
+Forestner Culvert - Downstream,60.523868,-150.806821,,,Forestner Culvert - Downstream,2023-09-08T00:00:00Z,Benjamin Meyer,Minnow Trap,Dolly Varden,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Forestner Culvert - Downstream,60.523868,-150.806821,,,Forestner Culvert - Downstream,2023-09-08T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,2 photos
+Forestner Culvert - Downstream,60.523868,-150.806821,,,Forestner Culvert - Downstream,2023-09-08T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,2 photos; 2 fish
+Moose River Trib 3.1 - Downstream,60.549277,-150.75262,,,Moose River Trib 3.1 - Downstream,2023-09-09T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,caught downstream on 9/9/2023
+West Mackey Lake 2,60.523712,-151.006649,,,West Mackey Lake 2,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,19,ID'ed and Released,,,,est. count; one photo
+West Mackey Lake 2,60.523712,-151.006649,,,West Mackey Lake 2,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,14,ID'ed and Released,,,,est. count; two photos
+West Mackey Lake 2,60.523712,-151.006649,,,West Mackey Lake 2,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,est. 2 years old
+West Mackey Lake 2,60.523712,-151.006649,,,West Mackey Lake 2,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,19,ID'ed and Released,,,,NULL
+West Mackey Lake 2,60.523712,-151.006649,,,West Mackey Lake 2,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,est. 1 year old; two photos
+West Mackey Lake 2,60.523712,-151.006649,,,West Mackey Lake 2,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,1,ID'ed and Released,,,,unspecified
+West Mackey Lake 2,60.523712,-151.006649,,,West Mackey Lake 2,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,0,ID'ed and Released,,,,unspecified
+West Mackey Lake 2,60.523712,-151.006649,,,West Mackey Lake 2,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,29,ID'ed and Released,,,,unspecified
+West Mackey Lake 2,60.523712,-151.006649,,,West Mackey Lake 2,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,two photos
+West Mackey Lake 2,60.523712,-151.006649,,,West Mackey Lake 2,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,14,ID'ed and Released,,,,est. count; unspecified
+South Mackey Pond,60.522313,-151.007562,,,South Mackey Pond,2023-09-14T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,2,ID'ed and Released,,,,From Event 1
+South Mackey Pond,60.522313,-151.007562,,,South Mackey Pond,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,14,ID'ed and Released,,,,est. count; unspecified
+South Mackey Pond,60.522313,-151.007562,,,South Mackey Pond,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,0,ID'ed and Released,,,,unspecified
+South Mackey Pond,60.522313,-151.007562,,,South Mackey Pond,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,29,ID'ed and Released,,,,est. count; unspecified
+South Mackey Pond,60.522313,-151.007562,,,South Mackey Pond,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,3,ID'ed and Released,,,,unspecified
+South Mackey Pond,60.522313,-151.007562,,,South Mackey Pond,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,9,ID'ed and Released,,,,est. count; unspecified
+South Mackey Pond,60.522313,-151.007562,,,South Mackey Pond,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,29,ID'ed and Released,,,,est. count; unspecified
+South Mackey Pond,60.522313,-151.007562,,,South Mackey Pond,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,24,ID'ed and Released,,,,est. count; unspecified
+South Mackey Pond,60.522313,-151.007562,,,South Mackey Pond,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,24,ID'ed and Released,,,,est. count; unspecified
+South Mackey Pond,60.522313,-151.007562,,,South Mackey Pond,2023-09-15T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,NA,NA,NA,NA,,,,,24,ID'ed and Released,,,,est. count; unspecified
+Clam Gulch Creek 1,60.239483,-151.400241,,,Clam Gulch Creek 1,2023-09-22T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,2 photos
+Clam Gulch Creek 1,60.239483,-151.400241,,,Clam Gulch Creek 1,2023-09-22T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,2 photos
+Clam Gulch Creek 1,60.239483,-151.400241,,,Clam Gulch Creek 1,2023-09-22T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,2 photos
+Clam Gulch Creek 1,60.239483,-151.400241,,,Clam Gulch Creek 1,2023-09-22T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,2 photos
+Clam Gulch Creek 1,60.239483,-151.400241,,,Clam Gulch Creek 1,2023-09-22T00:00:00Z,Benjamin Meyer,Minnow Trap,Dolly Varden,juvenile,NA,NA,NA,,,,,0,ID'ed and Released,,,,1 photo
+Clam Gulch Creek 1,60.239483,-151.400241,,,Clam Gulch Creek 1,2023-09-22T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,2,ID'ed and Released,,,,1 photo
+Clam Gulch Creek 1,60.239483,-151.400241,,,Clam Gulch Creek 1,2023-09-22T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,2,ID'ed and Released,,,,1 photo
+Clam Gulch Creek 1,60.239483,-151.400241,,,Clam Gulch Creek 1,2023-09-22T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,NULL
+Clam Gulch Creek 1,60.239483,-151.400241,,,Clam Gulch Creek 1,2023-09-22T00:00:00Z,Benjamin Meyer,Minnow Trap,stickleback-unspecified,not recorded,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,"2 fish, 2 photo"
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,2,ID'ed and Released,,,,2 photo
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,ninespine stickleback,not recorded,NA,NA,NA,,,,,0,ID'ed and Released,,,,2 photo
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,NULL
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,2 photo
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,ninespine stickleback,not recorded,NA,NA,NA,,,,,0,ID'ed and Released,,,,2 photo
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,sculpin-unspecified,not recorded,NA,NA,NA,,,,,0,ID'ed and Released,,,,1 photo
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,ninespine stickleback,not recorded,NA,NA,NA,,,,,0,ID'ed and Released,,,,1 photo
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,2,ID'ed and Released,,,,2 photo
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,ninespine stickleback,not recorded,NA,NA,NA,,,,,0,ID'ed and Released,,,,2 photo
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,ninespine stickleback,not recorded,NA,NA,NA,,,,,1,ID'ed and Released,,,,NULL
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,ninespine stickleback,not recorded,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,1,ID'ed and Released,,,,NULL
+Beaver Creek MT #10,60.61665,-151.092533,,,Beaver Creek MT #10,2023-09-27T00:00:00Z,Benjamin Meyer,Minnow Trap,coho salmon,parr,NA,NA,NA,,,,,0,ID'ed and Released,,,,NULL

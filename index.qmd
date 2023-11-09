@@ -1,9 +1,13 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+This document serves as the final report for work conducted from 2021 - 2023 to expand and corroborate the Alaska Department of Fish and Game's Anadromous Waters Catalog in the central Kenai Peninsula area of Alaska, USA.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+This document replaces and updates the following two previous reports, which can be disregarded as earlier versions:
 
-```{r}
-1 + 1
-```
+-   <https://bookdown.org/kwfwqx/tu_awc_expansion/>
+
+    -   Work funded by the Kenai Peninsula Chapter of Trout Unlimited 2021-2022
+
+-   <https://bookdown.org/kwfwqx/awc_expansion/>
+
+    -   Work funded by the Alaska Sustainable Salmon Fund project #54014
