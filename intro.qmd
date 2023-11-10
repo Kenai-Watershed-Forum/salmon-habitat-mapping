@@ -55,21 +55,11 @@ knitr::include_graphics('images/juv_coho1.jpeg')
 
 ```
 
-## Synopsis
+## Project Rationale
 
+::: {.callout-note appearance="simple"}
 The Kenai Peninsula's watersheds are significant producers of Pacific salmon. Critical to Alaska's economic and cultural wellbeing, these salmon support fisheries both inland and throughout Cook Inlet. [Kenai Watershed Forum](https://kenaiwatershed.org/) (KWF) in collaboration with [The Kenai Peninsula Chapter of Trout Unlimited](https://kenaipeninsula.tu.org/) (KPTU) are documenting habitat for salmonid spawning, rearing, and migration in order to increase the known water bodies recognized in the Alaska Department of Fish and Game's (ADF&G's) Anadromous Waters Catalog (AWC). The AWC is Alaska's most powerful tool for regulating, protecting, and conserving anadromous fish habitat.
-
-Project funding from 2021 - 2023 was secured from the following sources:
-
--   [Alaska Sustainable Salmon Fund](http://www.akssf.org/About.aspx) project #54014, "Expanding and Corroborating the Known Extent of Anadromous Waters Throughout the Kenai Peninsula."
-
--   Trout Unlimited's [Embrace-a-Stream](https://www.embraceastream.org/) program
-
--   [Kenai Peninsula Chapter of Trout Unlimited](https://kenaipeninsula.tu.org/)
-
--   [Kenai Community Foundation](https://www.kenaicommunityfoundation.org/)
-
-## Introduction
+:::
 
 Salmon are intrinsic to the cultural and economic well being of Alaska, but cannot persist on the landscape without healthy habitat. Through strategic conservation efforts, riparian and instream habitat can continue to maintain salmon populations as well as transport marine-derived nutrients; maintain hydrology; and provide refuge during a rapidly changing climate.
 
@@ -79,7 +69,7 @@ In recognition of the importance of protecting anadromous fish habitat, the Stat
 
 ```{r echo = F}
 #| label: fig-awc-map
-#| fig-cap: "The Alaska Department of Fish and Game's Anadromous Waters Catalog online mapper"
+#| fig-cap: "The Alaska Department of Fish and Game's Anadromous Waters Catalog online mapper. Access the map at https://bit.ly/awc_map."
 
 knitr::include_graphics('images/awc_mapper.png')
 ```

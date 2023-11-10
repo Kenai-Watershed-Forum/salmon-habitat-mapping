@@ -90,7 +90,9 @@ The project study map may be accessed by following the link at [ArcGIS Online](h
 
 ```{r echo = F}
 
-# update the map inset link above when ready to share
+# map in progress; need to get NHD, 21_18, and AWC layers in some projection as NetMap HIP.
+
+# try it and contact justin if no luck 
 
 ```
 
