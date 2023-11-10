@@ -11,7 +11,6 @@ knitr::include_graphics('images/awc_romey_img.png')
 
 ::: {.callout-note appearance="simple"}
 
-
 Our on-the-ground work serves to strengthen local freshwater habitat conservation and education efforts. However given the likely quantity of remaining undocumented anadromous habitat, going forward it will be critical to use a systematic, targeted fieldwork approach that can inform models for predictive occupancy maps that could one day be used for habitat regulation and management.
 
 :::
