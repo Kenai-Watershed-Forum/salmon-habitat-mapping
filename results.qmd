@@ -109,7 +109,8 @@ n_sites_total <- sample_events %>%
 #### table of mu,ber of site visits
 n_sites <- sample_events %>%
   group_by(site) %>%
-  tally() 
+  tally() %>%
+  rename(site_visits = n)
 
 ### total fish
 fish_ct <- fish_dat %>%
@@ -155,16 +156,20 @@ During fieldwork in summers 2021 - 2023:
 
 -   Over course of `r n_days` fieldwork days 2021 - 2023 (including the training event), we conducted a total of `r n_events` sampling events at `r n_sites_total` unique sites. See the interactive project map in the Methods section ("[Site selection](##%20Site%20selection)") for a current map of where and when sampling events have occurred. \[MAP WILL BE UPDATED FOR 2023\]
 
--   Table \@ref(tab:site-visits) summarises total samping events by individual site. We typically sampled a site only one time each.
+-   Table @tbl-sites summarises total sampling events by individual site. We typically sampled a site only one time each.
 
--   We have captured `r fish_ct` fish comprised of `r spp_ct` unique species. Table \@ref(tab:ct) summarizes current fish capture count by species.
+-   We have captured `r fish_ct` fish comprised of `r spp_ct` unique species. Table @tbl-ct-spp summarizes current fish capture count by species.
 
--   Table \@ref(tab:site-spp-ct) summarizes total fish capture for each species by site.
+-   Table @tbl-site-spp-ct summarizes total fish capture for each species by site.
 
-```{r, site-visits, echo = F, fig.cap = "cap"}
+```{r echo = F}
+#| label: tbl-sites
+#| tbl-cap: "Site visit count 2021 - 2023"
+
 n_sites %>%
   kbl(caption = "Total site visits") %>%
-  kable_paper(full_width = F, html_font = "Cambria")
+  kable_paper(full_width = F, html_font = "Cambria") %>%
+  scroll_box(height = "500px", width = "350px")
 
 #, 
  #             bootstrap_options = c("striped", "hover", "condensed", "responsive"))
@@ -174,11 +179,14 @@ n_sites %>%
 
 <br>
 
-```{r ct, echo = F, fig.cap = "Total fish capture count by species"}
+```{r ct, echo = F}
+#| label: tbl-ct-spp
+#| tbl-cap: "Total fish capture count by species"
 
 spp_ct_n %>%
   kbl(caption = "Total fish capture count by species") %>%
-  kable_paper(full_width = F, html_font = "Cambria")
+  kable_paper(full_width = F, html_font = "Cambria")  %>%
+  scroll_box(height = "500px", width = "350px")
 #, 
  #             bootstrap_options = c("striped", "hover", "condensed", "responsive"))
 
@@ -186,8 +194,9 @@ spp_ct_n %>%
 
 <br>
 
-```{r site-spp-ct, echo = F, fig.cap = "cap"}
-
+```{r echo = F}
+#| label: tbl-site-spp-ct
+#| tbl-cap: "Species count by site"
 site_spp_ct %>%
   kbl(caption = "Total fish capture count by species at each site.") %>%
   kable_paper(full_width = F, html_font = "Cambria",
@@ -204,36 +213,44 @@ site_spp_ct %>%
 
 Fish capture data was evaluated against the 2021 and 2022 Anadromous Waters Catalog to identify new stream segment nominations. Complete submission materials may be accessed in the project [Google Drive folder (link)](https://drive.google.com/drive/folders/1UmQGruxbmRO-ICCd0xbGi5rPp1ZTFCX2?usp=drive_link). Nominations were sent to the ADF&G Habitat Division in Anchorage in the fall of each year.
 
-As of November 2023, a total length of **17.6 miles** of stream segments and **1152 lake acres** were included in the nominations.
+::: {.callout-note appearance="simple"}
 
-The table below breaks down each nomination by length.
+## Total Anadromous Waters Nominations
 
-```{r, awc-noms, echo = F, fig.cap = "cap"}
+As of November 2023, a total length of **17.5 miles** of stream segments and **1152 lake acres** were included in the nominations.
 
-#| label: awc-noms
+:::
 
-### sample events
-tbl <- read_excel("input/2021_2023_stream_lengths.xlsx") %>%
+Table @tbl-awc-noms below breaks down each stream segment nomination by length.
+
+```{r echo = F}
+#| label: tbl-awc-noms
+#| tbl-cap: "Lengths of stream segments included in anadromous waters nominations."
+
+### nomination records
+noms_tbl <- read_excel("input/2021_2023_stream_lengths.xlsx") %>%
   clean_names() %>%
   select(nomination,nomination_name,shape_length) %>%
   # convert from m to km
   mutate(shape_length = shape_length/1000) %>%
   rename(stream_length_km = shape_length) %>%
   filter(!is.na(nomination_name)) %>%
-  group_by(nomination_name) %>%
-  summarise(total_stream_length_km = sum(stream_length_km))
+  group_by(nomination_name, nomination) %>%
+  summarise(total_stream_length_km = sum(stream_length_km)) %>%
+  arrange(nomination)
 
-
-tbl %>%
-  kbl(caption = "AWC Nominations") %>%
+# table
+noms_tbl %>%
+  kbl(caption = "AWC Nominations 2021 - 2023", digits = 2) %>%
   kable_paper(full_width = F, html_font = "Cambria")
 
 ```
 
 <br>
 
-```{r, awc-noms-map, echo = F, fig.cap = "map map"}
-
+```{r echo = F}
+#| label: fig-awc-noms-map
+#| fig-cap: "Nominated stream segments highlighted in orange, green, and yellow. Prexisting documented andromous waters prior to this project colored in pink."
 knitr::include_graphics('images/2021_2023_awc_noms.jpg')
 
 ```
@@ -241,6 +258,50 @@ knitr::include_graphics('images/2021_2023_awc_noms.jpg')
 <br>
 
 For general background on nominations, see the [slides linked here](https://docs.google.com/presentation/d/1uQX9_4T-vJDzp_gzBJFyqtggOg1Fpsng?rtpof=true&usp=drive_fs), presented at Kenai Watershed Forum's Fireside Chat series held at Kenai River Brewing on November 1, 2023.
+
+## Volunteer participation
+
+Volunteer recruitment efforts resulted in a steadily increasing level of participation from the general public. A total of 310 volunteer hours were documented throughout the project, with an initial higher outlay in 2021 to initiate training.
+
+<br>
+
+```{r echo = F}
+# volunteer hours prep
+vol_hrs <- read_sheet(url, sheet = "hours_records") %>%
+  clean_names() %>%
+  select(year,training_vs_fieldwork,total_time_hours) %>%
+  group_by(year,training_vs_fieldwork) %>%
+  summarise(hrs = sum(total_time_hours))
+
+# plot
+vol_hrs %>%
+  ggplot(aes(year,hrs,fill = training_vs_fieldwork)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  xlab("") +
+  ylab("Volunteer Hours") +
+  theme(legend.title=element_blank()) +
+  ggtitle("Central Kenai Peninsula Salmon Habitat Mapping\nVolunteer Hours 2021-2023")
+
+```
+
+The level of volunteer participation, along with experience gained, closely tracked the quantity of nominations submitted each year, with a steadily rising number of nominations from 2021 to 2023.
+
+<br>s
+
+```{r echo = F}
+# plot
+noms_tbl %>%
+  group_by(nomination) %>%
+  tally() %>%
+  ggplot(aes(nomination,n)) +
+  geom_bar(stat = "identity") +
+  xlab("") +
+  ylab("Number of AWC Nominations Submitted") +
+  ggtitle("Number of Anadromous Waters Nominations\nSubmitted to the Alaska Department of Fish and Game\n2021 - 2023")
+
+```
+
+
 
 ## Aquatic Resource Permit
 
@@ -337,6 +398,5 @@ arp <- fish_dat %>%
 
 # export csv to repo
 write_csv(arp, "output/aquatic_resource_permit_all.csv")
-
 
 ```

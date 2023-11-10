@@ -1,5 +1,7 @@
 # Discussion
 
+Each season of fieldwork was unique, thus we will discuss them individually.
+
 ## 2021 Fieldwork
 
 ### 2021 Anadromous habitat surveys
@@ -44,11 +46,13 @@ In two cases where map interpretation suggested presence of salmonids but we cap
 
     We conducted sampling events on two separate days at Suneva lake. We captured stickleback and sculpin on both occasions, but no salmonids despite extensive effort.
 
-    We visited the outlet at Suneva lake and discovered two perched culverts installed where the outlet stream crosses Sockeye Avenue (see figure \@suneva-outlet). The culvert is likely impeding fish passage, as there is a drop of several feet between the stream channel and the culvert outlet.
+    We visited the outlet at Suneva lake and discovered two perched culverts installed where the outlet stream crosses Sockeye Avenue (see figure \@fig-suneva-outlet). The culvert is likely impeding fish passage, as there is a drop of several feet between the stream channel and the culvert outlet.
 
     A site visit to the mouth of the creek flowing from Suneva Lake at its outlet at Cook Inlet will help determine if the waterway has potential to host anadromous species and may be part of future fieldwork.
 
-```{r suneva-outlet, echo = F, fig.cap = "Perched culvert near outlet of Suneva Lake, intersection with Sockeye Avenue",  out.height=400, out.extra= "angle = 90"}
+```{r echo = F}
+#| label: fig-suneva-outlet
+#| fig-cap: "Perched culvert near outlet of Suneva Lake, intersection with Sockeye Avenue"
 
 knitr::include_graphics('images/suneva_culvert.png')
 
@@ -57,11 +61,13 @@ knitr::include_graphics('images/suneva_culvert.png')
 
 2.  [Salamatof Creek]{.underline} - Salatamtof Creek lies North of Kenai and South of Nikiski, crossing the Kenai Spur highway. A stream connection of 1.56 km flows from Lower Salamatof Lake to Cook Inlet, and a stream segment of 2.84 km connects the lower lake to Salamatof Lake. We sampled at a site in the stream segment connecting the two lakes on one occasion in Summer 2021 and captured a several hundred sticklebacks, but no salmonids.
 
-We visited the location where maps indicated that Salamatof Creek crosses the Kenai Spur Highway in August 2021 (figure \@ref(fig:salamatof-creek)).
+    We visited the location where maps indicated that Salamatof Creek crosses the Kenai Spur Highway in August 2021 (figure \@fig-salamatof-creek).
 
-At the road crossing we observed a culvert passage for Salamatof Creek below the highway, but no flowing water. The visible nearby body of water at this location appeared to be lotic in nature, and no outflow was readily evident.
+    At the road crossing we observed a culvert passage for Salamatof Creek below the highway, but no flowing water. The visible nearby body of water at this location appeared to be lotic in nature, and no outflow was readily evident.
 
-```{r salamatof-creek, echo = F, fig.cap = "Salamatof Creek drainange, North of Kenai, Alaska. Red X indicates location of fish passage barrier."}
+```{r echo = F}
+#| label: fig-salamatof-creek
+#| fig-cap: "Salamatof Creek drainange, North of Kenai, Alaska. Red X indicates location of fish passage barrier."
 
 knitr::include_graphics('images/Inkedsalamatof_map.jpg')
 
@@ -81,17 +87,33 @@ In addition to fieldwork efforts aimed at prospecting for unidentified anadromou
 
 ## 2022 Fieldwork
 
+### 2022 Anadromous Habitat Surveys
+
 In Summer 2022 we focused our survey efforts on streams in the Kenai/Soldotna/Sterling area including Coal Creek, Beaver Creek, and tributaries of the Moose River. Experience from the previous season contributed to much more frequent success of identifying anadromous habitat prior to fieldwork. **In 2022, four out of five site visits yielded fish observations used in AWC nominations.**
 
-In one case, at the "Moose River Trib 1.4" site, the flow line indicated by the National Hydrography Database stops \~0.3 miles downstream of the location where we captured juvenile coho salmon. Thus, this salmon-bearing location was not only not documented in the Anadromous Waters Catalog, it was not yet documented even as a stream.
-
-(insert figure w/ map here)
+In one case, at the "Moose River Trib 1.4" site, the flow line indicated by the National Hydrography Database stops \~0.3 miles downstream of the location where we captured juvenile coho salmon. Thus, this salmon-bearing location was not only not documented in the Anadromous Waters Catalog, it was not yet documented even as a stream (figure @fig-moose-trib.
 
 These observations highlight the need for a more sophisticated mapping approach to generate survey sites for additional fieldwork. For additional discussion and a plan forward on this topic, see the "Next Steps" chapter.
 
+```{r echo = F}
+#| label: fig-moose-trib
+#| fig-cap: "A undocumented anadromous tributary of the Moose River near Sterling, AK."
+
+knitr::include_graphics('images/moose river trib map.jpg')
+
+```
+
+#### 2022 Outreach and other activities
+
+-   **Education**. In 2022 KWF continued to oversee fish sampling events aimed exclusively at education and outreach, occurring primarily at Lower Soldotna Creek. These events introduced basic facts about wild salmon life history and habitat to local community members, visitors, journalists, and summer campers. Total participants is estimated in excess of one hundred people.
+
 ## 2023 Fieldwork
 
-tbd
+### 2023 Anadromous Habitat Surveys
+
+In 2023 we continued to focus on waters near the road system in the central Kenai Peninsula including Soldotna Creek, Moose River, Beaver Creek, and smaller unnamed tributaries of the lower main stem Kenai River. In 2023 nearly all sites that we surveyed revealed the presence of juvenile anadromous fish.
+
+As presented in the results section, steadily increasing volunteer participation tracked closely with an increaing number of nominations.
 
 ## 2021-2023 Media highlights
 

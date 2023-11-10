@@ -122,11 +122,11 @@ In some cases where maps indicated a likelihood of anadromous habitat yet we did
 
 ### Data management
 
-We recorded data in the field using pre-printed Rite-in-the-Rain field forms, and entered data into a [Google Sheets database](https://bit.ly/eas_data)[^methods-3]. We read data into RStudio and generated this report using the bookdown package (v 0.35). Project edits are managed through a dedicated [project GitHub repository](https://github.com/Kenai-Watershed-Forum/tu_awc_expansion)[^methods-4].
+We recorded data in the field using pre-printed Rite-in-the-Rain field forms, and entered data into a [Google Sheets database](https://bit.ly/eas_data)[^methods-3]. We read data into RStudio and generated this report using the Quarto book template. Project edits are managed through a dedicated [project GitHub repository](https://github.com/Kenai-Watershed-Forum/salmon-habitat-mapping)[^methods-4].
 
 [^methods-3]: <https://bit.ly/eas_data>
 
-[^methods-4]: <https://github.com/Kenai-Watershed-Forum/tu_awc_expansion>
+[^methods-4]: <https://github.com/Kenai-Watershed-Forum/salmon-habitat-mapping>
 
 All project documents and data can be accessed in a dedicated [Google Drive folder](https://bit.ly/tu_kwf_embrace_a_stream_2021)[^methods-5].
 
