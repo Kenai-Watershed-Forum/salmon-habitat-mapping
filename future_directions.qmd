@@ -10,9 +10,7 @@ knitr::include_graphics('images/awc_romey_img.png')
 ## Summary
 
 ::: {.callout-note appearance="simple"}
-
 Our on-the-ground work serves to strengthen local freshwater habitat conservation and education efforts. However given the likely quantity of remaining undocumented anadromous habitat, going forward it will be critical to use a systematic, targeted fieldwork approach that can inform models for predictive occupancy maps that could one day be used for habitat regulation and management.
-
 :::
 
 The collaboration between the Kenai Peninsula Chapter of Trout Unlimited and Kenai Watershed Forum serves as a compelling example of how to engage volunteers interested in conserving fish habitat with hands-on opportunities. There is great potential to expand and continue the work described in this report, and a great urgency to do so.
