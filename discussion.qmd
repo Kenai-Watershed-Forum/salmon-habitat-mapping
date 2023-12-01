@@ -134,7 +134,11 @@ knitr::include_graphics('images/kdll_story.png')
 
 ### Public Lecture
 
-On November 1, 2023, Alexa Millward (Trout Unlimited) and Benjamin Meyer (Kenai Watershed Forum) were featured to present this project as part of Kenai Watershed Forum's "Fireside Chats" series held at Kenai River Brewing in Soldotna, AK. The slides from this presentation are [available online at this link](https://docs.google.com/presentation/d/1uQX9_4T-vJDzp_gzBJFyqtggOg1Fpsng?rtpof=true&usp=drive_fs).
+On November 1, 2023, Alexa Millward (Trout Unlimited) and Benjamin Meyer (Kenai Watershed Forum) were featured to present this project as part of Kenai Watershed Forum's "Fireside Chats" series held at Kenai River Brewing in Soldotna, AK.
+
+-   Presentation slides [available online at this link](https://docs.google.com/presentation/d/1uQX9_4T-vJDzp_gzBJFyqtggOg1Fpsng?rtpof=true&usp=drive_fs)
+
+-   Audio lecture [available at this link](https://www.kdll.org/podcast/kenai-conversation/2023-11-15/kenai-conversation-mapping-anadromous-waters), aired on KDLL Radio's Kenai Conversation on November 15, 2023
 
 ```{r, echo = F}
 
