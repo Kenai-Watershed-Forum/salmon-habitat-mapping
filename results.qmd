@@ -175,6 +175,12 @@ n_sites %>%
  #             bootstrap_options = c("striped", "hover", "condensed", "responsive"))
 
 # fix w/ webshot or make non-html
+
+#z <- left_join(sample_events,n_sites) %>%
+#  select(site,latitude,longitude,site_visits) %>%
+#  distinct()
+#write.csv(z,"output/site_visits.csv", row.names = F)
+
 ```
 
 <br>
