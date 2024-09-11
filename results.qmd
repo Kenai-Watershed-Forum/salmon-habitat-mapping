@@ -211,6 +211,8 @@ site_spp_ct %>%
   kable_styling(latex_options = c("scale_down","striped")) %>%
   scroll_box(width = "100%", height = "500px")
 
+write.csv(site_spp_ct,"output/site_spp_ct.csv", row.names = F)
+
 ```
 
 <br>
