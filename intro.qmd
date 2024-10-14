@@ -58,7 +58,7 @@ knitr::include_graphics('images/juv_coho1.jpeg')
 ## Project Rationale
 
 ::: {.callout-note appearance="simple"}
-The Kenai Peninsula's watersheds are significant producers of Pacific salmon. Critical to Alaska's economic and cultural wellbeing, these salmon support fisheries both inland and throughout Cook Inlet. [Kenai Watershed Forum](https://kenaiwatershed.org/) (KWF) in collaboration with [The Kenai Peninsula Chapter of Trout Unlimited](https://kenaipeninsula.tu.org/) (KPTU) are documenting habitat for salmonid spawning, rearing, and migration in order to increase the known water bodies recognized in the Alaska Department of Fish and Game's (ADF&G's) Anadromous Waters Catalog (AWC). The AWC is Alaska's most powerful tool for regulating, protecting, and conserving anadromous fish habitat.
+The Kenai Peninsula's watersheds are significant producers of Pacific salmon. Critical to Alaska's economic and cultural wellbeing, these salmon support fisheries both inland and throughout Cook Inlet. [Kenai Watershed Forum](https://kenaiwatershed.org/) (KWF) in collaboration with [The Kenai Peninsula Chapter of Trout Unlimited](https://kenaipeninsula.tu.org/) (KPTU) are documenting habitat for salmonid spawning, rearing, and migration in order to increase the known water bodies recognized in the Alaska Department of Fish and Game's (ADF&G's) Anadromous Waters Catalog (AWC). The AWC is Alaska's most powerful tool for regulating, protecting, and conserving anadromous fish habitat statewide.
 :::
 
 Salmon are intrinsic to the cultural and economic well being of Alaska, but cannot persist on the landscape without healthy habitat. Through strategic conservation efforts, riparian and instream habitat can continue to maintain salmon populations as well as transport marine-derived nutrients; maintain hydrology; and provide refuge during a rapidly changing climate.
@@ -69,7 +69,7 @@ In recognition of the importance of protecting anadromous fish habitat, the Stat
 
 ```{r echo = F}
 #| label: fig-awc-map
-#| fig-cap: "The Alaska Department of Fish and Game's Anadromous Waters Catalog online mapper. Access the map at https://bit.ly/awc_map."
+#| fig-cap: "The Alaska Department of Fish and Game's Anadromous Waters Catalog online mapper."
 
 knitr::include_graphics('images/awc_mapper.png')
 ```
@@ -84,11 +84,19 @@ In response, this project proposed to collect new observations of fish habitat a
 
 KWF worked with KPTU to strategically prioritize survey sites to collect data for AWC nomination submissions. Site prioritization was based on criteria including the increase in protected anadromous fish habitat, accessibility, and alignment of priorities with local agency and partnership goals. These are described in greater detail in the methods section. KWF coordinated with local agency partners to ensure that fieldwork efforts were not unnecessarily replicated.
 
+### Anadromous Habitat Modeling
+
+In response to the challenging scale of the task of ground-truthing many thousands of miles of anadromous streams, we are investigating methods to model probable anadromous habitat. If successfully developed, we anticipate that future managers and researchers will be able to consult these maps when reviewing permit applications, assessing habitat, or other applications.
+
+Following methods described in Romey and Martin 2022 and others, we applied existing end-of-anadromy modeling techniques to areas within the boundaries of the Chugach National Forest, where sufficient supporting geospatial data currently exists[^intro-4]. We report on these initial efforts in the Discussion section of this report.
+
+[^intro-4]: <https://app.paperpile.com/my-library/Romey-and-Martin-2022-p4hv9nptaAjetOBK3P73Muw>
+
 ## Volunteer Training
 
-On June 5, 2021 a half-day training workshop was conducted by Kenai Watershed Forum staff for fifteen Trout Unlimited volunteers, including but not limited to identifying ideal anadromous fish habitat; responsible deployment and retrieval of minnow traps; juvenile and adult fish identification; data collection and recording while in the field; and safe travel in bear country. Participants were introduced to an [Anadromous Habitat Survey Standard Operating Procedure](https://bit.ly/kwf_awc_sop) (SOP) document[^intro-4].
+On June 5, 2021 a half-day training workshop was conducted by Kenai Watershed Forum staff for fifteen Trout Unlimited volunteers, including but not limited to identifying ideal anadromous fish habitat; responsible deployment and retrieval of minnow traps; juvenile and adult fish identification; data collection and recording while in the field; and safe travel in bear country. Participants were introduced to an [Anadromous Habitat Survey Standard Operating Procedure](https://bit.ly/kwf_awc_sop) (SOP) document[^intro-5]. In summers 2022 - 2024, volunteers instead received training hands-on during fieldwork activities.
 
-[^intro-4]: <https://bit.ly/kwf_awc_sop>
+[^intro-5]: <https://bit.ly/kwf_awc_sop>
 
 ```{r, tu-volunteer, echo = F, fig.cap = "Kenai Peninsula Chapter of Trout Unlimited Volunteers."}
 
@@ -101,6 +109,8 @@ knitr::include_graphics('images/Fish_Trap_Seminar4.jpg')
 -   Submit nominations to increase anadromous stream, river, lake, and wetland coverage in the AWC and corresponding atlas
 
 -   Revise or corroborate outdated AWC and atlas data, particularly on Kenai River tributaries experiencing increases in zinc concentrations as well as priority corridors identified by the Kenai Mountains to Sea partnership
+
+-   Explore the feasibility of applying anadromous habitat modeling techniques within the Kenai Peninsula Borough
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
