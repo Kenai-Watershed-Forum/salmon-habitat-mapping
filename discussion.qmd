@@ -2,7 +2,7 @@
 
 Each season of fieldwork was unique, thus we will discuss them individually.
 
-## 2021 Fieldwork
+## 2021
 
 ### 2021 Anadromous habitat surveys
 
@@ -24,7 +24,7 @@ These results supported several conclusions that directed fieldwork efforts foll
 
 #### 2021 Highlight: Lower Soldotna Creek Tributary
 
-KWF was notified of a previously undocumented tributary segment in the Soldotna Creek drainage in July 2021. The tributary was documented as anadromous up to a road crossing approximately 100 m upstream from the Soldotna Creek mainstem, but the stream channel continued beyond. The stream segment upstream of the road crossing had been excavated in June 2021 as part of a new residnetial development project, but it was suspected that the modified channel still supported fish populations. KWF staff placed minnow traps at the most upstream locations where the traps could still be submerged. Over the course of several site visits we captured a total of 65 Coho Salmon and five Dolly Varden.
+KWF was notified of a previously undocumented tributary segment in the Soldotna Creek drainage in July 2021. The tributary was documented as anadromous up to a road crossing approximately 100 m upstream from the Soldotna Creek mainstem, but the stream channel continued beyond. The stream segment upstream of the road crossing had been excavated in June 2021 as part of a new residential development project, but it was suspected that the modified channel still supported fish populations. KWF staff placed minnow traps at the most upstream locations where the traps could still be submerged. Over the course of several site visits we captured a total of 65 Coho Salmon and five Dolly Varden.
 
 KWF submitted these data in ADFG's September 2021 call for data, and documented the approximate paths of existing stream channels, supported by several dozen ground-truthing photos. These data are displayed in the map figure below, and are also accessible at [ArcGIS Online](https://arcg.is/1XO9n5)[^discussion-2]).
 
@@ -83,7 +83,7 @@ In addition to fieldwork efforts aimed at prospecting for unidentified anadromou
 
 -   **Culvert replacement**. In summer 2021 KWF oversaw construction activities to replace the culvert carrying the North Fork of the Anchor River underneath Niklovaesk road in the Anchor Point area. As part of these efforts, a small segment of river channel is temporarily de-watered thus fish in this segment must be captured and released downstream prior. KWF personnel was able to capture n = 329 juvenile fish as part of these fish rescue efforts.
 
-## 2022 Fieldwork
+## 2022
 
 ### 2022 Anadromous Habitat Surveys
 
@@ -91,11 +91,11 @@ In Summer 2022 we focused our survey efforts on streams in the Kenai/Soldotna/St
 
 In one case, at the "Moose River Trib 1.4" site, the flow line indicated by the National Hydrography Database stops \~0.3 miles downstream of the location where we captured juvenile coho salmon. Thus, this salmon-bearing location was not only not documented in the Anadromous Waters Catalog, it was not yet documented even as a stream (@fig-moose-trib.)
 
-These observations highlight the need for a more sophisticated mapping approach to generate survey sites for additional fieldwork. For additional discussion and a plan forward on this topic, see the "Next Steps" chapter.
+These observations highlight the need for a more sophisticated mapping approach to generate survey sites for additional fieldwork. For additional discussion and a plan forward on this topic, see the "Future Directions" chapter.
 
 ```{r echo = F}
 #| label: fig-moose-trib
-#| fig-cap: "A undocumented anadromous tributary of the Moose River near Sterling, AK."
+#| fig-cap: "An undocumented anadromous tributary of the Moose River near Sterling, AK."
 
 knitr::include_graphics('images/moose river trib map.jpg')
 
@@ -105,7 +105,7 @@ knitr::include_graphics('images/moose river trib map.jpg')
 
 -   **Education**. In 2022 KWF continued to oversee fish sampling events aimed exclusively at education and outreach, occurring primarily at Lower Soldotna Creek. These events introduced basic facts about wild salmon life history and habitat to local community members, visitors, journalists, and summer campers. Total participants is estimated in excess of one hundred people.
 
-## 2023 Fieldwork
+## 2023
 
 ### 2023 Anadromous Habitat Surveys
 
@@ -113,9 +113,17 @@ In 2023 we continued to focus on waters near the road system in the central Kena
 
 As presented in the results section, steadily increasing volunteer participation tracked closely with an increasing number of nominations.
 
+## 2024
+
 ### 2024 Anadromous Habitat Surveys
 
-In 2024 we continued anadromous habitat surveys throughout the Kenai Peninsula. We conducted a total of X sampling events, and **nearly all sites that we surveyed revealed the presence of juvenile anadromous fish.**
+In 2024 nearly all sites surveyed throughout the Kenai Peninsula revealed the presence of juvenile anadromous fish. We focused efforts on streams and lakes in Turnagain Pass, Soldotna, and Sterling.
+
+#### Fish Map App
+
+In 2024, Kenai Watershed Forum and it's volunteers submitted all anadromous waters nominations using the [Fish Map App](https://www.alaskafishmapping.org/)[^discussion-3], a smartphone application developed by a coalition led by the Alaska Conservation Foundation. The app streamlines the process of recording and preparing field data for Alaskan anadromous water nominations. For each successfully submitted nomination, participants receive a $100 honorarium.
+
+[^discussion-3]: <https://www.alaskafishmapping.org/>
 
 -   fish map app
 -   ncrf proposal

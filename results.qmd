@@ -222,7 +222,7 @@ Fish capture data was evaluated against the 2024 Anadromous Waters Catalog to id
 ::: {.callout-note appearance="simple"}
 ## Total Anadromous Waters Nominations
 
-As of November 2023, a total length of **17.5 miles** of stream segments and **173 lake acres** were included in the nominations.
+As of October 2024, a total length of **21.1 miles** of stream segments and **173 lake acres** were included in our 23 nominations.
 :::
 
 Table @tbl-awc-noms below breaks down each stream segment nomination by length.
@@ -254,8 +254,8 @@ noms_tbl %>%
 
 ```{r echo = F}
 #| label: fig-awc-noms-map
-#| fig-cap: "Nominated stream segments highlighted in orange, green, and yellow. Prexisting documented andromous waters prior to this project colored in pink."
-knitr::include_graphics('images/2021_2023_awc_noms.jpg')
+#| fig-cap: "Nominated stream segments highlighted in orange, green, turquoise, and yellow. Prexisting documented andromous waters prior to this project colored in light blue."
+knitr::include_graphics('images/2024 AWC Layout Map.jpg')
 
 ```
 
@@ -275,7 +275,8 @@ vol_hrs <- read_sheet(url, sheet = "hours_records") %>%
   clean_names() %>%
   select(year,training_vs_fieldwork,total_time_hours) %>%
   group_by(year,training_vs_fieldwork) %>%
-  summarise(hrs = sum(total_time_hours))
+  summarise(hrs = sum(total_time_hours)) %>%
+  filter(!is.na(hrs))
 
 # plot
 vol_hrs %>%
@@ -288,7 +289,7 @@ vol_hrs %>%
 
 ```
 
-The level of volunteer participation, along with experience gained, closely tracked the quantity of nominations submitted each year, with a steadily rising number of nominations from 2021 to 2023.
+The level of volunteer participation, along with experience gained, closely tracked the quantity of nominations submitted each year, with a steadily rising number of nominations from 2021 to 2023. 2024 saw very minimal fudning resources directed towards fieldwork, thus the number of volunteer hours declined. Despite this reduced funding in 2024, six nominations were submitted. The result speaks to how sustained financial support, even if fluctuating in amount, is important to keep projects such as this in progress.
 
 <br>s
 
@@ -301,7 +302,7 @@ noms_tbl %>%
   geom_bar(stat = "identity") +
   xlab("") +
   ylab("Number of AWC Nominations Submitted") +
-  ggtitle("Number of Anadromous Waters Nominations\nSubmitted to the Alaska Department of Fish and Game\n2021 - 2023")
+  ggtitle("Number of Anadromous Waters Nominations\nSubmitted to the Alaska Department of Fish and Game\n2021 - 2024")
 
 ```
 
