@@ -38,7 +38,7 @@ The post-hoc documentation of this previously unidentified salmon stream after i
 
 <br>
 
-#### 2021 Highlight: Habitat Connectivity
+### 2021 Highlight: Habitat Connectivity
 
 In two cases where map interpretation suggested presence of salmonids but we captured none, we visited other locations in the watershed where fish barriers may be present. We found evidence of man-made fish barriers at two locations:
 
@@ -75,13 +75,13 @@ Based on observations at the road crossing, it is possible that historical const
 
 <br>
 
-#### 2021 Outreach and other activities
+### 2021 Outreach and other activities
 
 In addition to fieldwork efforts aimed at prospecting for unidentified anadromous waters, having personnel mobilized and trained in juvenile fish identification and capture methods allowed for support in two additional efforts:
 
 -   **Education**. In 2021 KWF oversaw 12 fish sampling events aimed exclusively at education and outreach, occurring primarily at Lower Soldotna Creek. These events introduced basic facts about wild salmon life history and habitat to local community members, visitors, journalists, and summer campers. Total participants is estimated in excess of one hundred people.
 
--   **Culvert replacement**. In summer 2021 KWF oversaw construction activities to replace the culvert carrying the North Fork of the Anchor River underneath Niklovaesk road in the Anchor Point area. As part of these efforts, a small segment of river channel is temporarily de-watered thus fish in this segment must be captured and released downstream prior. KWF personnel was able to capture n = 329 juvenile fish as part of these fish rescue efforts.
+-   **Culvert replacement**. In summer 2021 KWF oversaw construction activities to replace the culvert carrying the North Fork of the Anchor River underneath Niklovaesk road in the Anchor Point area. As part of these efforts, a small segment of river channel is temporarily de-watered thus fish in this segment must be captured and released downstream prior. KWF personnel was able to capture juvenile fish (n = 329) as part of these fish rescue efforts.
 
 ## 2022
 
@@ -101,7 +101,7 @@ knitr::include_graphics('images/moose river trib map.jpg')
 
 ```
 
-#### 2022 Outreach and other activities
+### 2022 Outreach and other activities
 
 -   **Education**. In 2022 KWF continued to oversee fish sampling events aimed exclusively at education and outreach, occurring primarily at Lower Soldotna Creek. These events introduced basic facts about wild salmon life history and habitat to local community members, visitors, journalists, and summer campers. Total participants is estimated in excess of one hundred people.
 
@@ -113,27 +113,60 @@ In 2023 we continued to focus on waters near the road system in the central Kena
 
 As presented in the results section, steadily increasing volunteer participation tracked closely with an increasing number of nominations.
 
+### 2023 Outreach and other activities
+
+-   **Education**. In 2023 KWF continued to oversee fish sampling events aimed exclusively at education and outreach, occurring primarily at Lower Soldotna Creek. These events introduced basic facts about wild salmon life history and habitat to local community members, visitors, journalists, and summer campers. Total participants is estimated in excess of one hundred people.
+
 ## 2024
 
 ### 2024 Anadromous Habitat Surveys
 
-In 2024 nearly all sites surveyed throughout the Kenai Peninsula revealed the presence of juvenile anadromous fish. We focused efforts on streams and lakes in Turnagain Pass, Soldotna, and Sterling.
+In 2024 nearly all sites surveyed throughout the Kenai Peninsula revealed the presence of juvenile anadromous fish. We focused efforts on streams and lakes in Turnagain Pass, Soldotna, and Sterling. With this year's field data, Kenai Watershed Forum and it's volunteers submitted six new nominations.
 
-#### Fish Map App
+Post-season, KWF selected several dozen additional locations in the central Kenai Peninsula that would be appropriate for field surveys based on criteria described in the Methods section. We visually assessed the overlay of the National Hydrography Database, the 2024 Anadromous Waters Catalog, and the borough property ownership boundaries layer to select sites. While this is approach is not systematic, it is targeted towards accessible sites where nominations would yield high conservation value.
 
-In 2024, Kenai Watershed Forum and it's volunteers submitted all anadromous waters nominations using the [Fish Map App](https://www.alaskafishmapping.org/)[^discussion-3], a smartphone application developed by a coalition led by the Alaska Conservation Foundation. The app streamlines the process of recording and preparing field data for Alaskan anadromous water nominations. For each successfully submitted nomination, participants receive a $100 honorarium.
+### 2024 Outreach and other activities
+
+-   **Education**. In 2024 KWF continued to oversee fish sampling events aimed at education and outreach, occurring primarily at Lower Soldotna Creek. These events introduced basic facts about wild salmon life history and habitat to local community members, visitors, journalists, and summer campers. Total participants is estimated in excess of two thousand people, primarily from the [Kenai River Fair](https://www.peninsulaclarion.com/news/kenai-river-fair-debuts-with-array-of-activities-and-education/) on June 8th. At this event we displayed juvenile fish in glass aquariums and provided education materials and perspectives to passers-by (@fig-krf-aquarium). We also held a similar display at Trout Unlimited Alaska's riparian restoration event at Centennial Park in Soldotna on June 9th ("[Plants for Salmon](https://www.kdll.org/community-calendar/event/plants-for-salmon-18-05-2024-00-08-49).")
+
+```{r echo = F}
+#| label: fig-krf-aquarium
+#| fig-cap: "Juvenile fish from Soldotna Creek displayed in glass aquariums at the 2024 Kenai River Fair at Soldotna Creek Park."
+
+knitr::include_graphics('images/kenai_river_fair_2024.jpg')
+
+```
+
+-   **Fish Map App.** In 2024, Kenai Watershed Forum and it's volunteers submitted all anadromous waters nominations using the [Fish Map App](https://www.alaskafishmapping.org/)[^discussion-3], a smartphone application developed by a coalition led by the Alaska Conservation Foundation and Indiginous Sentinels Network. The app streamlines the process of recording and preparing field data for Alaskan anadromous water nominations. For each successfully submitted nomination, participants receive a \$100 honorarium.
+
+-   **New Grant Proposal.** Kenai Watershed Forum was invited to submit a proposal to the [National Coastal Resilience Fund](https://www.nfwf.org/programs/national-coastal-resilience-fund) to continue and substantially expand the work described in this report. The proposal highlighted the conservation and infrastructure values of documenting anadromous habitat, and how current legal infrastructure at the both the State of Alaska level (statute 16.05.871) and Kenai Peninsula Borough (ordinance 21.18) can help ensure that planners and permit reviewers have better maps for decision making. KWF will be notified in winter 2024 if the proposal is funded.
+
+-   **Electrofishing Training.** Two Kenai Watershed Forum staff attended a three-day workshop in Anchorage, AK hosted by the Alaska Chapter of the American Fisheries Society and the Alaska Department of Fish and Game. Staff learned principles of safely using electrofishing tools to survey freshwater streams and lakes, culminating with hands-on field experience.
+
+-   **GIS Training.** One Kenai Watershed Forum staff member attended a free two-day workshop hosted by [Chickaloon Village Traditional Council](https://www.chickaloon-nsn.gov/) at Alaska Pacific University focused on GIS mapping techniques for fish habitat and fish passage. The course provided immediate value to work described in this project to expand the anadromous waters catalog, with practical workflows to manipulate and measure stream layers and communicate results.
 
 [^discussion-3]: <https://www.alaskafishmapping.org/>
 
--   fish map app
--   ncrf proposal
--   kenai river fair and education events (planst for salmon; park)
--   e-fishing training
--   results of RFAS work
--   Additional proposed sites
--   demo at planst for salmon day
+### Predictive Habitat Mapping
 
-## 2021-2023 Media highlights
+As previous years discussion sections have highlighted, the geographic scale of efforts needed to map Alaska's anadromous waters is so large that continuing to rely on ground-truthing efforts alone will result in additional habitat being disturbed before it is even documented (see 2021 Discussion, "Highlight: Lower Soldotna Creek Tributary.") Additional rationale and background for this discussion can be found in the two essays posted on Kenai Watershed Forum's blog post, "[Mapping Alaska's Salmon Streams](https://www.kenaiwatershed.org/news-media/mapping-alaskas-salmon-streams/)[^discussion-4]." Two efforts were initiated in 2024 to begin to address the challenge:
+
+[^discussion-4]: <https://www.kenaiwatershed.org/news-media/mapping-alaskas-salmon-streams/>
+
+1.  **Gradient Barrier Mapping.** Kenai Watershed Forum and [St. Mary's University of Minnesota Geospatial Services](http://www.geospatialservices.org/) developed a custom approach in ArcGIS Pro to estimate the locations of probable barriers to upstream migration of adult anadromous fish. Following discussion with Alaska Department of Fish and game staff, we used the National Hydrography Database and available LiDAR data to locate the first point upstream with a 16% gradient over 35m distance for all watersheds in the Kenai Peninsula Borough (KPB). We presumed that all stream and lake habitat downstream from these points may be anadromous. With this approach, we estimated a total of 16,474 miles of anadromous stream habitat, a quantity more than three times the 4,898 miles of currently documented miles of anadromous streams in the KPB.
+
+    While the above approach is relatively coarse, it highlights the scale of probable undocumented anadromous habitat remaining in the KPB region. Further exploration of this dataset is needed to assess its overlay with known existing anadromous habitat.
+
+    ```{r echo = F}
+    library(xfun)
+    embed_file("other/Probable_AWC_habitat_GIS_Methods_20240815.docx", text = "Download draft methods for ArcPro GIS gradient mapping of anadromous stream migration barriers.")
+
+    embed_file("other/summary_results_kpb_awc_streams_2023.xlsx", text = "Download draft summary results of Kenai Peninsula Borough anadromous gradient barrier mapping.")
+    ```
+
+2.  **End-of-anadromy mapping**. In 2024, the Kenai Peninsula Chapter of Trout Unlimited received an additional Embrace-a-Stream grant to explore remote sensing and analysis innovations around the topic of mapping anadromous waters in the Kenai region. We worked with consultants [Romey Fisheries and Aquatic Science](https://www.rom3y.com/) to apply "End-of-Anadromy" modeling to watersheds within the boundaries of the Chugach National Forest, following an approach described in Romey and Martin 2022 for watersheds in southeast Alaska. In this approach, a multivariate statistical model of landscape and watershed parameters is applied to predicting probable end-of-anadromy locations rather than a single gradient over distance metric. The approach has proven very successful in southeast Alaska, with ... \[working here 10/21/2024\]
+
+## Media highlights
 
 ### Radio
 
