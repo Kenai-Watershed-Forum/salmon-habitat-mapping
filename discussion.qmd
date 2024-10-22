@@ -149,7 +149,7 @@ knitr::include_graphics('images/kenai_river_fair_2024.jpg')
 
 ### Predictive Habitat Mapping
 
-As previous years discussion sections have highlighted, the geographic scale of efforts needed to map Alaska's anadromous waters is so large that continuing to rely on ground-truthing efforts alone will result in additional habitat being disturbed before it is even documented (see 2021 Discussion, "Highlight: Lower Soldotna Creek Tributary.") Additional rationale and background for this discussion can be found in the two essays posted on Kenai Watershed Forum's blog post, "[Mapping Alaska's Salmon Streams](https://www.kenaiwatershed.org/news-media/mapping-alaskas-salmon-streams/)[^discussion-4]." Two efforts were initiated in 2024 to begin to address the challenge:
+As previous years discussion sections have highlighted, the geographic scale of efforts needed to map Alaska's anadromous waters is so large that continuing to rely on ground-truthing efforts alone will result in additional habitat being disturbed before it is even documented (see 2021 Discussion, "[2021 Highlight: Lower Soldotna Creek Tributary].") Additional rationale and background for this discussion can be found in the two essays posted on Kenai Watershed Forum's blog post, "[Mapping Alaska's Salmon Streams](https://www.kenaiwatershed.org/news-media/mapping-alaskas-salmon-streams/)[^discussion-4]." Two efforts were initiated in 2024 to begin to address the challenge:
 
 [^discussion-4]: <https://www.kenaiwatershed.org/news-media/mapping-alaskas-salmon-streams/>
 
@@ -164,7 +164,13 @@ As previous years discussion sections have highlighted, the geographic scale of 
     embed_file("other/summary_results_kpb_awc_streams_2023.xlsx", text = "Download draft summary results of Kenai Peninsula Borough anadromous gradient barrier mapping.")
     ```
 
-2.  **End-of-anadromy mapping**. In 2024, the Kenai Peninsula Chapter of Trout Unlimited received an additional Embrace-a-Stream grant to explore remote sensing and analysis innovations around the topic of mapping anadromous waters in the Kenai region. We worked with consultants [Romey Fisheries and Aquatic Science](https://www.rom3y.com/) to apply "End-of-Anadromy" modeling to watersheds within the boundaries of the Chugach National Forest, following an approach described in Romey and Martin 2022 for watersheds in southeast Alaska. In this approach, a multivariate statistical model of landscape and watershed parameters is applied to predicting probable end-of-anadromy locations rather than a single gradient over distance metric. The approach has proven very successful in southeast Alaska, with ... \[working here 10/21/2024\]
+2.  **End-of-anadromy mapping**. In 2024, the Kenai Peninsula Chapter of Trout Unlimited received an additional Embrace-a-Stream grant to explore remote sensing and analysis innovations around the topic of mapping anadromous waters in the Kenai region. We worked with consultants [Romey Fisheries and Aquatic Science](https://www.rom3y.com/) to apply "End-of-Anadromy" modeling to watersheds within the boundaries of the Chugach National Forest, following an approach described for watersheds in southeast Alaska [@romey2022]. In this approach, a multivariate statistical model of landscape and watershed parameters is applied to predicting probable end-of-anadromy locations rather than a single gradient over distance metric. The approach has proven very successful in southeast Alaska, with researchers able to predict the locations of upper extent of anadromy with 98% accuracy with an average error distance of \< 67m.
+
+    Overall, we found that the end of anadromy model that was developed in southeast Alaska did not perform to adequate standards when directly transferred to Kenai region geography. There are likely two primary reasons for this result: 1) lack of appropriate region-specific model training data, and 2) different regional fish populations are adapted to distinct regional geographies.
+
+    As an anecdotal example of model under performance, we nominated a
+
+3.  was developed using hundreds
 
 ## Media highlights
 
