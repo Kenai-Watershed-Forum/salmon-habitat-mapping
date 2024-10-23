@@ -164,6 +164,8 @@ embed_file("other/Probable_AWC_habitat_GIS_Methods_20240815.docx", text = "Downl
 embed_file("other/summary_results_kpb_awc_streams_2023.xlsx", text = "Download draft summary results of Kenai Peninsula Borough anadromous gradient barrier mapping.")
 ```
 
+<br>
+
 2.  **End-of-anadromy mapping**. In 2024, the Kenai Peninsula Chapter of Trout Unlimited received an additional Embrace-a-Stream grant to explore remote sensing and analysis innovations around the topic of mapping anadromous waters in the Kenai region. We worked with consultants [Romey Fisheries and Aquatic Science](https://www.rom3y.com/) to apply "End-of-Anadromy" modeling to watersheds within the boundaries of the Chugach National Forest, following an approach described for watersheds in southeast Alaska [@romey2022]. In this approach, a multivariate statistical model of landscape and watershed parameters is applied to predicting probable end-of-anadromy locations rather than a single gradient over distance metric. The approach has proven very successful in southeast Alaska, with researchers able to predict the locations of upper extent of anadromy with 98% accuracy with an average error distance of \< 67m. We used juvenile coho salmon as the model species.
 
 The predictive habitat maps discussed above are **not** currently published online in Kenai Wateshed Forum's ArcGIS Online account, but are available by emailing hydrology (at) kenaiwatershed.org.
