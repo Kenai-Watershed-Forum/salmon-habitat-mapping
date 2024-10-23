@@ -157,20 +157,24 @@ As previous years discussion sections have highlighted, the geographic scale of 
 
     While the above approach is relatively coarse, it highlights the scale of probable undocumented anadromous habitat remaining in the KPB region. Further exploration of this dataset is needed to assess its overlay with known existing anadromous habitat.
 
-    ```{r echo = F}
-    library(xfun)
-    embed_file("other/Probable_AWC_habitat_GIS_Methods_20240815.docx", text = "Download draft methods for ArcPro GIS gradient mapping of anadromous stream migration barriers.")
+```{r echo = F, message = F}
+library(xfun)
+embed_file("other/Probable_AWC_habitat_GIS_Methods_20240815.docx", text = "Download draft methods for ArcPro GIS gradient mapping of anadromous stream migration barriers.")
 
-    embed_file("other/summary_results_kpb_awc_streams_2023.xlsx", text = "Download draft summary results of Kenai Peninsula Borough anadromous gradient barrier mapping.")
-    ```
+embed_file("other/summary_results_kpb_awc_streams_2023.xlsx", text = "Download draft summary results of Kenai Peninsula Borough anadromous gradient barrier mapping.")
+```
 
-2.  **End-of-anadromy mapping**. In 2024, the Kenai Peninsula Chapter of Trout Unlimited received an additional Embrace-a-Stream grant to explore remote sensing and analysis innovations around the topic of mapping anadromous waters in the Kenai region. We worked with consultants [Romey Fisheries and Aquatic Science](https://www.rom3y.com/) to apply "End-of-Anadromy" modeling to watersheds within the boundaries of the Chugach National Forest, following an approach described for watersheds in southeast Alaska [@romey2022]. In this approach, a multivariate statistical model of landscape and watershed parameters is applied to predicting probable end-of-anadromy locations rather than a single gradient over distance metric. The approach has proven very successful in southeast Alaska, with researchers able to predict the locations of upper extent of anadromy with 98% accuracy with an average error distance of \< 67m.
+2.  **End-of-anadromy mapping**. In 2024, the Kenai Peninsula Chapter of Trout Unlimited received an additional Embrace-a-Stream grant to explore remote sensing and analysis innovations around the topic of mapping anadromous waters in the Kenai region. We worked with consultants [Romey Fisheries and Aquatic Science](https://www.rom3y.com/) to apply "End-of-Anadromy" modeling to watersheds within the boundaries of the Chugach National Forest, following an approach described for watersheds in southeast Alaska [@romey2022]. In this approach, a multivariate statistical model of landscape and watershed parameters is applied to predicting probable end-of-anadromy locations rather than a single gradient over distance metric. The approach has proven very successful in southeast Alaska, with researchers able to predict the locations of upper extent of anadromy with 98% accuracy with an average error distance of \< 67m. We used juvenile coho salmon as the model species.
 
-    Overall, we found that the end of anadromy model that was developed in southeast Alaska did not perform to adequate standards when directly transferred to Kenai region geography. There are likely two primary reasons for this result: 1) lack of appropriate region-specific model training data, and 2) different regional fish populations are adapted to distinct regional geographies.
+The predictive habitat maps discussed above are **not** currently published online in Kenai Wateshed Forum's ArcGIS Online account, but are available by emailing hydrology (at) kenaiwatershed.org.
 
-    As an anecdotal example of model under performance, we nominated a
+Overall, we found that the end of anadromy model that was developed in southeast Alaska did not perform to adequate standards when directly transferred to Kenai region geography. There are likely two main reasons for this result:
 
-3.  was developed using hundreds
+-   Lack of appropriate region-specific model training data. The Kenai modeling effort was based primarily off of fish distribution parameters developed from field surveys performed in southeast Alaska. It is likely that a suite of geographic characteristics unique to southeast Alaska are responsible for spatial distribution, as is the case for the Kenai region. Thus, transferring model parameters from one regional population to another risks misalignment of geographical and biological data. To remedy this issue, anadromous waters surveys in the Kenai region should be conducted following Last Fish Observed protocols (surveying for fish presence/absence in upstream direction until none observed). These data will then be used to train an updated Kenai-specific regional fish distribution model.
+
+-   Different regional fish populations are adapted to distinct regional geographies. Habitat conditions beyond geographical form also influence fish distribution, and are regionally unique. Environmental drivers relevant to habitat modeling can include water temperature regime, stream flow regime, inter species and intra species competition, and water quality. Model performance will improve by using Kenai-region specific datasets.
+
+An anecdotal example of model under performance for both Gradient Barrier as well as End-of-Anadromy mapping is evident in the segment of Granite Creek in Turnagain Pass nominated in 2024 (@fig-awc-noms-map). In this figure, a 4.23 km length of Granite Creek is nominated. However, both predictive maps show probable end of anadromous habitat ending near the Hope Highway cutoff, more than 15 stream kilometers downstream from where we observed anadromous fish. Many other similar examples are evident upon examination, highlighting the need to improve existing predictive maps for the Kenai region.
 
 ## Media highlights
 
