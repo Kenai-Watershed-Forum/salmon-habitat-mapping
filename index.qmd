@@ -10,6 +10,8 @@ It is estimated that less than half of Alaska's freshwater salmon habitat is off
 Two nonprofits in the central Kenai Peninsula region, Kenai Watershed Forum and the Kenai Peninsula Chapter of Trout Unlimited, are collaborating to address this data gap by working with volunteers to document local salmon habitat. From 2021 - 2024, we identified 21.1 miles of stream and 173 lake acres of previously undocumented anadromous habitat near the roadways of the Kenai Peninsula.
 
 Given that so much undocumented salmon habitat was so close at hand prior to this project, our results highlight the need to continue this work and explore new methods of mapping and modeling that can address the scale of the challenge. Going forward in summer 2025, we are working with geospatial specialists to apply predictive habitat occupancy models that will help to target and prioritize our fieldwork. If these models prove successful, we anticipate that in the future they may have broad application throughout Alaska, for researchers as well as within regulatory and permitting regimes.
+
+Access the online interactive map of results at <http://bit.ly/kwf_awc>.
 :::
 
 Our work is funded from the following sources:
