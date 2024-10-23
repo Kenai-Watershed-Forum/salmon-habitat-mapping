@@ -145,6 +145,8 @@ knitr::include_graphics('images/kenai_river_fair_2024.jpg')
 
 -   **GIS Training.** One Kenai Watershed Forum staff member attended a free two-day workshop hosted by [Chickaloon Village Traditional Council](https://www.chickaloon-nsn.gov/) at Alaska Pacific University focused on GIS mapping techniques for fish habitat and fish passage. The course provided immediate value to work described in this project to expand the anadromous waters catalog, with practical workflows to manipulate and measure stream layers and communicate results.
 
+-   **Local Habitat Ordinance Updates.** Kenai Watershed Forum, along with othe local nonprofits, communicated throughout 2024 with staff from Kenai Peninsula Borough regarding updates to waterbodies managed under borough ordinance 21.18. By statute, the map of 21.18 waterbodies is to be updated ever three years. However, ten years had passed since the previous update. In response, borough staff began reviewing data hosted in ADF&G Anadromous Waters Catalog to verify currency and detail. Where data is sufficiently robust to document presence of anadromous fish, a package proposal to update the 21.18 maps are received for vote by the borough assembly after review by the Lands Committee. In August 2024 these updates were unanimously adopted by the assembly for the southern district of the borough. Updates to the other two borough andromous habitat districts (Northern and Western) are currently in progress. A map of KPB 21.18 districts can be found [here](https://geohub.kpb.us/datasets/KPB::kpb-21-18-districts/explore).
+
 [^discussion-3]: <https://www.alaskafishmapping.org/>
 
 ### Predictive Habitat Mapping

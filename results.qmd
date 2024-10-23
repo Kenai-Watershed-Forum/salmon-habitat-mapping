@@ -152,7 +152,7 @@ site_spp_ct[is.na(site_spp_ct)] <- 0
 
 During fieldwork in summers 2021 - 2024:
 
--   Over course of `r n_days` fieldwork days 2021 - 2024 (including the training event), we conducted a total of `r n_events` sampling events at `r n_sites_total` unique sites. See the interactive project map in the Methods section ("Site selection") for a current map of where and when sampling events have occurred. \[MAP WILL BE UPDATED FOR 2023\]
+-   Over course of `r n_days` fieldwork days 2021 - 2024 (including the training event), we conducted a total of `r n_events` sampling events at `r n_sites_total` unique sites. See the interactive project map in the Methods section ("Site selection") for a current map of where nominations have occurred. 
 
 -   Table @tbl-sites summarises total sampling events by individual site. We typically sampled a site only one time each.
 
@@ -225,7 +225,7 @@ Fish capture data was evaluated against the 2024 Anadromous Waters Catalog to id
 As of October 2024, a total length of **21.1 miles** of stream segments and **173 lake acres** were included in our 23 nominations.
 :::
 
-Table @tbl-awc-noms below breaks down each stream segment nomination by length.
+Tables @tbl-awc-noms and @tbl-awc-noms-lakes below breaks down each stream segment nomination by length and lake by area.
 
 ```{r echo = F}
 #| label: tbl-awc-noms
@@ -243,9 +243,26 @@ noms_tbl <- read_excel("input/2021_2024_stream_lengths.xlsx") %>%
   summarise(total_stream_length_km = sum(stream_length_km)) %>%
   arrange(nomination)
 
-# table
+# stream table
 noms_tbl %>%
-  kbl(caption = "AWC Nominations 2021 - 2024", digits = 2) %>%
+  kbl(caption = "AWC Stream Nominations 2021 - 2024", digits = 2) %>%
+  kable_paper(full_width = F, html_font = "Cambria")
+
+```
+
+<br>
+
+```{r echo = F}
+#| label: tbl-awc-noms-lakes
+#| tbl-cap: "Lake areas included in anadromous waters nominations."
+
+### nomination records
+noms_tbl_lakes <- read_excel("input/2021_2024_lake_areas.xlsx") %>%
+  clean_names() 
+
+# lakes table
+noms_tbl_lakes %>%
+  kbl(caption = "AWC Lake Nominations 2021 - 2024", digits = 2) %>%
   kable_paper(full_width = F, html_font = "Cambria")
 
 ```
