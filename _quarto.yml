@@ -2,6 +2,7 @@ project:
   type: book
   output-dir: docs
 
+
 book:
   title: "Salmon Habitat Mapping in the Central Kenai Peninsula 2021-2024 [DRAFT]"
   author: "Benjamin Meyer, Kenai Watershed Forum"
@@ -34,6 +35,7 @@ format:
     toc-title: Table of contents
     number-sections: true
     highlight-style: github
+
 
 editor: visual
 
