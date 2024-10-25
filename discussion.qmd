@@ -109,7 +109,7 @@ knitr::include_graphics('images/moose river trib map.jpg')
 
 ### 2023 Anadromous Habitat Surveys
 
-In 2023 we continued to focus on waters near the road system in the central Kenai Peninsula including Soldotna Creek, Moose River, Beaver Creek, and smaller unnamed tributaries of the lower main stem Kenai River. **In 2023 nearly all sites that we surveyed revealed the presence of juvenile anadromous fish.**
+In 2023 we continued to focus on waters near the road system in the central Kenai Peninsula including Soldotna Creek, Moose River, Beaver Creek, and smaller unnamed tributaries of the lower main stem Kenai River. **In 2023 nearly all sites that we surveyed revealed the presence of previously undocumented juvenile anadromous fish.**
 
 As presented in the results section, steadily increasing volunteer participation tracked closely with an increasing number of nominations.
 

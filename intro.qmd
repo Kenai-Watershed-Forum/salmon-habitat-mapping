@@ -90,7 +90,7 @@ In response to the challenging scale of the task of ground-truthing many thousan
 
 Following methods described in Romey and Martin 2022 and others, we applied existing end-of-anadromy modeling techniques to areas within the boundaries of the Chugach National Forest, where sufficient supporting geospatial data currently exists[^intro-4]. We report on these initial efforts in the Discussion section of this report.
 
-[^intro-4]: <https://app.paperpile.com/my-library/Romey-and-Martin-2022-p4hv9nptaAjetOBK3P73Muw>
+[^intro-4]: <https://paperpile.com/shared/sjm~9ORhFQSmRxQx6f0JVpg>
 
 ## Volunteer Training
 

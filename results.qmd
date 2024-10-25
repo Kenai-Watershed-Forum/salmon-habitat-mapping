@@ -104,9 +104,15 @@ n_sites_total <- sample_events %>%
   nrow() %>%
   as.character()
 
-#### table of mu,ber of site visits
+#### table of number of site visits
 n_sites <- sample_events %>%
   group_by(site) %>%
+  tally() %>%
+  rename(site_visits = n)
+
+#### table of site visits with coordinates
+n_sites_coords <- sample_events %>%
+  group_by(site, latitude,longitude) %>%
   tally() %>%
   rename(site_visits = n)
 
@@ -164,20 +170,13 @@ During fieldwork in summers 2021 - 2024:
 #| label: tbl-sites
 #| tbl-cap: "Site visit count 2021 - 2024"
 
-n_sites %>%
+n_sites_coords %>%
   kbl(caption = "Total site visits") %>%
   kable_paper(full_width = F, html_font = "Cambria") %>%
   scroll_box(height = "500px", width = "350px")
 
-#, 
- #             bootstrap_options = c("striped", "hover", "condensed", "responsive"))
-
-# fix w/ webshot or make non-html
-
-#z <- left_join(sample_events,n_sites) %>%
-#  select(site,latitude,longitude,site_visits) %>%
-#  distinct()
-#write.csv(z,"output/site_visits.csv", row.names = F)
+# export csv
+write.csv(n_sites_coords,"output/site_visits_coords.csv", row.names = F)
 
 ```
 
@@ -190,7 +189,7 @@ n_sites %>%
 spp_ct_n %>%
   kbl(caption = "Total fish capture count by species") %>%
   kable_paper(full_width = F, html_font = "Cambria")  %>%
-  scroll_box(height = "500px", width = "350px")
+  scroll_box(height = "600px", width = "350px")
 #, 
  #             bootstrap_options = c("striped", "hover", "condensed", "responsive"))
 
@@ -282,7 +281,7 @@ For general background on nominations, see the [slides linked here](https://docs
 
 ## Volunteer participation
 
-Volunteer recruitment efforts resulted in a steadily increasing level of participation from the general public. A total of 310 volunteer hours were documented throughout the project, with an initial higher outlay in 2021 to initiate training.
+Volunteer recruitment efforts resulted in a steadily increasing level of participation from the general public. A total of 350 volunteer hours were documented throughout the project, with an initial higher outlay in 2021 to initiate training.
 
 <br>
 
