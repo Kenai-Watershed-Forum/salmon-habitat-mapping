@@ -123,7 +123,9 @@ As presented in the results section, steadily increasing volunteer participation
 
 In 2024 nearly all sites surveyed throughout the Kenai Peninsula revealed the presence of juvenile anadromous fish. We focused efforts on streams and lakes in Turnagain Pass, Soldotna, and Sterling. With this year's field data, Kenai Watershed Forum and it's volunteers submitted six new nominations.
 
-Post-season, KWF selected several dozen additional locations in the central Kenai Peninsula that would be appropriate for field surveys based on criteria described in the Methods section. We visually assessed the overlay of the National Hydrography Database, the 2024 Anadromous Waters Catalog, and the borough property ownership boundaries layer to select sites. While this is approach is not systematic, it is targeted towards accessible sites where nominations would yield high conservation value.
+Post-season, KWF selected several dozen additional locations in the central Kenai Peninsula that would be appropriate for field surveys based on criteria described in the Methods section. We visually assessed the overlay of the National Hydrography Database, the 2024 Anadromous Waters Catalog, and the borough property ownership boundaries layer to select sites. While this is approach is not systematic, it is targeted towards accessible sites where nominations would yield high conservation value. These sites may be viewed in the ArcGIS Online [Project Map](https://bit.ly/kwf_awc) linked here and in the footnote[^discussion-3].
+
+[^discussion-3]: <https://bit.ly/kwf_awc>
 
 ### 2024 Outreach and other activities
 
@@ -137,7 +139,7 @@ knitr::include_graphics('images/kenai_river_fair_2024.jpg')
 
 ```
 
--   **Fish Map App.** In 2024, Kenai Watershed Forum and it's volunteers submitted all anadromous waters nominations using the [Fish Map App](https://www.alaskafishmapping.org/)[^discussion-3], a smartphone application developed by a coalition led by the Alaska Conservation Foundation and Indiginous Sentinels Network. The app streamlines the process of recording and preparing field data for Alaskan anadromous water nominations. For each successfully submitted nomination, participants receive a \$100 honorarium.
+-   **Fish Map App.** In 2024, Kenai Watershed Forum and it's volunteers submitted all anadromous waters nominations using the [Fish Map App](https://www.alaskafishmapping.org/)[^discussion-4], a smartphone application developed by a coalition led by the Alaska Conservation Foundation and Indiginous Sentinels Network. The app streamlines the process of recording and preparing field data for Alaskan anadromous water nominations. For each successfully submitted nomination, participants receive a \$100 honorarium.
 
 -   **New Grant Proposal.** Kenai Watershed Forum was invited to submit a proposal to the [National Coastal Resilience Fund](https://www.nfwf.org/programs/national-coastal-resilience-fund) to continue and substantially expand the work described in this report. The proposal highlighted the conservation and infrastructure values of documenting anadromous habitat, and how current legal infrastructure at the both the State of Alaska level (statute 16.05.871) and Kenai Peninsula Borough (ordinance 21.18) can help ensure that planners and permit reviewers have better maps for decision making. KWF will be notified in winter 2024 if the proposal is funded.
 
@@ -147,13 +149,13 @@ knitr::include_graphics('images/kenai_river_fair_2024.jpg')
 
 -   **Local Habitat Ordinance Updates.** Kenai Watershed Forum, along with othe local nonprofits, communicated throughout 2024 with staff from Kenai Peninsula Borough regarding updates to waterbodies managed under borough ordinance 21.18. By statute, the map of 21.18 waterbodies is to be updated ever three years. However, ten years had passed since the previous update. In response, borough staff began reviewing data hosted in ADF&G Anadromous Waters Catalog to verify currency and detail. Where data is sufficiently robust to document presence of anadromous fish, a package proposal to update the 21.18 maps are received for vote by the borough assembly after review by the Lands Committee. In August 2024 these updates were unanimously adopted by the assembly for the southern district of the borough. Updates to the other two borough andromous habitat districts (Northern and Western) are currently in progress. A map of KPB 21.18 districts can be found [here](https://geohub.kpb.us/datasets/KPB::kpb-21-18-districts/explore).
 
-[^discussion-3]: <https://www.alaskafishmapping.org/>
+[^discussion-4]: <https://www.alaskafishmapping.org/>
 
 ### Predictive Habitat Mapping
 
-As previous years discussion sections have highlighted, the geographic scale of efforts needed to map Alaska's anadromous waters is so large that continuing to rely on ground-truthing efforts alone will result in additional habitat being disturbed before it is even documented (see 2021 Discussion, "[2021 Highlight: Lower Soldotna Creek Tributary].") Additional rationale and background for this discussion can be found in the two essays posted on Kenai Watershed Forum's blog post, "[Mapping Alaska's Salmon Streams](https://www.kenaiwatershed.org/news-media/mapping-alaskas-salmon-streams/)[^discussion-4]." Two efforts were initiated in 2024 to begin to address the challenge:
+As previous years discussion sections have highlighted, the geographic scale of efforts needed to map Alaska's anadromous waters is so large that continuing to rely on ground-truthing efforts alone will result in additional habitat being disturbed before it is even documented (see 2021 Discussion, "[2021 Highlight: Lower Soldotna Creek Tributary].") Additional rationale and background for this discussion can be found in the two essays posted on Kenai Watershed Forum's blog post, "[Mapping Alaska's Salmon Streams](https://www.kenaiwatershed.org/news-media/mapping-alaskas-salmon-streams/)[^discussion-5]." Two efforts were initiated in 2024 to begin to address the challenge:
 
-[^discussion-4]: <https://www.kenaiwatershed.org/news-media/mapping-alaskas-salmon-streams/>
+[^discussion-5]: <https://www.kenaiwatershed.org/news-media/mapping-alaskas-salmon-streams/>
 
 1.  **Gradient Barrier Mapping.** Kenai Watershed Forum and [St. Mary's University of Minnesota Geospatial Services](http://www.geospatialservices.org/) developed a custom approach in ArcGIS Pro to estimate the locations of probable barriers to upstream migration of adult anadromous fish. Following discussion with Alaska Department of Fish and game staff, we used the National Hydrography Database and available LiDAR data to locate the first point upstream with a 16% gradient over 35m distance for all watersheds in the Kenai Peninsula Borough (KPB). We presumed that all stream and lake habitat downstream from these points may be anadromous. With this approach, we estimated a total of 16,474 miles of anadromous stream habitat, a quantity more than three times the 4,898 miles of currently documented miles of anadromous streams in the KPB.
 
