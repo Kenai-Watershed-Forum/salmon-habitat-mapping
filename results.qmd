@@ -158,7 +158,7 @@ site_spp_ct[is.na(site_spp_ct)] <- 0
 
 During fieldwork in summers 2021 - 2024:
 
--   Over course of `r n_days` fieldwork days 2021 - 2024 (including the training event), we conducted a total of `r n_events` sampling events at `r n_sites_total` unique sites. See the interactive project map in the Methods section ("Site selection") for a current map of where nominations have occurred. 
+-   Over course of `r n_days` fieldwork days 2021 - 2024 (including the training event), we conducted a total of `r n_events` sampling events at `r n_sites_total` unique sites. See the interactive project map in the Methods section ("Site selection") for a current map of where nominations have occurred.
 
 -   Table @tbl-sites summarises total sampling events by individual site. We typically sampled a site only one time each.
 
@@ -221,7 +221,7 @@ Fish capture data was evaluated against the 2024 Anadromous Waters Catalog to id
 ::: {.callout-note appearance="simple"}
 ## Total Anadromous Waters Nominations
 
-As of October 2024, a total length of **21.1 miles** of stream segments and **173 lake acres** were included in our 23 nominations.
+As of October 2024, a total length of **22.4 miles** of stream segments and **173 lake acres** were included in our 24 nominations.
 :::
 
 Tables @tbl-awc-noms and @tbl-awc-noms-lakes below breaks down each stream segment nomination by length and lake by area.
@@ -271,7 +271,7 @@ noms_tbl_lakes %>%
 ```{r echo = F}
 #| label: fig-awc-noms-map
 #| fig-cap: "Nominated stream segments highlighted in orange, green, turquoise, and yellow. Prexisting documented andromous waters prior to this project colored in light blue."
-knitr::include_graphics('images/2024 AWC Layout Map.jpg')
+knitr::include_graphics('images/2021_2024 Nominations Graphic.jpg')
 
 ```
 
@@ -305,9 +305,9 @@ vol_hrs %>%
 
 ```
 
-The level of volunteer participation, along with experience gained, closely tracked the quantity of nominations submitted each year, with a steadily rising number of nominations from 2021 to 2023. 2024 saw very minimal funding resources directed towards fieldwork, thus the number of volunteer hours declined. Despite this reduced funding in 2024, six nominations were submitted. The result speaks to how sustained financial support, even if fluctuating in amount, is important to keep projects such as this in progress.
+The level of volunteer participation, along with experience gained, closely tracked the quantity of nominations submitted each year, with a steadily rising number of nominations from 2021 to 2023. 2024 saw very minimal funding resources directed towards fieldwork, thus the number of volunteer hours declined. Despite this reduced funding in 2024, seven nominations were submitted. The result speaks to how sustained financial support, even if fluctuating in amount, is important to keep projects such as this in progress.
 
-<br>s
+<br>
 
 ```{r echo = F}
 # plot

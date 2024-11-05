@@ -6,7 +6,6 @@ project:
 book:
   title: "Salmon Habitat Mapping in the Central Kenai Peninsula 2021-2024 [DRAFT]"
   author: "Benjamin Meyer, Kenai Watershed Forum"
-  date: "10/25/2024"
   page-navigation: true
   chapters:
     - index.qmd
@@ -23,6 +22,8 @@ search: true
 downloads: [docx]
 
 bibliography: references.bib
+
+
 
 format:
   html:
