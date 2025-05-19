@@ -1,0 +1,35 @@
+---
+title: "point_parcel_intersect"
+format: html
+---
+
+```{r}
+##Parcel Point Join=name
+##Points=vector
+##Parcels=vector
+##Output=output file
+
+library(sf)
+library(dplyr)
+library(readr)
+
+points <- st_read(Points)
+parcels <- st_read(Parcels)
+
+if (st_crs(points) != st_crs(parcels)) {
+  parcels <- st_transform(parcels, st_crs(points))
+}
+
+joined <- st_join(points, parcels, join = st_intersects, left = FALSE)
+
+output <- joined %>%
+  transmute(
+    point_id = row_number(),
+    owner = OWNER_NAME,  # <-- update to match your actual field
+    x = st_coordinates(geometry)[,1],
+    y = st_coordinates(geometry)[,2]
+  )
+
+write_csv(output, Output)
+
+```
