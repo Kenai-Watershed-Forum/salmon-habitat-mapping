@@ -4,7 +4,6 @@
 date: "`r Sys.Date()`"
 ---
 
-
 ```{r echo = F}
 knitr::include_graphics('images/alexa.jpg')
 ```

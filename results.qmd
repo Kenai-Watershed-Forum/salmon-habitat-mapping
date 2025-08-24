@@ -66,7 +66,7 @@ sample_events <- read_sheet(url, sheet =  "A_Sample_Event") %>%
             site_depart_time = as_hms(site_depart_time)) %>%
   select(-QC1,-QC2,-data_entry,-notes,-crew)
 
-### fish count
+1### fish count
 fish_dat <- read_sheet(url, sheet = "F_Fish_ID") %>%
   select(-QC1,-QC2,-data_entry)  %>%
   
@@ -182,7 +182,7 @@ write.csv(n_sites_coords,"output/site_visits_coords.csv", row.names = F)
 
 <br>
 
-```{r ct, echo = F}
+```{r , echo = F}
 #| label: tbl-ct-spp
 #| tbl-cap: "Total fish capture count by species"
 

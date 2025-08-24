@@ -19,7 +19,7 @@ book:
 repo-url: https://github.com/Kenai-Watershed-Forum/salmon-habitat-mapping
 repo-actions: [edit]
 search: true
-downloads: [docx]
+#downloads: [docx]
 
 bibliography: references.bib
 
@@ -30,12 +30,12 @@ format:
     theme: cosmo
   #pdf:
   #  documentclass: scrreprt
-  docx:
-    toc: true
-    toc-depth: 2
-    toc-title: Table of contents
-    number-sections: true
-    highlight-style: github
+ # docx:
+ #   toc: true
+#    toc-depth: 2
+#    toc-title: Table of contents
+#    number-sections: true
+#    highlight-style: github
 
 
 editor: visual
