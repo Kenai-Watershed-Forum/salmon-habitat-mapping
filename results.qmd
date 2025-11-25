@@ -66,7 +66,7 @@ sample_events <- read_sheet(url, sheet =  "A_Sample_Event") %>%
             site_depart_time = as_hms(site_depart_time)) %>%
   select(-QC1,-QC2,-data_entry,-notes,-crew)
 
-1### fish count
+### fish count
 fish_dat <- read_sheet(url, sheet = "F_Fish_ID") %>%
   select(-QC1,-QC2,-data_entry)  %>%
   
