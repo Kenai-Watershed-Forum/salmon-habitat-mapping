@@ -50,10 +50,57 @@ points_theme <- theme(axis.title = element_text(size = 14, face = "bold"),
 select <- dplyr::select
 ```
 
-```{r, echo = F}
-# summarise total capture effort
+```{r echo = F}
+# Note
+# In 2025 KWF transitioned from using paper field forms entered in a google sheet to using ESRI Field Maps to collect field data. The code chunks below treat these data read-in processes separately. For 2025, the ERSI data is being formatted to match the pre-existing data structure that was in place during the google sheets read-in process. Fish capture data vs. sampling effort are organized separately.
 
-## read in 
+```
+
+
+```{r echo = F}
+
+# Read in and prepare ESRI Field Maps data
+
+# field maps data 2025 from ArcGIS Online
+dat_field_maps <- read.csv("input/field_maps/kwf_stream_surveys_20251125.csv")
+
+# prep to integrate into same format as paper field forms from 2021 - July 2025
+dat_field_maps <- dat_field_maps %>%
+  clean_names()
+
+# retain useful columns
+col_names <- (
+  c(
+  # sampling event
+  "latitude","longitude",
+  "survey_time_and_date",
+  "observer1","observer2","observer3","observer4",
+  "trap_deployment_time","trap_check_time",
+  "electrofishing_start_time", "electrofishing_end_time",
+  # fish capture
+  "fish_count_1", "fish_life_stage_1", "fish_species_1", "fish_capture_1_notes",
+  "fish_count_2", "fish_life_stage_2", "fish_species_2", "fish_capture_2_notes",
+  "fish_count_3", "fish_life_stage_3", "fish_species_3", "fish_capture_3_notes",
+  "fish_count_4", "fish_life_stage_4", "fish_species_4", "fish_capture_4_notes",
+  "fish_count_5", "fish_life_stage_5", "fish_species_5", "fish_capture_5_notes",
+  "fish_count_6", "fish_life_stage_6", "fish_species_6", "fish_capture_6_notes",
+  "additional_fish_capture_data"
+  )
+)
+
+dat_field_maps <- dat_field_maps %>%
+  select(all_of(col_names))
+
+
+```
+
+
+
+```{r echo = F}
+
+# Read in and prepare Google Sheets data
+
+## read in data from paper field forms
 url <- "https://docs.google.com/spreadsheets/d/1S0hwY4EQo9Xtz5d4UnSBCbZoJ0ft_HGQrarfmA5dwNY/edit#gid=0"
 
 ## prep data sources
@@ -137,7 +184,8 @@ spp_ct_n <- fish_dat %>%
 site_spp_ct <- fish_dat %>%
   group_by(species,site) %>%
   summarise(n = sum(count)) %>%
-  pivot_wider(names_from = "species", values_from = "n") 
+  pivot_wider(names_from = "species", values_from = "n") %>%
+  filter(!is.na(site))
 
 ### total fish at each site
 total_by_site <- fish_dat %>%
