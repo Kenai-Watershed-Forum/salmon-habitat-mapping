@@ -25,6 +25,7 @@ library(packrat)
 library(foreign)
 library(kableExtra)
 library(janitor)
+library(anytime)
 
 # set plotting themes
 
@@ -48,6 +49,9 @@ points_theme <- theme(axis.title = element_text(size = 14, face = "bold"),
 
 # clarify select function
 select <- dplyr::select
+
+#
+source("functions/datetime_convert.R")
 ```
 
 ```{r echo = F}
@@ -55,7 +59,6 @@ select <- dplyr::select
 # In 2025 KWF transitioned from using paper field forms entered in a google sheet to using ESRI Field Maps to collect field data. The code chunks below treat these data read-in processes separately. For 2025, the ERSI data is being formatted to match the pre-existing data structure that was in place during the google sheets read-in process. Fish capture data vs. sampling effort are organized separately.
 
 ```
-
 
 ```{r echo = F}
 
@@ -66,9 +69,14 @@ dat_field_maps <- read.csv("input/field_maps/kwf_stream_surveys_20251125.csv")
 
 # prep to integrate into same format as paper field forms from 2021 - July 2025
 dat_field_maps <- dat_field_maps %>%
-  clean_names()
+  clean_names() %>%
+  type_convert() 
+  
+  
+# working here
+# use the XY columsn instead
 
-# retain useful columns
+# specify useful columns to retain
 col_names <- (
   c(
   # sampling event
@@ -88,13 +96,62 @@ col_names <- (
   )
 )
 
+# retain specified columns
 dat_field_maps <- dat_field_maps %>%
-  select(all_of(col_names))
+  select(all_of(col_names)) 
+
+# apply "convert_to_datetime" function (posix conversion) to convert columns w/ date or time in column name
+dat_field_maps <- dat_field_maps %>%
+  mutate(
+    across(
+      .cols = where(is.character),
+      .fns  = convert_to_datetime
+    )
+  )
+
+
+# the data pipline of Field Maps --> ArcGIS Online --> download csv and open in Excel removes the 8 hour UTC time zoen offset. Thus we need to revert all date/times back to local Alaska time
+
+# specify columns that need UTC -> Alaska conversion
+time_cols <- c(
+  "survey_time_and_date",
+  "trap_deployment_time",
+  "trap_check_time",
+  "electrofishing_start_time",
+  "electrofishing_end_time"
+)
+
+# convert time/date columns to AKST time zone
+dat_field_maps <- dat_field_maps %>%
+  mutate(
+    across(
+      all_of(time_cols),
+      ~ .x %>%
+        force_tz("UTC") %>%              # treat existing clock time as UTC
+        with_tz("America/Anchorage")     # convert to Alaska local time
+    )
+  )
+
+
+## Find all datetime (POSIXt) columns
+datetime_cols <- dat_field_maps |>
+  select(where(lubridate::is.POSIXt)) |>
+  names()
+
+## Create a single 'earliest_time' and 'latest_time' column across all datetime columns
+dat_field_maps <- dat_field_maps |>
+  rowwise() |>
+  mutate(site_arrive_time = min(c_across(all_of(datetime_cols)), na.rm = TRUE),
+         site_depart_time = max(c_across(all_of(datetime_cols)), na.rm = TRUE)) |>
+  ungroup()
+
+
+  
+  
+  
 
 
 ```
-
-
 
 ```{r echo = F}
 
