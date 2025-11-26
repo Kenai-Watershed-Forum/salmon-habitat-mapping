@@ -26,6 +26,7 @@ library(foreign)
 library(kableExtra)
 library(janitor)
 library(anytime)
+library(stringr)
 
 # set plotting themes
 
@@ -55,7 +56,8 @@ source("functions/datetime_convert.R")
 ```
 
 ```{r echo = F}
-# Note
+# Notes
+
 # In 2025 KWF transitioned from using paper field forms entered in a google sheet to using ESRI Field Maps to collect field data on mobile devices. The code chunks below treat the read-in processes from these two distinct data sources separately. For 2025, the ERSI data is being formatted to match the pre-existing data structure that was in place during the google sheets read-in process. 
 
 # Fish capture data vs. sampling effort are organized separately in two tabs in a google sheets. We will attempt to organize the ESRI data to match the object "fish_dat" wherein they are combined.
@@ -189,12 +191,10 @@ dat_field_maps <- dat_field_maps |>
 
 # this result still contains extraneous columns. We will eliminate them as part of performing a bind_rows() later
 
+
+
 # 2) Fish capture data
 
-# experimenting
-
-
-library(stringr)
 
 dat_field_maps <- dat_field_maps %>%
   # 1) Standardize the capture-notes names:
@@ -249,11 +249,121 @@ dat_field_maps <- dat_field_maps %>%
   select(-contains("datetime"))
 
 
-  
+# change scientific species names to common names
 
+## -----------------------------------------------------------
+## 1) Read species mapping from Excel (common + scientific)
+##    File: other/arp_freshwater_data_form_2025.xlsx
+##    Sheet: "Cell Drop Down List"
+##    Range: rows 46–137, columns B (common) and C (scientific)
+## -----------------------------------------------------------
+
+species_map_raw <- read_excel(
+  "other/arp_freshwater_data_form_2025.xlsx",
+  sheet    = "Cell Drop Down List",
+  range    = "B46:C137",
+  col_names = c("common_name", "scientific_name")
+) %>%
+  mutate(
+    common_name     = str_squish(as.character(common_name)),
+    scientific_name = str_squish(as.character(scientific_name))
+  )
+
+## -----------------------------------------------------------
+## 2) Build a lookup that maps *either* common OR scientific
+##    name to the canonical common_name used in the dropdown
+## -----------------------------------------------------------
+
+species_lookup <- species_map_raw %>%
+  mutate(canonical = common_name) %>%              # preserve canonical label
+  pivot_longer(
+    cols      = c(common_name, scientific_name),  # all possible name forms
+    names_to  = "col_type",
+    values_to = "name"
+  ) %>%
+  filter(!is.na(name), name != "") %>%
+  mutate(
+    species_key = str_to_lower(str_squish(name))   # normalized key for matching
+  ) %>%
+  select(species_key, canonical) %>%
+  distinct()
+
+## -----------------------------------------------------------
+## 3) Apply mapping to fish_dat$species
+##    - Any value matching common OR scientific gets replaced
+##      with canonical common_name
+## -----------------------------------------------------------
+
+z <- dat_field_maps %>%
+  mutate(
+    species_raw = species,
+    species_key = str_to_lower(str_squish(as.character(species)))
+  ) %>%
+  left_join(species_lookup, by = "species_key") %>%
+  mutate(
+    species = if_else(!is.na(canonical), canonical, species_raw)
+  ) %>%
+  select(-species_raw, -species_key, -canonical)
+
+# common names now present for all fish species observations
+
+# working here
+# this join is supposed to chnage all species names over toc ommon name, but it is not working yet
 
 ```
 
+```{r}
+# combine datasets from ESRI and Google Sheets
+
+## ------------------------------------------------------------------
+## 1. Identify columns common to both data frames
+## ------------------------------------------------------------------
+
+common_cols <- intersect(names(dat_field_maps), names(fish_dat))
+
+## Optional: inspect type mismatches
+type_compare <- tibble(
+  col       = common_cols,
+  fieldmap  = map_chr(common_cols, ~ class(dat_field_maps[[.x]])[1]),
+  fishdat   = map_chr(common_cols, ~ class(fish_dat[[.x]])[1])
+)
+print(type_compare)
+
+## ------------------------------------------------------------------
+## 2. Align column types across common fields
+##
+##  - site_arrive_date  : POSIXct vs Date → convert both to Date
+##  - site_depart_date  : POSIXct vs Date → convert both to Date
+##  - site_arrive_time  : hms vs hms → enforce as_hms() 
+##  - site_depart_time  : hms vs hms → enforce as_hms() 
+##
+## ------------------------------------------------------------------
+
+dat_field_common <- dat_field_maps %>%
+  select(all_of(common_cols)) %>%
+  mutate(
+    across(c(site_arrive_date, site_depart_date), as.Date),
+    across(c(site_arrive_time, site_depart_time), as_hms)
+  )
+
+fish_dat_common <- fish_dat %>%
+  select(all_of(common_cols)) %>%
+  mutate(
+    across(c(site_arrive_date, site_depart_date), as.Date),
+    across(c(site_arrive_time, site_depart_time), as_hms)
+  )
+
+## ------------------------------------------------------------------
+## 3. Bind rows into a single clean dataset
+## ------------------------------------------------------------------
+
+fish_all <- bind_rows(dat_field_common, fish_dat_common)
+
+z <- fish_all %>%
+  distinct(species)
+
+
+```
 
 
 
@@ -261,15 +371,16 @@ dat_field_maps <- dat_field_maps %>%
 
 # summary statistics
 
-### how many unique sampling events (unique date/site) did we have 2021-2024?
-n_events <- sample_events %>%
-  group_by(site,site_arrive_time) %>%
+### how many unique sampling events (unique date/site) did we have?
+n_events <- fish_all %>%
+  group_by(latitude,longitude,site_arrive_date,site_arrive_time) %>%
   tally() %>%
   nrow() %>%
   as.character()
 
-### how many unique event days did we have 2021-2024?
-n_days <- sample_events%>%
+### how many unique event days did we have?
+n_days <- fish_all %>%
+  distinct() %>%
   select(site_arrive_date) %>%
   distinct() %>%
   nrow() %>%
@@ -279,47 +390,43 @@ n_days <- sample_events%>%
 ### number of sites
 
 #### total value only
-n_sites_total <- sample_events %>%
-  group_by(site) %>%
+n_sites_total <- fish_all %>%
+  group_by(latitude, longitude) %>%
   tally() %>%
   nrow() %>%
   as.character()
 
 #### table of number of site visits
-n_sites <- sample_events %>%
-  group_by(site) %>%
-  tally() %>%
-  rename(site_visits = n)
-
-#### table of site visits with coordinates
-n_sites_coords <- sample_events %>%
-  group_by(site, latitude,longitude) %>%
+n_sites_coords <- fish_all %>%
+  group_by(site,latitude,longitude) %>%
   tally() %>%
   rename(site_visits = n)
 
 ### total fish
-fish_ct <- fish_dat %>%
-  summarise(n = sum(count)) %>%
+fish_ct <- fish_all %>%
+  summarise(n = sum(count, na.rm = T)) %>%
   as.character()
 
 ### total unique species
-spp_ct <- fish_dat %>%
+spp_ct <- fish_all %>%
+  filter(!is.na(species)) %>%
   group_by(species) %>%
   summarise(n = sum(count)) %>%
   nrow() %>%
   as.character()
 
 ### count by species
-spp_ct_n <- fish_dat %>%
+spp_ct_n <- fish_all %>%
   group_by(species) %>%
   summarise(n = sum(count))
 
 ### count by species at each site
-site_spp_ct <- fish_dat %>%
-  group_by(species,site) %>%
+site_spp_ct <- fish_all %>%
+  group_by(species,site,latitude, longitude) %>%
   summarise(n = sum(count)) %>%
   pivot_wider(names_from = "species", values_from = "n") %>%
-  filter(!is.na(site))
+  filter(!is.na(site)) %>%
+  select(-None)
 
 ### total fish at each site
 total_by_site <- fish_dat %>%
