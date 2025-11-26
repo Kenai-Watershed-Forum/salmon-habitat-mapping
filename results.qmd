@@ -50,19 +50,58 @@ points_theme <- theme(axis.title = element_text(size = 14, face = "bold"),
 # clarify select function
 select <- dplyr::select
 
-#
+# source function to recognize and convert columns to posix
 source("functions/datetime_convert.R")
 ```
 
 ```{r echo = F}
 # Note
-# In 2025 KWF transitioned from using paper field forms entered in a google sheet to using ESRI Field Maps to collect field data. The code chunks below treat these data read-in processes separately. For 2025, the ERSI data is being formatted to match the pre-existing data structure that was in place during the google sheets read-in process. Fish capture data vs. sampling effort are organized separately.
+# In 2025 KWF transitioned from using paper field forms entered in a google sheet to using ESRI Field Maps to collect field data on mobile devices. The code chunks below treat the read-in processes from these two distinct data sources separately. For 2025, the ERSI data is being formatted to match the pre-existing data structure that was in place during the google sheets read-in process. 
+
+# Fish capture data vs. sampling effort are organized separately in two tabs in a google sheets. We will attempt to organize the ESRI data to match the object "fish_dat" wherein they are combined.
+
+# Long term suggested strategy: enter the 2021-2024 data from google sheets in to the ESRI database so it's all in one location
 
 ```
 
 ```{r echo = F}
 
+# Read in and prepare Google Sheets data
+
+## read in data from paper field forms
+url <- "https://docs.google.com/spreadsheets/d/1S0hwY4EQo9Xtz5d4UnSBCbZoJ0ft_HGQrarfmA5dwNY/edit#gid=0"
+
+## prep data sources
+
+### sample events
+sample_events <- read_sheet(url, sheet =  "A_Sample_Event") %>%
+  # retain only TU events
+  # filter(project_org == "TU") %>%
+  transform(site_arrive_time = as_hms(site_arrive_time),
+            site_depart_time = as_hms(site_depart_time)) %>%
+  select(-QC1,-QC2,-data_entry,-notes,-crew)
+
+
+
+### fish count
+fish_dat <- read_sheet(url, sheet = "F_Fish_ID") %>%
+  select(-QC1,-QC2,-data_entry)  %>%
+  
+  # inner join. Assumes that no other simultaneous fieldwork was done elsewhere that day
+  inner_join(sample_events, by = c("site_depart_date","site")) %>%
+  
+  # transform column types
+  transform(fl_mm = as.numeric(fl_mm),
+            photo_id = as.character(photo_id),
+            notes = as.character(notes))
+
+```
+
+
+```{r echo = F}
+
 # Read in and prepare ESRI Field Maps data
+# 1) Site/event information
 
 # field maps data 2025 from ArcGIS Online
 dat_field_maps <- read.csv("input/field_maps/kwf_stream_surveys_20251125.csv")
@@ -71,16 +110,12 @@ dat_field_maps <- read.csv("input/field_maps/kwf_stream_surveys_20251125.csv")
 dat_field_maps <- dat_field_maps %>%
   clean_names() %>%
   type_convert() 
-  
-  
-# working here
-# use the XY columsn instead
 
 # specify useful columns to retain
 col_names <- (
   c(
   # sampling event
-  "latitude","longitude",
+  "y","x", # latitude and longitude
   "survey_time_and_date",
   "observer1","observer2","observer3","observer4",
   "trap_deployment_time","trap_check_time",
@@ -98,7 +133,9 @@ col_names <- (
 
 # retain specified columns
 dat_field_maps <- dat_field_maps %>%
-  select(all_of(col_names)) 
+  select(all_of(col_names)) %>%
+  rename(latitude = y,
+         longitude = x)
 
 # apply "convert_to_datetime" function (posix conversion) to convert columns w/ date or time in column name
 dat_field_maps <- dat_field_maps %>%
@@ -110,7 +147,7 @@ dat_field_maps <- dat_field_maps %>%
   )
 
 
-# the data pipline of Field Maps --> ArcGIS Online --> download csv and open in Excel removes the 8 hour UTC time zoen offset. Thus we need to revert all date/times back to local Alaska time
+# the data pipeline of Field Maps --> ArcGIS Online --> download csv and open in Excel removes the 8 hour UTC time zone offset. Thus we need to revert all date/times back to local Alaska time
 
 # specify columns that need UTC -> Alaska conversion
 time_cols <- c(
@@ -138,54 +175,94 @@ datetime_cols <- dat_field_maps |>
   select(where(lubridate::is.POSIXt)) |>
   names()
 
-## Create a single 'earliest_time' and 'latest_time' column across all datetime columns
+## Create site arrival and departure time columns based on earliest and latest activity
 dat_field_maps <- dat_field_maps |>
   rowwise() |>
-  mutate(site_arrive_time = min(c_across(all_of(datetime_cols)), na.rm = TRUE),
-         site_depart_time = max(c_across(all_of(datetime_cols)), na.rm = TRUE)) |>
-  ungroup()
+  mutate(site_arrive_datetime = min(c_across(all_of(datetime_cols)), na.rm = TRUE),
+         site_depart_datetime = max(c_across(all_of(datetime_cols)), na.rm = TRUE)) |>
+  ungroup() %>%
+  mutate(site_arrive_date = date(site_arrive_datetime),
+         site_arrive_time = as_hms(site_arrive_datetime),
+         site_depart_date = date(site_depart_datetime),
+         site_depart_time = as_hms(site_depart_datetime))
 
 
+# this result still contains extraneous columns. We will eliminate them as part of performing a bind_rows() later
+
+# 2) Fish capture data
+
+# experimenting
+
+
+library(stringr)
+
+dat_field_maps <- dat_field_maps %>%
+  # 1) Standardize the capture-notes names:
+  #    fish_capture_1_notes -> fish_capture_notes_1, etc.
+  rename_with(
+    ~ str_replace(.x,
+                  "^fish_capture_(\\d+)_notes$",
+                  "fish_capture_notes_\\1"),
+    starts_with("fish_capture_")
+  ) %>%
   
+  # 2) Pivot the 6 sets of fish_* columns into long format
+  pivot_longer(
+    cols = matches("^fish_(count|life_stage|species|capture_notes)_\\d+$"),
+    names_to      = c(".value", "fish_set"),
+    names_pattern = "fish_(count|life_stage|species|capture_notes)_(\\d+)",
+    values_drop_na = FALSE
+  ) %>%
   
+  # 2a) (Optional) rename back to fish_* if you prefer
+  rename(
+    fish_count        = count,
+    fish_species      = species,
+    fish_life_stage   = life_stage,
+    fish_capture_notes = capture_notes
+  ) %>%
+  
+  # 3) Drop rows where all fish fields are NA
+  filter(
+    !(is.na(fish_count) &
+      is.na(fish_species) &
+      is.na(fish_life_stage) &
+      is.na(fish_capture_notes))
+  ) %>%
+  
+  # 4) Make fish_set an integer
+  mutate(fish_set = as.integer(fish_set))
+
+
+## prepare column content and names to match google sheets read in 
+dat_field_maps <- dat_field_maps %>%
+  # create new columns and rename existing ones
+  mutate(site = "",
+         observer_name = "",
+         project_org = "KWF",
+         species = fish_species,
+         lifestage = fish_life_stage,
+         count = fish_count,
+         disposition = "ID'd and released",
+         notes = paste(additional_fish_capture_data,";",fish_capture_notes),
+         observer_name = "Benjamin Meyer") %>%
+  select(-contains("datetime"))
+
+
   
 
 
 ```
 
+
+
+
 ```{r echo = F}
 
-# Read in and prepare Google Sheets data
-
-## read in data from paper field forms
-url <- "https://docs.google.com/spreadsheets/d/1S0hwY4EQo9Xtz5d4UnSBCbZoJ0ft_HGQrarfmA5dwNY/edit#gid=0"
-
-## prep data sources
-
-### sample events
-sample_events <- read_sheet(url, sheet =  "A_Sample_Event") %>%
-  # retain only TU events
-  # filter(project_org == "TU") %>%
-  transform(site_arrive_time = as_hms(site_arrive_time),
-            site_depart_time = as_hms(site_depart_time)) %>%
-  select(-QC1,-QC2,-data_entry,-notes,-crew)
-
-### fish count
-fish_dat <- read_sheet(url, sheet = "F_Fish_ID") %>%
-  select(-QC1,-QC2,-data_entry)  %>%
-  
-  # inner join. Assumes that no other simultaneous fieldwork was done elsewhere that day
-  inner_join(sample_events, by = c("site_depart_date","site")) %>%
-  
-  # transform column types
-  transform(fl_mm = as.numeric(fl_mm),
-            photo_id = as.character(photo_id),
-            notes = as.character(notes))
-
-
+# summary statistics
 
 ### how many unique sampling events (unique date/site) did we have 2021-2024?
-n_events <- sample_events%>%
+n_events <- sample_events %>%
   group_by(site,site_arrive_time) %>%
   tally() %>%
   nrow() %>%
