@@ -248,10 +248,13 @@ dat_field_maps <- dat_field_maps %>%
          observer_name = "Benjamin Meyer") %>%
   select(-contains("datetime"))
 
+```
 
+
+```{r }
 # change scientific species names to common names
 
-## -----------------------------------------------------------
+## ---------------------------------------------- -------------
 ## 1) Read species mapping from Excel (common + scientific)
 ##    File: other/arp_freshwater_data_form_2025.xlsx
 ##    Sheet: "Cell Drop Down List"
