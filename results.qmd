@@ -99,7 +99,6 @@ fish_dat <- read_sheet(url, sheet = "F_Fish_ID") %>%
 
 ```
 
-
 ```{r echo = F}
 
 # Read in and prepare ESRI Field Maps data
@@ -195,7 +194,6 @@ dat_field_maps <- dat_field_maps |>
 
 # 2) Fish capture data
 
-
 dat_field_maps <- dat_field_maps %>%
   # 1) Standardize the capture-notes names:
   #    fish_capture_1_notes -> fish_capture_notes_1, etc.
@@ -250,7 +248,6 @@ dat_field_maps <- dat_field_maps %>%
 
 ```
 
-
 ```{r }
 # change scientific species names to common names
 
@@ -261,7 +258,7 @@ dat_field_maps <- dat_field_maps %>%
 ##    Range: rows 46–137, columns B (common) and C (scientific)
 ## -----------------------------------------------------------
 
-species_map_raw <- read_excel(
+species_map <- read_excel(
   "other/arp_freshwater_data_form_2025.xlsx",
   sheet    = "Cell Drop Down List",
   range    = "B46:C137",
@@ -270,48 +267,15 @@ species_map_raw <- read_excel(
   mutate(
     common_name     = str_squish(as.character(common_name)),
     scientific_name = str_squish(as.character(scientific_name))
-  )
-
-## -----------------------------------------------------------
-## 2) Build a lookup that maps *either* common OR scientific
-##    name to the canonical common_name used in the dropdown
-## -----------------------------------------------------------
-
-species_lookup <- species_map_raw %>%
-  mutate(canonical = common_name) %>%              # preserve canonical label
-  pivot_longer(
-    cols      = c(common_name, scientific_name),  # all possible name forms
-    names_to  = "col_type",
-    values_to = "name"
   ) %>%
-  filter(!is.na(name), name != "") %>%
-  mutate(
-    species_key = str_to_lower(str_squish(name))   # normalized key for matching
-  ) %>%
-  select(species_key, canonical) %>%
-  distinct()
+  filter(!is.na(common_name)) %>%
+  rename(fish_species = scientific_name)
 
-## -----------------------------------------------------------
-## 3) Apply mapping to fish_dat$species
-##    - Any value matching common OR scientific gets replaced
-##      with canonical common_name
-## -----------------------------------------------------------
 
-z <- dat_field_maps %>%
-  mutate(
-    species_raw = species,
-    species_key = str_to_lower(str_squish(as.character(species)))
-  ) %>%
-  left_join(species_lookup, by = "species_key") %>%
-  mutate(
-    species = if_else(!is.na(canonical), canonical, species_raw)
-  ) %>%
-  select(-species_raw, -species_key, -canonical)
-
-# common names now present for all fish species observations
-
-# working here
-# this join is supposed to chnage all species names over toc ommon name, but it is not working yet
+## 2 join common name to species name in overall dataframe, remove extraneous column
+dat_field_maps <- left_join(dat_field_maps, species_map) %>%
+  select(-fish_species, -species) %>%
+  rename(species = common_name)
 
 ```
 
@@ -362,13 +326,8 @@ fish_dat_common <- fish_dat %>%
 
 fish_all <- bind_rows(dat_field_common, fish_dat_common)
 
-z <- fish_all %>%
-  distinct(species)
-
 
 ```
-
-
 
 ```{r echo = F}
 
@@ -418,7 +377,7 @@ spp_ct <- fish_all %>%
   nrow() %>%
   as.character()
 
-### count by species
+### count by species table
 spp_ct_n <- fish_all %>%
   group_by(species) %>%
   summarise(n = sum(count))
@@ -429,12 +388,13 @@ site_spp_ct <- fish_all %>%
   summarise(n = sum(count)) %>%
   pivot_wider(names_from = "species", values_from = "n") %>%
   filter(!is.na(site)) %>%
-  select(-None)
+  select(-"NA")
 
-### total fish at each site
-total_by_site <- fish_dat %>%
-  group_by(site) %>%
-  summarise(total_fish = sum(count))
+### total fish at each site table
+total_by_site <- fish_all %>%
+  group_by(site, latitude, longitude) %>%
+  summarise(total_fish = sum(count)) %>%
+  filter(!is.na(latitude))
 
 #### join site totals to species totals by site
 z <- left_join(site_spp_ct,total_by_site)
@@ -448,9 +408,9 @@ site_spp_ct[is.na(site_spp_ct)] <- 0
 
 ## Fish capture
 
-During fieldwork in summers 2021 - 2024:
+During fieldwork in summers 2021 - 2025:
 
--   Over course of `r n_days` fieldwork days 2021 - 2024 (including the training event), we conducted a total of `r n_events` sampling events at `r n_sites_total` unique sites. See the interactive project map in the Methods section ("Site selection") for a current map of where nominations have occurred.
+-   Over course of `r n_days` fieldwork days 2021 - 2025 (including the training events), we conducted a total of `r n_events` sampling events at `r n_sites_total` unique sites. See the interactive project map in the Methods section ("Site selection") for a current map of where nominations have occurred.
 
 -   Table @tbl-sites summarises total sampling events by individual site. We typically sampled a site only one time each.
 
@@ -460,7 +420,7 @@ During fieldwork in summers 2021 - 2024:
 
 ```{r echo = F}
 #| label: tbl-sites
-#| tbl-cap: "Site visit count 2021 - 2024"
+#| tbl-cap: "Site visit count 2021 - 2025"
 
 n_sites_coords %>%
   kbl(caption = "Total site visits") %>%
@@ -476,7 +436,7 @@ write.csv(n_sites_coords,"output/site_visits_coords.csv", row.names = F)
 
 ```{r , echo = F}
 #| label: tbl-ct-spp
-#| tbl-cap: "Total fish capture count by species"
+#| tbl-cap: "Total fish capture count by species 2021 - 2025"
 
 spp_ct_n %>%
   kbl(caption = "Total fish capture count by species") %>%
@@ -491,7 +451,7 @@ spp_ct_n %>%
 
 ```{r echo = F}
 #| label: tbl-site-spp-ct
-#| tbl-cap: "Species count by site"
+#| tbl-cap: "Species count by site 2021 -2025"
 site_spp_ct %>%
   kbl(caption = "Total fish capture count by species at each site.") %>%
   kable_paper(full_width = F, html_font = "Cambria",
@@ -508,12 +468,12 @@ write.csv(site_spp_ct,"output/site_spp_ct.csv", row.names = F)
 
 ## AWC Nominations
 
-Fish capture data was evaluated against the 2024 Anadromous Waters Catalog to identify new stream segment nominations. Complete submission materials for 2021 - 2023 may be accessed in the project [Google Drive folder (link)](https://drive.google.com/drive/folders/1UmQGruxbmRO-ICCd0xbGi5rPp1ZTFCX2?usp=drive_link), sent to the ADF&G Habitat Division in Anchorage in the fall of each year. In 2024 we submitted all nominations through the Fish Map App smartphone application from the Alaska Conservation Foundation
+Fish capture data was evaluated against the 2025 Anadromous Waters Catalog to identify new stream segment nominations. Complete submission materials for 2021 - 2023 may be accessed in the project [Google Drive folder (link)](https://drive.google.com/drive/folders/1UmQGruxbmRO-ICCd0xbGi5rPp1ZTFCX2?usp=drive_link), sent to the ADF&G Habitat Division in Anchorage in the fall of each year. In 2024 we submitted all nominations through the Fish Map App smartphone application from the Alaska Conservation Foundation
 
 ::: {.callout-note appearance="simple"}
 ## Total Anadromous Waters Nominations
 
-As of October 2024, a total length of **22.4 miles** of stream segments and **173 lake acres** were included in our 24 nominations.
+As of October 2025, a total length of approximately **24.5 miles** of stream segments and **173 lake acres** were included in our 25 nominations.
 :::
 
 Tables @tbl-awc-noms and @tbl-awc-noms-lakes below breaks down each stream segment nomination by length and lake by area.
@@ -523,7 +483,7 @@ Tables @tbl-awc-noms and @tbl-awc-noms-lakes below breaks down each stream segme
 #| tbl-cap: "Lengths of stream segments included in anadromous waters nominations."
 
 ### nomination records
-noms_tbl <- read_excel("input/2021_2024_stream_lengths.xlsx") %>%
+noms_tbl <- read_excel("input/2021_2025_stream_lengths.xlsx") %>%
   clean_names() %>%
   select(nomination,nomination_name,shape_length) %>%
   # convert from m to km
@@ -536,7 +496,7 @@ noms_tbl <- read_excel("input/2021_2024_stream_lengths.xlsx") %>%
 
 # stream table
 noms_tbl %>%
-  kbl(caption = "AWC Stream Nominations 2021 - 2024", digits = 2) %>%
+  kbl(caption = "AWC Stream Nominations 2021 - 2025", digits = 2) %>%
   kable_paper(full_width = F, html_font = "Cambria")
 
 ```
@@ -548,12 +508,12 @@ noms_tbl %>%
 #| tbl-cap: "Lake areas included in anadromous waters nominations."
 
 ### nomination records
-noms_tbl_lakes <- read_excel("input/2021_2024_lake_areas.xlsx") %>%
+noms_tbl_lakes <- read_excel("input/2021_2025_lake_areas.xlsx") %>%
   clean_names() 
 
 # lakes table
 noms_tbl_lakes %>%
-  kbl(caption = "AWC Lake Nominations 2021 - 2024", digits = 2) %>%
+  kbl(caption = "AWC Lake Nominations 2021 - 2025", digits = 2) %>%
   kable_paper(full_width = F, html_font = "Cambria")
 
 ```
@@ -562,8 +522,8 @@ noms_tbl_lakes %>%
 
 ```{r echo = F}
 #| label: fig-awc-noms-map
-#| fig-cap: "Nominated stream segments highlighted in orange, green, turquoise, and yellow. Prexisting documented andromous waters prior to this project colored in light blue."
-knitr::include_graphics('images/2021_2024 Nominations Graphic.jpg')
+#| fig-cap: "Nominated stream segments highlighted in orange, green, turquoise, and yellow. Prexisting documented anadromous waters prior to this project colored in light blue."
+knitr::include_graphics('images/2021_2025_awc_noms_graphic.jpg')
 
 ```
 
@@ -571,9 +531,13 @@ knitr::include_graphics('images/2021_2024 Nominations Graphic.jpg')
 
 For general background on nominations, see the [slides linked here](https://docs.google.com/presentation/d/1uQX9_4T-vJDzp_gzBJFyqtggOg1Fpsng?rtpof=true&usp=drive_fs), presented at Kenai Watershed Forum's Fireside Chat series held at Kenai River Brewing on November 1, 2023.
 
+Or, see the presentation below on Kenai Watershed Forum's YouTube channel
+
+{{< video https://www.youtube.com/watch?v=u62Md_aYzPk >}}
+
 ## Volunteer participation
 
-Volunteer recruitment efforts resulted in a steadily increasing level of participation from the general public. A total of 350 volunteer hours were documented throughout the project, with an initial higher outlay in 2021 to initiate training.
+Volunteer recruitment efforts resulted in a steadily increasing level of participation from the general public. A total of 665 volunteer hours were documented throughout the project, with higher outlays in 2021 and 2025 to initiate training.
 
 <br>
 
@@ -593,11 +557,13 @@ vol_hrs %>%
   xlab("") +
   ylab("Volunteer Hours") +
   theme(legend.title=element_blank()) +
-  ggtitle("Central Kenai Peninsula Salmon Habitat Mapping\nVolunteer Hours 2021-2024")
+  ggtitle("Central Kenai Peninsula Salmon Habitat Mapping\nVolunteer Hours 2021-2025")
 
 ```
 
-The level of volunteer participation, along with experience gained, closely tracked the quantity of nominations submitted each year, with a steadily rising number of nominations from 2021 to 2023. 2024 saw very minimal funding resources directed towards fieldwork, thus the number of volunteer hours declined. Despite this reduced funding in 2024, seven nominations were submitted. The result speaks to how sustained financial support, even if fluctuating in amount, is important to keep projects such as this in progress.
+The level of volunteer participation, along with experience gained, mostly tracked the quantity of nominations submitted each year, with a steadily rising number of nominations from 2021 to 2023. 2024 saw very minimal funding resources directed towards fieldwork, thus the number of volunteer hours declined. Despite this reduced funding in 2024, seven nominations were submitted. The result speaks to how sustained financial support, even if fluctuating in amount, is important to keep projects such as this in progress.
+
+In 2025, several training events were held in collaboration with Cook Inletkeeper as part of our shared [`Backyard Salmonscapes`](https://www.peninsulaclarion.com/news/cook-inletkeeper-program-promotes-community-engagement/) program. Volunteers also contributed efforts to our technical mapping efforts in progress, in collaboration with consultants Terrainworks and Romey Riverscape Sciences. [Click here to read more](https://www.kenaiwatershed.org/news-media/fish-habitat-mapping-2025/) on our new freshwater fish habitat mapping efforts on Kenai Watershed Forum's website.
 
 <br>
 
@@ -610,7 +576,7 @@ noms_tbl %>%
   geom_bar(stat = "identity") +
   xlab("") +
   ylab("Number of AWC Nominations Submitted") +
-  ggtitle("Number of Anadromous Waters Nominations\nSubmitted to the Alaska Department of Fish and Game\n2021 - 2024")
+  ggtitle("Number of Anadromous Waters Nominations\nSubmitted to the Alaska Department of Fish and Game\n2021 - 2025")
 
 ```
 
@@ -626,11 +592,24 @@ Fish capture data was reformatted each fall in to a csv file for submission to A
 
 # prep data format for ARP report: https://www.adfg.alaska.gov/sf/SARR/AWC/index.cfm?ADFG=nomSubmit.about
 
-# get unique sampling events (site, location, fishing method)
+# Notes for 2025
+# same as above, we need to integrate data sources from both ESRI Field Maps as well as KWF's gogle sheets database
+
+# read in google sheets sample effort database
 sample_effort <- read_sheet(url, sheet = "C_Sample_Effort") %>%
   filter(!is.na(gear_type)) %>%
   select(site,site_depart_date, gear_type) %>%
   distinct()
+
+
+# format ESRI Field Maps effort database (location, departure date, gear type)
+z <- dat_field_maps |>
+  # some sites have electrofishing only, some sites minnow traps only, some sites have both
+  
+  select(site_depart_date)
+
+# join google sheets and ESRI data into same dataframe
+
 
 # join sample effort data
 fish_dat <- left_join(fish_dat,sample_effort, by = c("site","site_depart_date"))
