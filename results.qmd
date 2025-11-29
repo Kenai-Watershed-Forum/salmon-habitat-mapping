@@ -105,7 +105,7 @@ fish_dat <- read_sheet(url, sheet = "F_Fish_ID") %>%
 # 1) Site/event information
 
 # field maps data 2025 from ArcGIS Online
-dat_field_maps <- read.csv("input/field_maps/kwf_stream_surveys_20251125.csv")
+dat_field_maps <- read.csv("input/field_maps/kwf_stream_surveys_20251129.csv")
 
 # prep to integrate into same format as paper field forms from 2021 - July 2025
 dat_field_maps <- dat_field_maps %>%
@@ -241,9 +241,19 @@ dat_field_maps <- dat_field_maps %>%
          species = fish_species,
          lifestage = fish_life_stage,
          count = fish_count,
-         disposition = "ID'd and released",
          notes = paste(additional_fish_capture_data,";",fish_capture_notes),
          observer_name = "Benjamin Meyer") %>%
+  mutate(disposition = case_when(
+      # 1. Euthanized all blackfish
+      species == "Dallia pectoralis" ~ 
+        "Sacrificed and Discarded at Collection Site",
+      
+      # 2. Species column is missing or recorded as "None"
+      is.na(species) ~ NA_character_,
+      str_to_lower(species) == "none" ~ NA_character_,
+      
+      # 3. All other cases
+      TRUE ~ "ID'd and released"))%>%              
   select(-contains("datetime"))
 
 ```
@@ -602,17 +612,29 @@ sample_effort <- read_sheet(url, sheet = "C_Sample_Effort") %>%
   distinct()
 
 
-# format ESRI Field Maps effort database (location, departure date, gear type)
+# format ESRI Field Maps effort database to be compatibe with google sheets data (location, departure date, gear type)
 z <- dat_field_maps |>
-  # some sites have electrofishing only, some sites minnow traps only, some sites have both
-  
-  select(site_depart_date)
+  filter(!is.na(species))
+  # some sites have electrofishing only, some sites minnow traps only
+  # in 2025, no sites have both. Field Maps form should be used to record seperate events for MT vs e-fishing; data for the two different capture methods should not be regarded as part of the same event
+  mutate(gear_type = case_when(
+    !is.na(trap_deployment_time) ~ "Minnow Trap",
+    !is.na(electrofishing_start_time) ~ "Backpack Electrofisher"
+  )) |>
+  select(latitude, longitude, site_depart_date, gear_type)
 
 # join google sheets and ESRI data into same dataframe
 
+  # working here 11/29/2025 - need to resolve how to address instances where multiple gear methods existin same event space
+
 
 # join sample effort data
-fish_dat <- left_join(fish_dat,sample_effort, by = c("site","site_depart_date"))
+fish_dat <- left_join(fish_all,sample_effort, by = c("site","site_depart_date"))
+
+
+
+
+
 
 # prepare data into ARP format
 arp <- fish_dat %>%
