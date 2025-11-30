@@ -330,13 +330,20 @@ fish_dat_common <- fish_dat %>%
     across(c(site_arrive_time, site_depart_time), as_hms)
   )
 
+
 ## ------------------------------------------------------------------
 ## 3. Bind rows into a single clean dataset
 ## ------------------------------------------------------------------
 
-fish_all <- bind_rows(dat_field_common, fish_dat_common)
-
-
+fish_all <- bind_rows(dat_field_common, fish_dat_common) |>
+  # modify site name column such that site name is coordinates if o given site name is recorded
+  mutate(site = case_when(
+    is.na(site) | site == "" ~ paste0(latitude, ",", longitude),
+      TRUE ~ site
+    
+  ))
+  
+# dataframe contains a single row for each observation of fish species/site/date
 ```
 
 ```{r echo = F}
@@ -613,27 +620,30 @@ sample_effort <- read_sheet(url, sheet = "C_Sample_Effort") %>%
 
 
 # format ESRI Field Maps effort database to be compatibe with google sheets data (location, departure date, gear type)
-z <- dat_field_maps |>
-  filter(!is.na(species))
+dat_field_maps <- dat_field_maps |>
+  filter(!is.na(species)) %>%
   # some sites have electrofishing only, some sites minnow traps only
   # in 2025, no sites have both. Field Maps form should be used to record seperate events for MT vs e-fishing; data for the two different capture methods should not be regarded as part of the same event
   mutate(gear_type = case_when(
     !is.na(trap_deployment_time) ~ "Minnow Trap",
-    !is.na(electrofishing_start_time) ~ "Backpack Electrofisher"
+    !is.na(electrofishing_start_time) ~ "Backpack Electrofisher"# 
   )) |>
-  select(latitude, longitude, site_depart_date, gear_type)
+  select(latitude, longitude, site_depart_date, gear_type) |>
+  # make site name lat and long
+  mutate(site = paste0(latitude,",",longitude)) %>%
+  select(-latitude,-longitude) %>%
+  transform(site_depart_date = as.POSIXct(site_depart_date))
+  
 
 # join google sheets and ESRI data into same dataframe
 
-  # working here 11/29/2025 - need to resolve how to address instances where multiple gear methods existin same event space
+sample_effort <- bind_rows(dat_field_maps,sample_effort)
+
+  # 11/29/2025 - worked on how to address instances where multiple gear methods existin same event space. None f these events in 2025 captured fish, so a moot point. Note for future years reporting
 
 
 # join sample effort data
 fish_dat <- left_join(fish_all,sample_effort, by = c("site","site_depart_date"))
-
-
-
-
 
 
 # prepare data into ARP format
@@ -644,7 +654,7 @@ arp <- fish_dat %>%
   mutate(`Additional count (1)` = ifelse(fish_dat$count <= 1, "0",fish_dat$count - 1)) %>%
   
   # remove extraneous columns
-  select(-site_arrive_time, -site_depart_time,-photo_id, -count, -camera_id, -project_org,
+  select(-site_arrive_time, -site_depart_time, -count, -project_org,
          -site_arrive_date) %>%
   
   # rename existing columns
@@ -654,9 +664,9 @@ arp <- fish_dat %>%
          `Location ID (optional)` = site,
          Species = species,
          `Life stage` = lifestage,
-         `Weight (g)` = wt_g,
-         `Length (mm) (NO estimates or ranges)` = fl_mm,
-         `Length method` = length_method,
+         #`Weight (g)` = wt_g,
+         #`Length (mm) (NO estimates or ranges)` = fl_mm,
+         #`Length method` = length_method,
          `Disposition (1)` = disposition,
          Comments = notes,
          `Fish collection method` = gear_type) %>%
@@ -675,12 +685,16 @@ arp <- fish_dat %>%
   `Disposition (2)` = "",
   `Anesthesia/ Sedative Used (Leave blank if none used)` = "",
   Sex = "",
-  Age = ""
+  Age = "",
+  `Weight (g)` = "",
+  `Length (mm) (NO estimates or ranges)` = "",
+  `Length method` = ""
+
          ) %>%
   
 
   
-  # order columns to match ARP
+  # order columns to match ARP column structure
   select(
   `Location ID (optional)`,
   `Latitude (decimal degrees)`,
@@ -706,7 +720,9 @@ arp <- fish_dat %>%
   `Disposition (2)`,
   `Anesthesia/ Sedative Used (Leave blank if none used)`,
   Comments						
-  )
+  ) %>%
+  # remove instances where no fish were collected
+  filter(!is.na(Species))
 
 # export csv to repo
 write_csv(arp, "output/aquatic_resource_permit_all.csv")
