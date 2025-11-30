@@ -96,7 +96,7 @@ The project map may be accessed by following the link at [ArcGIS Online](https:/
 
 ```
 
-Prior to minnow trap deployment, each year we obtained all necessary permits from ADF&G including the Aquatic Resource Permit (ARP). As required by the ARP, the ADF&G local Area Management Biologist was notified of trapping locations and timeframes before going into the field. We also obtained landowner permission for access to sites where applicable. Finally, trapping efforts for each day were strategically chosen based on proximity of sites so as to reduce drive and personnel time.
+Prior to minnow trap deployment or use of backpack electrofishers, each year we obtained all necessary agency permits from ADF&G, USFWS, USFS, and others. As required by the Alaska Department of FIsh and Game's (ADF&G's) Aquatic Resource Permit, the ADF&G local Area Management Biologist was notified of fish survey locations and timeframes before going into the field. We also obtained landowner permission for access to sites where applicable. Finally, trapping efforts for each day were strategically chosen based on proximity of sites so as to reduce drive and personnel time.
 
 ## Fish capture and processing
 
@@ -110,9 +110,13 @@ knitr::include_graphics('images/Fish_Traps.jpg')
 
 We used Gee minnow traps baited with salmon eggs as the primary capture methods for juvenile salmonids. We used commercial salmon eggs as bait and placed them in perforated 2-4 oz containers in order to prevent egg consumption by fish. We labeled traps with KWF contact information using brightly colored flagging tape. At the trapping location, we collected site photos and recorded the following on a datasheet: field technician initials, GPS coordinates of trap deployment site(s), and site drawings with pertinent notes regarding fish habitat. We used a minimum of one baited minnow trap, fully submerged in a discrete location, and properly secured to ensure retrieval. We recorded the date and time of deployment. While not exceeding 24 hours, we allowed traps to soak overnight if needed. Upon trap retrieval, we recorded the date and time and transferred the trap's catch into a bucket of water.
 
+### Backpack Electrofishing
+
+We used electrofishing: single pass techniques to survey for end-of-anadromy locations [@penaluna2021]. We electrofished to delimit last-fish using a spatially continuous, single-pass backpack electrofishing approach similar to that described by Torgerson and validated by Bateman, but sampled all accessible stream habitat [@bateman2005; @torgerson2004]. We optimized electrofishing effectiveness so that units are set at the minimum needed to achieve satisfactory electrofishing in each stream [@reynolds2011]. Detections with electrofishing were made visually by identifying individual fish to the lowest taxonomic unit possible, which was generally to species.
+
 ### Fish processing
 
-We identified each fish that we captured to lowest feasible taxa and life stage using a photarium. We recorded disposition; and in somecases recorded fork length to the nearest millimeter along with photos of identifying features. When completed, we placed fish in a recovery bucket. Once all fish recuperated successfully, we released them near the original capture location. We monitored data throughout the summer for unintended mortalities, and were prepared to cease sampling and contact the area management biologist should \>10% unintended collection mortality occur. We entered all data into the Aquatic Resource Permit spreadsheet provided by the ADF&G and submitted it with a written report to ADF&G at the conclusion of each permit year.
+We identified each fish that we captured to lowest feasible taxa and life stage using a photarium. We recorded disposition; and in some cases recorded fork length to the nearest millimeter along with photos of identifying features. When completed, we placed fish in a recovery bucket. Once all fish recuperated successfully, we released them near the original capture location. We monitored data throughout the summer for unintended mortalities, and were prepared to cease sampling and contact the area management biologist should \>10% unintended collection mortality occur. We entered all data into the Aquatic Resource Permit spreadsheet provided by the ADF&G and submitted it with a written report to ADF&G at the conclusion of each permit year.
 
 These data were used to submit nominations for the inclusion of new miles or acres of fish habitat to the AWC as well as revision or corroboration of fish presence.
 
@@ -130,10 +134,16 @@ We recorded data in the field using pre-printed Rite-in-the-Rain field forms, an
 
 [^methods-4]: <https://github.com/Kenai-Watershed-Forum/salmon-habitat-mapping>
 
-All project documents and data can be accessed in a dedicated [Google Drive folder](https://bit.ly/tu_kwf_embrace_a_stream_2021)[^methods-5].
+In 2025, we transitioned to using a custom form in ESRI Field Maps for data collection mobile devices. These data were downloaded as a csv file and integrated into this report in the Results section.
+
+All other project documents and data can be accessed in a dedicated [Google Drive folder](https://bit.ly/tu_kwf_embrace_a_stream_2021)[^methods-5].
 
 [^methods-5]: <https://bit.ly/tu_kwf_embrace_a_stream_2021>
 
 ### Analysis
 
 We generated summary tables displaying the quantity of fish captured at each sample site by date. We also generated a csv file reformatting all fish capture data to prepare for submission to the Alaska Department of Fish and Game to fulfill Aquatic Resource Permit requirements.
+
+## Further Reading
+
+In 2025, we began shifting focus towards efforts to model the probable extent of anadromous habitat within the Kenai Peninsula region. The Google Document "[Mapping Anadromous Habitat in the Kenai Peninsula Borough Project Manual 2025 - 2027 \[DRAFT\]](https://docs.google.com/document/d/1sJe2g893Urh1uhxVKh1RBIGE8733W4yfJP6w0fgwE0Q/edit?usp=sharing)" can be accessed by clicking the link.\

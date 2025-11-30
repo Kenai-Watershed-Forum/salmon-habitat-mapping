@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Methods – Salmon Habitat Mapping in the Central Kenai Peninsula 2021-2024 [DRAFT]</title>
+<title>2&nbsp; Methods – Salmon Habitat Mapping in the Central Kenai Peninsula 2021-2025 [DRAFT]</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -37,7 +57,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -96,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Salmon Habitat Mapping in the Central Kenai Peninsula 2021-2024 [DRAFT]</a> 
+      <a href="./">Salmon Habitat Mapping in the Central Kenai Peninsula 2021-2025 [DRAFT]</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -165,7 +185,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#fish-capture-and-processing" id="toc-fish-capture-and-processing" class="nav-link" data-scroll-target="#fish-capture-and-processing"><span class="header-section-number">2.2</span> Fish capture and processing</a>
   <ul class="collapse">
   <li><a href="#minnow-trapping" id="toc-minnow-trapping" class="nav-link" data-scroll-target="#minnow-trapping"><span class="header-section-number">2.2.1</span> Minnow Trapping</a></li>
-  <li><a href="#fish-processing" id="toc-fish-processing" class="nav-link" data-scroll-target="#fish-processing"><span class="header-section-number">2.2.2</span> Fish processing</a></li>
+  <li><a href="#backpack-electrofishing" id="toc-backpack-electrofishing" class="nav-link" data-scroll-target="#backpack-electrofishing"><span class="header-section-number">2.2.2</span> Backpack Electrofishing</a></li>
+  <li><a href="#fish-processing" id="toc-fish-processing" class="nav-link" data-scroll-target="#fish-processing"><span class="header-section-number">2.2.3</span> Fish processing</a></li>
   </ul></li>
   <li><a href="#habitat-connectivity" id="toc-habitat-connectivity" class="nav-link" data-scroll-target="#habitat-connectivity"><span class="header-section-number">2.3</span> Habitat connectivity</a></li>
   <li><a href="#data-management-and-analysis" id="toc-data-management-and-analysis" class="nav-link" data-scroll-target="#data-management-and-analysis"><span class="header-section-number">2.4</span> Data management and analysis</a>
@@ -173,6 +194,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#data-management" id="toc-data-management" class="nav-link" data-scroll-target="#data-management"><span class="header-section-number">2.4.1</span> Data management</a></li>
   <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis"><span class="header-section-number">2.4.2</span> Analysis</a></li>
   </ul></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">2.5</span> Further Reading</a></li>
   </ul>
 </nav>
     </div>
@@ -226,7 +248,7 @@ ul.task-list li input[type="checkbox"] {
 </iframe>
 
 <p><br></p>
-<p>Prior to minnow trap deployment, each year we obtained all necessary permits from ADF&amp;G including the Aquatic Resource Permit (ARP). As required by the ARP, the ADF&amp;G local Area Management Biologist was notified of trapping locations and timeframes before going into the field. We also obtained landowner permission for access to sites where applicable. Finally, trapping efforts for each day were strategically chosen based on proximity of sites so as to reduce drive and personnel time.</p>
+<p>Prior to minnow trap deployment or use of backpack electrofishers, each year we obtained all necessary agency permits from ADF&amp;G, USFWS, USFS, and others. As required by the Alaska Department of FIsh and Game’s (ADF&amp;G’s) Aquatic Resource Permit, the ADF&amp;G local Area Management Biologist was notified of fish survey locations and timeframes before going into the field. We also obtained landowner permission for access to sites where applicable. Finally, trapping efforts for each day were strategically chosen based on proximity of sites so as to reduce drive and personnel time.</p>
 </section>
 </section>
 <section id="fish-capture-and-processing" class="level2" data-number="2.2">
@@ -245,9 +267,13 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-number="2.2.1" class="anchored" data-anchor-id="minnow-trapping"><span class="header-section-number">2.2.1</span> Minnow Trapping</h3>
 <p>We used Gee minnow traps baited with salmon eggs as the primary capture methods for juvenile salmonids. We used commercial salmon eggs as bait and placed them in perforated 2-4 oz containers in order to prevent egg consumption by fish. We labeled traps with KWF contact information using brightly colored flagging tape. At the trapping location, we collected site photos and recorded the following on a datasheet: field technician initials, GPS coordinates of trap deployment site(s), and site drawings with pertinent notes regarding fish habitat. We used a minimum of one baited minnow trap, fully submerged in a discrete location, and properly secured to ensure retrieval. We recorded the date and time of deployment. While not exceeding 24 hours, we allowed traps to soak overnight if needed. Upon trap retrieval, we recorded the date and time and transferred the trap’s catch into a bucket of water.</p>
 </section>
-<section id="fish-processing" class="level3" data-number="2.2.2">
-<h3 data-number="2.2.2" class="anchored" data-anchor-id="fish-processing"><span class="header-section-number">2.2.2</span> Fish processing</h3>
-<p>We identified each fish that we captured to lowest feasible taxa and life stage using a photarium. We recorded disposition; and in somecases recorded fork length to the nearest millimeter along with photos of identifying features. When completed, we placed fish in a recovery bucket. Once all fish recuperated successfully, we released them near the original capture location. We monitored data throughout the summer for unintended mortalities, and were prepared to cease sampling and contact the area management biologist should &gt;10% unintended collection mortality occur. We entered all data into the Aquatic Resource Permit spreadsheet provided by the ADF&amp;G and submitted it with a written report to ADF&amp;G at the conclusion of each permit year.</p>
+<section id="backpack-electrofishing" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="backpack-electrofishing"><span class="header-section-number">2.2.2</span> Backpack Electrofishing</h3>
+<p>We used electrofishing: single pass techniques to survey for end-of-anadromy locations <span class="citation" data-cites="penaluna2021">(<a href="references.html#ref-penaluna2021" role="doc-biblioref">Penaluna et al. 2021</a>)</span>. We electrofished to delimit last-fish using a spatially continuous, single-pass backpack electrofishing approach similar to that described by Torgerson and validated by Bateman, but sampled all accessible stream habitat <span class="citation" data-cites="bateman2005 torgerson2004">(<a href="references.html#ref-bateman2005" role="doc-biblioref">Bateman, Gresswell, and Torgersen 2005</a>; <a href="references.html#ref-torgerson2004" role="doc-biblioref"><strong>torgerson2004?</strong></a>)</span>. We optimized electrofishing effectiveness so that units are set at the minimum needed to achieve satisfactory electrofishing in each stream <span class="citation" data-cites="reynolds2011">(<a href="references.html#ref-reynolds2011" role="doc-biblioref">Reynolds and Harlan 2011</a>)</span>. Detections with electrofishing were made visually by identifying individual fish to the lowest taxonomic unit possible, which was generally to species.</p>
+</section>
+<section id="fish-processing" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="fish-processing"><span class="header-section-number">2.2.3</span> Fish processing</h3>
+<p>We identified each fish that we captured to lowest feasible taxa and life stage using a photarium. We recorded disposition; and in some cases recorded fork length to the nearest millimeter along with photos of identifying features. When completed, we placed fish in a recovery bucket. Once all fish recuperated successfully, we released them near the original capture location. We monitored data throughout the summer for unintended mortalities, and were prepared to cease sampling and contact the area management biologist should &gt;10% unintended collection mortality occur. We entered all data into the Aquatic Resource Permit spreadsheet provided by the ADF&amp;G and submitted it with a written report to ADF&amp;G at the conclusion of each permit year.</p>
 <p>These data were used to submit nominations for the inclusion of new miles or acres of fish habitat to the AWC as well as revision or corroboration of fish presence.</p>
 </section>
 </section>
@@ -260,14 +286,31 @@ ul.task-list li input[type="checkbox"] {
 <section id="data-management" class="level3" data-number="2.4.1">
 <h3 data-number="2.4.1" class="anchored" data-anchor-id="data-management"><span class="header-section-number">2.4.1</span> Data management</h3>
 <p>We recorded data in the field using pre-printed Rite-in-the-Rain field forms, and entered data into a <a href="https://bit.ly/eas_data">Google Sheets database</a><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. We read data into RStudio and generated this report using the Quarto book template. Project edits are managed through a dedicated <a href="https://github.com/Kenai-Watershed-Forum/salmon-habitat-mapping">project GitHub repository</a><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
-<p>All project documents and data can be accessed in a dedicated <a href="https://bit.ly/tu_kwf_embrace_a_stream_2021">Google Drive folder</a><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>.</p>
+<p>In 2025, we transitioned to using a custom form in ESRI Field Maps for data collection mobile devices. These data were downloaded as a csv file and integrated into this report in the Results section.</p>
+<p>All other project documents and data can be accessed in a dedicated <a href="https://bit.ly/tu_kwf_embrace_a_stream_2021">Google Drive folder</a><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>.</p>
 </section>
 <section id="analysis" class="level3" data-number="2.4.2">
 <h3 data-number="2.4.2" class="anchored" data-anchor-id="analysis"><span class="header-section-number">2.4.2</span> Analysis</h3>
 <p>We generated summary tables displaying the quantity of fish captured at each sample site by date. We also generated a csv file reformatting all fish capture data to prepare for submission to the Alaska Department of Fish and Game to fulfill Aquatic Resource Permit requirements.</p>
-
-
 </section>
+</section>
+<section id="further-reading" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">2.5</span> Further Reading</h2>
+<p>In 2025, we began shifting focus towards efforts to model the probable extent of anadromous habitat within the Kenai Peninsula region. The Google Document “<a href="https://docs.google.com/document/d/1sJe2g893Urh1uhxVKh1RBIGE8733W4yfJP6w0fgwE0Q/edit?usp=sharing">Mapping Anadromous Habitat&nbsp;in the Kenai Peninsula Borough Project Manual 2025 - 2027 [DRAFT]</a>” can be accessed by clicking the link.<br>
+</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-bateman2005" class="csl-entry" role="listitem">
+Bateman, Douglas S., Robert E. Gresswell, and Christian E. Torgersen. 2005. <span>“Evaluating Single-Pass Catch as a Tool for Identifying Spatial Pattern in Fish Distribution.”</span> <em>Journal of Freshwater Ecology</em> 20 (2): 335–45. <a href="https://doi.org/10.1080/02705060.2005.9664974">https://doi.org/10.1080/02705060.2005.9664974</a>.
+</div>
+<div id="ref-penaluna2021" class="csl-entry" role="listitem">
+Penaluna, Brooke E., Jennifer M. Allen, Ivan Arismendi, Taal Levi, Tiffany S. Garcia, and Jason K. Walter. 2021. <span>“Better Boundaries: Identifying the Upper Extent of Fish Distributions in Forested Streams Using eDNA and Electrofishing.”</span> <em>Ecosphere</em> 12 (1): e03332. <a href="https://doi.org/10.1002/ecs2.3332">https://doi.org/10.1002/ecs2.3332</a>.
+</div>
+<div id="ref-reynolds2011" class="csl-entry" role="listitem">
+Reynolds, Jim, and Lisa Harlan. 2011. <span>“Quick-Start Guide to Electrofishing.”</span> <a href="https://www.smith-root.com/images/smith-root/downloads/00261_quick_start_guide_to_electrofishing.pdf">https://www.smith-root.com/images/smith-root/downloads/00261_quick_start_guide_to_electrofishing.pdf</a>.
+</div>
+</div>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>

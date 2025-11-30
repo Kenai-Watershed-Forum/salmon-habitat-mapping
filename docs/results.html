@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Results – Salmon Habitat Mapping in the Central Kenai Peninsula 2021-2024 [DRAFT]</title>
+<title>3&nbsp; Results – Salmon Habitat Mapping in the Central Kenai Peninsula 2021-2025 [DRAFT]</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -100,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Salmon Habitat Mapping in the Central Kenai Peninsula 2021-2024 [DRAFT]</a> 
+      <a href="./">Salmon Habitat Mapping in the Central Kenai Peninsula 2021-2025 [DRAFT]</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -193,28 +193,44 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 1</code></pre>
+<pre><code># A tibble: 14 × 3
+   col              fieldmap  fishdat  
+   &lt;chr&gt;            &lt;chr&gt;     &lt;chr&gt;    
+ 1 latitude         numeric   numeric  
+ 2 longitude        numeric   numeric  
+ 3 site_arrive_date Date      POSIXct  
+ 4 site_arrive_time hms       hms      
+ 5 site_depart_date Date      POSIXct  
+ 6 site_depart_time hms       hms      
+ 7 site             character character
+ 8 observer_name    character character
+ 9 project_org      character character
+10 lifestage        character character
+11 count            integer   numeric  
+12 notes            character character
+13 disposition      character character
+14 species          character character</code></pre>
 </div>
 </div>
-<p><em>Note: All fishing effort and capture results are current as of 2025-08-23.</em></p>
+<p><em>Note: All fishing effort and capture results are current as of 2025-11-29.</em></p>
 <section id="fish-capture" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="fish-capture"><span class="header-section-number">3.1</span> Fish capture</h2>
-<p>During fieldwork in summers 2021 - 2024:</p>
+<p>During fieldwork in summers 2021 - 2025:</p>
 <ul>
-<li><p>Over course of 79 fieldwork days 2021 - 2024 (including the training event), we conducted a total of 135 sampling events at 100 unique sites. See the interactive project map in the Methods section (“Site selection”) for a current map of where nominations have occurred.</p></li>
+<li><p>Over course of 91 fieldwork days 2021 - 2025 (including the training events), we conducted a total of 182 sampling events at 144 unique sites. See the interactive project map in the Methods section (“Site selection”) for a current map of where nominations have occurred.</p></li>
 <li><p>Table <a href="#tbl-sites" class="quarto-xref">Table&nbsp;<span>3.1</span></a> summarises total sampling events by individual site. We typically sampled a site only one time each.</p></li>
-<li><p>We have captured 4731 fish comprised of 14 unique species. Table <a href="#tbl-ct-spp" class="quarto-xref">Table&nbsp;<span>3.2</span></a> summarizes current fish capture count by species.</p></li>
+<li><p>We have captured 4997 fish comprised of 19 unique species. Table <a href="#tbl-ct-spp" class="quarto-xref">Table&nbsp;<span>3.2</span></a> summarizes current fish capture count by species.</p></li>
 <li><p>Table <a href="#tbl-site-spp-ct" class="quarto-xref">Table&nbsp;<span>3.3</span></a> summarizes total fish capture for each species by site.</p></li>
 </ul>
 <div class="cell">
 <div id="tbl-sites" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sites-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3.1: Site visit count 2021 - 2024
+Table&nbsp;3.1: Site visit count 2021 - 2025
 </figcaption>
 <div aria-describedby="tbl-sites-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:350px; ">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:500px; ">
 <table class="lightable-paper do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <caption>Total site visits</caption>
 <thead>
@@ -227,28 +243,460 @@ Table&nbsp;3.1: Site visit count 2021 - 2024
 </thead>
 <tbody>
 <tr class="odd">
+<td style="text-align: left;">60.4836089833584,-151.058868583291</td>
+<td style="text-align: right;">60.48361</td>
+<td style="text-align: right;">-151.0589</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.4836546668301,-151.058816833144</td>
+<td style="text-align: right;">60.48365</td>
+<td style="text-align: right;">-151.0588</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.4836548677589,-151.057820180184</td>
+<td style="text-align: right;">60.48365</td>
+<td style="text-align: right;">-151.0578</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.4836668332046,-151.058852333666</td>
+<td style="text-align: right;">60.48367</td>
+<td style="text-align: right;">-151.0589</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.48983684136,-149.716090663317</td>
+<td style="text-align: right;">60.48984</td>
+<td style="text-align: right;">-149.7161</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5133439460281,-150.859893271401</td>
+<td style="text-align: right;">60.51334</td>
+<td style="text-align: right;">-150.8599</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5185531665679,-150.865639666713</td>
+<td style="text-align: right;">60.51855</td>
+<td style="text-align: right;">-150.8656</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5190314998128,-150.867780333171</td>
+<td style="text-align: right;">60.51903</td>
+<td style="text-align: right;">-150.8678</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5191188331783,-150.861787833607</td>
+<td style="text-align: right;">60.51912</td>
+<td style="text-align: right;">-150.8618</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5198751668078,-150.860827666621</td>
+<td style="text-align: right;">60.51988</td>
+<td style="text-align: right;">-150.8608</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5199434999825,-150.860761999773</td>
+<td style="text-align: right;">60.51994</td>
+<td style="text-align: right;">-150.8608</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5199826668706,-150.860682166494</td>
+<td style="text-align: right;">60.51998</td>
+<td style="text-align: right;">-150.8607</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5200878332918,-150.86050333348</td>
+<td style="text-align: right;">60.52009</td>
+<td style="text-align: right;">-150.8605</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5201656666832,-150.860427666587</td>
+<td style="text-align: right;">60.52017</td>
+<td style="text-align: right;">-150.8604</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5201821667387,-150.86045083324</td>
+<td style="text-align: right;">60.52018</td>
+<td style="text-align: right;">-150.8605</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5202457920482,-150.860424536857</td>
+<td style="text-align: right;">60.52025</td>
+<td style="text-align: right;">-150.8604</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5202666345661,-150.860350736663</td>
+<td style="text-align: right;">60.52027</td>
+<td style="text-align: right;">-150.8604</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.52127209827,-150.859240390226</td>
+<td style="text-align: right;">60.52127</td>
+<td style="text-align: right;">-150.8592</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.523832333471,-150.806871667027</td>
+<td style="text-align: right;">60.52383</td>
+<td style="text-align: right;">-150.8069</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5294026665651,-151.081506167079</td>
+<td style="text-align: right;">60.52940</td>
+<td style="text-align: right;">-151.0815</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5294728331745,-151.081384500155</td>
+<td style="text-align: right;">60.52947</td>
+<td style="text-align: right;">-151.0814</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5295859998577,-151.081322833505</td>
+<td style="text-align: right;">60.52959</td>
+<td style="text-align: right;">-151.0813</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5296468334764,-151.081300499591</td>
+<td style="text-align: right;">60.52965</td>
+<td style="text-align: right;">-151.0813</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5368105858248,-150.754533535057</td>
+<td style="text-align: right;">60.53681</td>
+<td style="text-align: right;">-150.7545</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5375230001773,-151.092986166591</td>
+<td style="text-align: right;">60.53752</td>
+<td style="text-align: right;">-151.0930</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5417069999622,-151.101298166524</td>
+<td style="text-align: right;">60.54171</td>
+<td style="text-align: right;">-151.1013</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5417881667668,-151.101257499791</td>
+<td style="text-align: right;">60.54179</td>
+<td style="text-align: right;">-151.1013</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5417883333183,-151.101223666542</td>
+<td style="text-align: right;">60.54179</td>
+<td style="text-align: right;">-151.1012</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5418363332576,-151.101235666238</td>
+<td style="text-align: right;">60.54184</td>
+<td style="text-align: right;">-151.1012</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5418780002095,-151.101230166751</td>
+<td style="text-align: right;">60.54188</td>
+<td style="text-align: right;">-151.1012</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5419361666829,-151.101186666732</td>
+<td style="text-align: right;">60.54194</td>
+<td style="text-align: right;">-151.1012</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5422709165395,-151.217612716722</td>
+<td style="text-align: right;">60.54227</td>
+<td style="text-align: right;">-151.2176</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5422911657167,-151.217940391595</td>
+<td style="text-align: right;">60.54229</td>
+<td style="text-align: right;">-151.2179</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5423104164717,-151.218394516921</td>
+<td style="text-align: right;">60.54231</td>
+<td style="text-align: right;">-151.2184</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5423451164853,-151.217527966964</td>
+<td style="text-align: right;">60.54235</td>
+<td style="text-align: right;">-151.2175</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5423732835192,-151.218556433759</td>
+<td style="text-align: right;">60.54237</td>
+<td style="text-align: right;">-151.2186</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5425407257567,-151.216868418492</td>
+<td style="text-align: right;">60.54254</td>
+<td style="text-align: right;">-151.2169</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5425688829015,-151.217114913511</td>
+<td style="text-align: right;">60.54257</td>
+<td style="text-align: right;">-151.2171</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5425873166579,-151.21697603307</td>
+<td style="text-align: right;">60.54259</td>
+<td style="text-align: right;">-151.2170</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5493051664676,-150.752892499882</td>
+<td style="text-align: right;">60.54931</td>
+<td style="text-align: right;">-150.7529</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5524128332384,-150.75742716669</td>
+<td style="text-align: right;">60.55241</td>
+<td style="text-align: right;">-150.7574</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.6124098334616,-151.095687167088</td>
+<td style="text-align: right;">60.61241</td>
+<td style="text-align: right;">-151.0957</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.6137856666128,-151.101816000369</td>
+<td style="text-align: right;">60.61379</td>
+<td style="text-align: right;">-151.1018</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.6138270491459,-151.101867428021</td>
+<td style="text-align: right;">60.61383</td>
+<td style="text-align: right;">-151.1019</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.6142543333377,-151.101662000383</td>
+<td style="text-align: right;">60.61425</td>
+<td style="text-align: right;">-151.1017</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.6150878335298,-151.086157000426</td>
+<td style="text-align: right;">60.61509</td>
+<td style="text-align: right;">-151.0862</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.6175083332561,-151.092390667101</td>
+<td style="text-align: right;">60.61751</td>
+<td style="text-align: right;">-151.0924</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.6186671667768,-151.091918500011</td>
+<td style="text-align: right;">60.61867</td>
+<td style="text-align: right;">-151.0919</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.6191638332369,-151.091797000174</td>
+<td style="text-align: right;">60.61916</td>
+<td style="text-align: right;">-151.0918</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.6202111668466,-151.091437499787</td>
+<td style="text-align: right;">60.62021</td>
+<td style="text-align: right;">-151.0914</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.6206078331563,-151.091485167091</td>
+<td style="text-align: right;">60.62061</td>
+<td style="text-align: right;">-151.0915</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.6221846664509,-151.090153332935</td>
+<td style="text-align: right;">60.62218</td>
+<td style="text-align: right;">-151.0902</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.6222674998185,-151.090121500235</td>
+<td style="text-align: right;">60.62227</td>
+<td style="text-align: right;">-151.0901</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.6223748335068,-151.09008166624</td>
+<td style="text-align: right;">60.62237</td>
+<td style="text-align: right;">-151.0901</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.7413154515577,-149.258106546279</td>
+<td style="text-align: right;">60.74132</td>
+<td style="text-align: right;">-149.2581</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.7414343794077,-149.259513932343</td>
+<td style="text-align: right;">60.74143</td>
+<td style="text-align: right;">-149.2595</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.7415854743461,-149.260157850129</td>
+<td style="text-align: right;">60.74159</td>
+<td style="text-align: right;">-149.2602</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.7957461664763,-149.197589833061</td>
+<td style="text-align: right;">60.79575</td>
+<td style="text-align: right;">-149.1976</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.7960016668789,-149.197044166713</td>
+<td style="text-align: right;">60.79600</td>
+<td style="text-align: right;">-149.1970</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.7962438333778,-149.196412333064</td>
+<td style="text-align: right;">60.79624</td>
+<td style="text-align: right;">-149.1964</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.796384833452,-149.195572166627</td>
+<td style="text-align: right;">60.79638</td>
+<td style="text-align: right;">-149.1956</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.7964421667126,-149.194319500099</td>
+<td style="text-align: right;">60.79644</td>
+<td style="text-align: right;">-149.1943</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.797248000059,-149.192795333048</td>
+<td style="text-align: right;">60.79725</td>
+<td style="text-align: right;">-149.1928</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.7980731802086,-149.190451667099</td>
+<td style="text-align: right;">60.79807</td>
+<td style="text-align: right;">-149.1905</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.7981191665113,-149.190669000109</td>
+<td style="text-align: right;">60.79812</td>
+<td style="text-align: right;">-149.1907</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.8003364549796,-149.200931741089</td>
+<td style="text-align: right;">60.80034</td>
+<td style="text-align: right;">-149.2009</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.8019742103104,-149.202574834304</td>
+<td style="text-align: right;">60.80197</td>
+<td style="text-align: right;">-149.2026</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.8023024267097,-149.202392704473</td>
+<td style="text-align: right;">60.80230</td>
+<td style="text-align: right;">-149.2024</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.8027937774246,-149.201802788013</td>
+<td style="text-align: right;">60.80279</td>
+<td style="text-align: right;">-149.2018</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.8031739661773,-149.201819101418</td>
+<td style="text-align: right;">60.80317</td>
+<td style="text-align: right;">-149.2018</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.8034507781268,-149.201317096786</td>
+<td style="text-align: right;">60.80345</td>
+<td style="text-align: right;">-149.2013</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.8035789399961,-149.201250619659</td>
+<td style="text-align: right;">60.80358</td>
+<td style="text-align: right;">-149.2013</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">Beaver Creek MT #10</td>
 <td style="text-align: right;">60.61714</td>
 <td style="text-align: right;">-151.0923</td>
-<td style="text-align: right;">2</td>
+<td style="text-align: right;">17</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Beaver Creek Trib 1.1</td>
 <td style="text-align: right;">60.57007</td>
 <td style="text-align: right;">-151.1465</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Beaver Creek Trib 1.2</td>
 <td style="text-align: right;">60.57484</td>
 <td style="text-align: right;">-151.1503</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Beaver Creek Trib 1.3</td>
 <td style="text-align: right;">60.57522</td>
 <td style="text-align: right;">-151.1508</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Bernice Culvert</td>
@@ -260,205 +708,145 @@ Table&nbsp;3.1: Site visit count 2021 - 2024
 <td style="text-align: left;">Bird Lake</td>
 <td style="text-align: right;">60.98049</td>
 <td style="text-align: right;">-150.4137</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Bird Pond</td>
-<td style="text-align: right;">60.98346</td>
-<td style="text-align: right;">-150.4175</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">Candlelight - Downstream</td>
 <td style="text-align: right;">60.56958</td>
 <td style="text-align: right;">-151.1927</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Candlelight - Upstream</td>
-<td style="text-align: right;">60.56990</td>
-<td style="text-align: right;">-151.1932</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Centennial Park Launch</td>
 <td style="text-align: right;">60.47904</td>
 <td style="text-align: right;">-151.1045</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Clam Gulch Creek 1</td>
 <td style="text-align: right;">60.23948</td>
 <td style="text-align: right;">-151.4002</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">9</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Coal Creek Trib 1</td>
 <td style="text-align: right;">60.38256</td>
 <td style="text-align: right;">-151.1437</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Coal Creek Trib 2.1</td>
-<td style="text-align: right;">60.34428</td>
-<td style="text-align: right;">-151.2201</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Colorado Creek 1</td>
-<td style="text-align: right;">60.64451</td>
-<td style="text-align: right;">-149.5009</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">19</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Cooper Creek Mouth</td>
 <td style="text-align: right;">60.48407</td>
 <td style="text-align: right;">-149.8810</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Crooked Creek Trib 1.1</td>
-<td style="text-align: right;">60.30811</td>
-<td style="text-align: right;">-151.2824</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">Crooked Creek Trib 1.2</td>
 <td style="text-align: right;">60.31038</td>
 <td style="text-align: right;">-151.2829</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Derks Lake Outlet</td>
 <td style="text-align: right;">60.53088</td>
 <td style="text-align: right;">-150.9716</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Dolly Varden Way - Downstream</td>
 <td style="text-align: right;">60.52771</td>
 <td style="text-align: right;">-150.9845</td>
 <td style="text-align: right;">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Dolly Varden Way - Upstream</td>
 <td style="text-align: right;">60.52770</td>
 <td style="text-align: right;">-150.9846</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Eagle Rock Stream</td>
 <td style="text-align: right;">60.54817</td>
 <td style="text-align: right;">-151.1118</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">East Mackey Lake</td>
 <td style="text-align: right;">60.53527</td>
 <td style="text-align: right;">-150.9913</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Forestner Culvert - Downstream</td>
 <td style="text-align: right;">60.52387</td>
 <td style="text-align: right;">-150.8068</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Forestner Culvert - Upstream</td>
 <td style="text-align: right;">60.52383</td>
 <td style="text-align: right;">-150.8069</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Funny River Rd Trib 1.1</td>
 <td style="text-align: right;">60.45978</td>
 <td style="text-align: right;">-151.0007</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Granite Creek 1.1</td>
 <td style="text-align: right;">60.80138</td>
 <td style="text-align: right;">-149.2035</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Granite Creek 4.1</td>
 <td style="text-align: right;">60.78960</td>
 <td style="text-align: right;">-149.2090</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Isbell 1</td>
-<td style="text-align: right;">60.49506</td>
-<td style="text-align: right;">-150.9683</td>
 <td style="text-align: right;">2</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">Isbell 1</td>
+<td style="text-align: right;">60.49506</td>
+<td style="text-align: right;">-150.9683</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">KNWR Trib 1</td>
 <td style="text-align: right;">60.45829</td>
 <td style="text-align: right;">-150.8764</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">9</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Kasilof Trib 1.1</td>
 <td style="text-align: right;">60.33330</td>
 <td style="text-align: right;">-151.2703</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Kasilof Trib 1.2</td>
-<td style="text-align: right;">60.33295</td>
-<td style="text-align: right;">-151.2707</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Kasilof Trib 2</td>
 <td style="text-align: right;">60.32300</td>
 <td style="text-align: right;">-151.2925</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Lief Hansen Park</td>
-<td style="text-align: right;">60.55368</td>
-<td style="text-align: right;">-151.2463</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Lou Morgan Crossing - Downstream</td>
-<td style="text-align: right;">60.51299</td>
-<td style="text-align: right;">-150.8596</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Lou Morgan Crossing - Upstream</td>
-<td style="text-align: right;">60.51336</td>
-<td style="text-align: right;">-150.8599</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">Lower Beaver Creek</td>
 <td style="text-align: right;">60.56007</td>
 <td style="text-align: right;">-151.1261</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Lower Soldotna Creek</td>
-<td style="text-align: right;">60.48335</td>
-<td style="text-align: right;">-151.0577</td>
-<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Lower Soldotna Creek</td>
 <td style="text-align: right;">60.48335</td>
 <td style="text-align: right;">-151.0577</td>
-<td style="text-align: right;">5</td>
+<td style="text-align: right;">129</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Mackey Lakes Crossing - Downstream</td>
-<td style="text-align: right;">60.52515</td>
-<td style="text-align: right;">-151.0023</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: left;">Lower Soldotna Creek</td>
+<td style="text-align: right;">60.48335</td>
+<td style="text-align: right;">-151.0577</td>
+<td style="text-align: right;">18</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Mackey Lakes Crossing - Upstream</td>
@@ -470,85 +858,61 @@ Table&nbsp;3.1: Site visit count 2021 - 2024
 <td style="text-align: left;">Mackey Lakes Culvet - Downstream</td>
 <td style="text-align: right;">60.52522</td>
 <td style="text-align: right;">-151.0021</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">15</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Makey Lakes Culvert - Upstream</td>
-<td style="text-align: right;">60.52508</td>
-<td style="text-align: right;">-151.0025</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">McLain Lake NE</td>
 <td style="text-align: right;">60.86992</td>
 <td style="text-align: right;">-150.5788</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Moose River Trib 1</td>
 <td style="text-align: right;">60.56372</td>
 <td style="text-align: right;">-150.7028</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">8</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Moose River Trib 1.2</td>
 <td style="text-align: right;">60.56126</td>
 <td style="text-align: right;">-150.6943</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Moose River Trib 1.3</td>
 <td style="text-align: right;">60.56302</td>
 <td style="text-align: right;">-150.6974</td>
-<td style="text-align: right;">2</td>
+<td style="text-align: right;">20</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Moose River Trib 1.4</td>
 <td style="text-align: right;">60.56000</td>
 <td style="text-align: right;">-150.6930</td>
-<td style="text-align: right;">2</td>
+<td style="text-align: right;">9</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Moose River Trib 1.5</td>
 <td style="text-align: right;">60.55808</td>
 <td style="text-align: right;">-150.6917</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Moose River Trib 1.6</td>
-<td style="text-align: right;">60.55702</td>
-<td style="text-align: right;">-150.6917</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Moose River Trib 1.7</td>
-<td style="text-align: right;">60.55654</td>
-<td style="text-align: right;">-150.6914</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Moose River Trib 2</td>
-<td style="text-align: right;">60.55982</td>
-<td style="text-align: right;">-150.7092</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Moose River Trib 2.1</td>
 <td style="text-align: right;">60.55926</td>
 <td style="text-align: right;">-150.7450</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Moose River Trib 2.2</td>
 <td style="text-align: right;">60.56039</td>
 <td style="text-align: right;">-150.7531</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Moose River Trib 2.3</td>
 <td style="text-align: right;">60.56094</td>
 <td style="text-align: right;">-150.7467</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Moose River Trib 3.1 - Downstream</td>
@@ -557,64 +921,52 @@ Table&nbsp;3.1: Site visit count 2021 - 2024
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Moose River Trib 3.1 - Upstream</td>
-<td style="text-align: right;">60.54928</td>
-<td style="text-align: right;">-150.7526</td>
+<td style="text-align: left;">NA,NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Moose River Trib 3.2</td>
-<td style="text-align: right;">60.55289</td>
-<td style="text-align: right;">-150.7606</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">No Name Creek (Shqui Tsaina)</td>
 <td style="text-align: right;">60.56600</td>
 <td style="text-align: right;">-151.2720</td>
 <td style="text-align: right;">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">North Fork Anchor River</td>
 <td style="text-align: right;">59.80044</td>
 <td style="text-align: right;">-151.6368</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">North Nikiski Lake 1.1</td>
 <td style="text-align: right;">60.80209</td>
 <td style="text-align: right;">-150.9956</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">North Nikiski Lake 1.2</td>
 <td style="text-align: right;">60.79753</td>
 <td style="text-align: right;">-150.9860</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">North Nikiski Lake 2</td>
 <td style="text-align: right;">60.79425</td>
 <td style="text-align: right;">-150.9874</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Otter Trail 1</td>
 <td style="text-align: right;">60.54763</td>
 <td style="text-align: right;">-150.7359</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Poppy Lane Creek</td>
-<td style="text-align: right;">60.49551</td>
-<td style="text-align: right;">-151.2154</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Resurrection Pass Bridge</td>
 <td style="text-align: right;">60.48393</td>
 <td style="text-align: right;">-149.9510</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Salamatof Creek</td>
@@ -626,97 +978,61 @@ Table&nbsp;3.1: Site visit count 2021 - 2024
 <td style="text-align: left;">Savena Lake Trib</td>
 <td style="text-align: right;">60.55695</td>
 <td style="text-align: right;">-150.9991</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Seven Egg Creek</td>
-<td style="text-align: right;">60.93470</td>
-<td style="text-align: right;">-150.7131</td>
+<td style="text-align: left;">Shqui Tsatnu</td>
+<td style="text-align: right;">60.56605</td>
+<td style="text-align: right;">-151.2706</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Sixmile Trib 1.1</td>
-<td style="text-align: right;">60.74404</td>
-<td style="text-align: right;">-149.3669</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">Sixmile Trib 2</td>
 <td style="text-align: right;">60.72671</td>
 <td style="text-align: right;">-149.3176</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Slikok Creek Platform</td>
+<td style="text-align: right;">60.48221</td>
+<td style="text-align: right;">-151.1327</td>
+<td style="text-align: right;">7</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Snag Lake South</td>
 <td style="text-align: right;">60.81345</td>
 <td style="text-align: right;">-150.6901</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Soldotna Creek Mouth</td>
 <td style="text-align: right;">60.48335</td>
 <td style="text-align: right;">-151.0577</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Soldotna Creek Parcel 1</td>
-<td style="text-align: right;">60.49508</td>
-<td style="text-align: right;">-151.0156</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Soldotna Creek Parcel 2</td>
-<td style="text-align: right;">60.49537</td>
-<td style="text-align: right;">-151.0150</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Soldotna Creek Parcel 3</td>
-<td style="text-align: right;">60.49496</td>
-<td style="text-align: right;">-151.0146</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Soldotna Creek Parcel 4</td>
-<td style="text-align: right;">60.49453</td>
-<td style="text-align: right;">-151.0146</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">19</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">South Mackey Pond</td>
 <td style="text-align: right;">60.52231</td>
 <td style="text-align: right;">-151.0076</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Strawberry Rd Corridor</td>
-<td style="text-align: right;">60.57591</td>
-<td style="text-align: right;">-151.0571</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Strawberry Rd Corridor 2</td>
-<td style="text-align: right;">60.58944</td>
-<td style="text-align: right;">-151.0624</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Summit Lake Outlet</td>
 <td style="text-align: right;">60.64234</td>
 <td style="text-align: right;">-149.4940</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Suneva Lake</td>
 <td style="text-align: right;">60.75166</td>
 <td style="text-align: right;">-151.1941</td>
-<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Tree Lake</td>
 <td style="text-align: right;">60.55918</td>
 <td style="text-align: right;">-150.9184</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Union Lake 1</td>
@@ -725,70 +1041,46 @@ Table&nbsp;3.1: Site visit count 2021 - 2024
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Unknown Nikiski Creek 1</td>
-<td style="text-align: right;">60.77920</td>
-<td style="text-align: right;">-151.0813</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">Unknown Nikiski Lake 1</td>
 <td style="text-align: right;">60.77243</td>
 <td style="text-align: right;">-151.0866</td>
 <td style="text-align: right;">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Unknown Nikiski Lake 2</td>
 <td style="text-align: right;">60.76791</td>
 <td style="text-align: right;">-151.0720</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Unnamed Kenai Trib 1 - Upstream</td>
-<td style="text-align: right;">60.52016</td>
-<td style="text-align: right;">-150.8649</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Unnamed Kenai Trib 1.1</td>
 <td style="text-align: right;">60.51832</td>
 <td style="text-align: right;">-150.8653</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Unnamed Kenai Trib 1.2</td>
 <td style="text-align: right;">60.51828</td>
 <td style="text-align: right;">-150.8619</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Upper Ohmer Lake</td>
 <td style="text-align: right;">60.45573</td>
 <td style="text-align: right;">-150.2857</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Upper Savena Lake Trib</td>
-<td style="text-align: right;">60.56934</td>
-<td style="text-align: right;">-151.0366</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">Upper Soldotna Creek 1</td>
 <td style="text-align: right;">60.55580</td>
 <td style="text-align: right;">-150.9228</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">WalMart Creek</td>
 <td style="text-align: right;">60.56560</td>
 <td style="text-align: right;">-151.2213</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">West Beck Lake 1</td>
-<td style="text-align: right;">60.72683</td>
-<td style="text-align: right;">-151.1413</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">West Beck Lake 2</td>
@@ -797,40 +1089,28 @@ Table&nbsp;3.1: Site visit count 2021 - 2024
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">West Fork Beaver Creek Bridge - Downstream</td>
-<td style="text-align: right;">60.64054</td>
-<td style="text-align: right;">-151.0839</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">West Fork Beaver Creek Bridge - Upstream</td>
 <td style="text-align: right;">60.64064</td>
 <td style="text-align: right;">-151.0840</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">West Mackey Lake</td>
 <td style="text-align: right;">60.52338</td>
 <td style="text-align: right;">-151.0073</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">West Mackey Lake 2</td>
 <td style="text-align: right;">60.52371</td>
 <td style="text-align: right;">-151.0066</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">soldotna_creek2</td>
 <td style="text-align: right;">60.54188</td>
 <td style="text-align: right;">-150.9276</td>
 <td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">NA</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">4</td>
 </tr>
 </tbody>
 </table>
@@ -846,7 +1126,7 @@ Table&nbsp;3.1: Site visit count 2021 - 2024
 <div id="tbl-ct-spp" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ct-spp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3.2: Total fish capture count by species
+Table&nbsp;3.2: Total fish capture count by species 2021 - 2025
 </figcaption>
 <div aria-describedby="tbl-ct-spp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -862,23 +1142,31 @@ Table&nbsp;3.2: Total fish capture count by species
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Alaska blackfish</td>
-<td style="text-align: right;">9</td>
+<td style="text-align: right;">22</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Chinook salmon</td>
-<td style="text-align: right;">19</td>
+<td style="text-align: right;">23</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Dolly Varden</td>
-<td style="text-align: right;">74</td>
+<td style="text-align: right;">117</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">Other species not listed (please specify in comment column)</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">Pacific salmon-unspecified</td>
 <td style="text-align: right;">227</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">coho salmon</td>
-<td style="text-align: right;">854</td>
+<td style="text-align: right;">945</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">general fish observation, no species information</td>
+<td style="text-align: right;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">lamprey-unspecified</td>
@@ -886,35 +1174,51 @@ Table&nbsp;3.2: Total fish capture count by species
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ninespine stickleback</td>
-<td style="text-align: right;">46</td>
+<td style="text-align: right;">68</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">no fish collected or observed</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">rainbow trout</td>
-<td style="text-align: right;">74</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">salmonid, unspecified</td>
-<td style="text-align: right;">3</td>
+<td style="text-align: right;">83</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">sculpin-unspecified</td>
-<td style="text-align: right;">160</td>
+<td style="text-align: left;">salmonid, unspecified</td>
+<td style="text-align: right;">5</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">sculpin-unspecified</td>
+<td style="text-align: right;">224</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">slimy sculpin</td>
 <td style="text-align: right;">103</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">sockeye salmon</td>
 <td style="text-align: right;">2</td>
 </tr>
+<tr class="even">
+<td style="text-align: left;">steelhead (adult)</td>
+<td style="text-align: right;">9</td>
+</tr>
 <tr class="odd">
 <td style="text-align: left;">stickleback-unspecified</td>
-<td style="text-align: right;">2924</td>
+<td style="text-align: right;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">threespine stickleback</td>
-<td style="text-align: right;">129</td>
+<td style="text-align: right;">130</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">wood frog</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
 </tr>
 </tbody>
 </table>
@@ -930,7 +1234,7 @@ Table&nbsp;3.2: Total fish capture count by species
 <div id="tbl-site-spp-ct" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-site-spp-ct-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3.3: Species count by site
+Table&nbsp;3.3: Species count by site 2021 -2025
 </figcaption>
 <div aria-describedby="tbl-site-spp-ct-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -940,25 +1244,106 @@ Table&nbsp;3.3: Species count by site
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">site</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">latitude</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">longitude</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">Alaska blackfish</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">Chinook salmon</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">Dolly Varden</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">Other species not listed (please specify in comment column)</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">Pacific salmon-unspecified</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">coho salmon</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">general fish observation, no species information</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">lamprey-unspecified</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">ninespine stickleback</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">no fish collected or observed</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">rainbow trout</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">salmonid, unspecified</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">sculpin-unspecified</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">slimy sculpin</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">sockeye salmon</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">steelhead (adult)</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">stickleback-unspecified</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">threespine stickleback</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">wood frog</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td style="text-align: left;">60.5423451164853,-151.217527966964</td>
+<td style="text-align: right;">60.54235</td>
+<td style="text-align: right;">-151.2175</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5423732835192,-151.218556433759</td>
+<td style="text-align: right;">60.54237</td>
+<td style="text-align: right;">-151.2186</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5425873166579,-151.21697603307</td>
+<td style="text-align: right;">60.54259</td>
+<td style="text-align: right;">-151.2170</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">Candlelight - Downstream</td>
+<td style="text-align: right;">60.56958</td>
+<td style="text-align: right;">-151.1927</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -973,10 +1358,20 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">WalMart Creek</td>
+<td style="text-align: right;">60.56560</td>
+<td style="text-align: right;">-151.2213</td>
 <td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -990,9 +1385,61 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5375230001773,-151.092986166591</td>
+<td style="text-align: right;">60.53752</td>
+<td style="text-align: right;">-151.0930</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">60.6150878335298,-151.086157000426</td>
+<td style="text-align: right;">60.61509</td>
+<td style="text-align: right;">-151.0862</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">Centennial Park Launch</td>
+<td style="text-align: right;">60.47904</td>
+<td style="text-align: right;">-151.1045</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">0</td>
@@ -1006,14 +1453,22 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Crooked Creek Trib 1.2</td>
+<td style="text-align: right;">60.31038</td>
+<td style="text-align: right;">-151.2829</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1023,32 +1478,72 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Lower Soldotna Creek</td>
+<td style="text-align: right;">60.48335</td>
+<td style="text-align: right;">-151.0577</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">377</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">7</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Lower Soldotna Creek</td>
+<td style="text-align: right;">60.48335</td>
+<td style="text-align: right;">-151.0577</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">437</td>
-<td style="text-align: right;">7</td>
 <td style="text-align: right;">3</td>
-<td style="text-align: right;">47</td>
 <td style="text-align: right;">1</td>
-<td style="text-align: right;">101</td>
-<td style="text-align: right;">76</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">13</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Soldotna Creek Mouth</td>
+<td style="text-align: right;">60.48335</td>
+<td style="text-align: right;">-151.0577</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">86</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
@@ -1056,14 +1551,283 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">43</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Clam Gulch Creek 1</td>
+<td style="text-align: left;">60.7413154515577,-149.258106546279</td>
+<td style="text-align: right;">60.74132</td>
+<td style="text-align: right;">-149.2581</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.7414343794077,-149.259513932343</td>
+<td style="text-align: right;">60.74143</td>
+<td style="text-align: right;">-149.2595</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.7415854743461,-149.260157850129</td>
+<td style="text-align: right;">60.74159</td>
+<td style="text-align: right;">-149.2602</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.7957461664763,-149.197589833061</td>
+<td style="text-align: right;">60.79575</td>
+<td style="text-align: right;">-149.1976</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.7960016668789,-149.197044166713</td>
+<td style="text-align: right;">60.79600</td>
+<td style="text-align: right;">-149.1970</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.7981191665113,-149.190669000109</td>
+<td style="text-align: right;">60.79812</td>
+<td style="text-align: right;">-149.1907</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.8019742103104,-149.202574834304</td>
+<td style="text-align: right;">60.80197</td>
+<td style="text-align: right;">-149.2026</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.8023024267097,-149.202392704473</td>
+<td style="text-align: right;">60.80230</td>
+<td style="text-align: right;">-149.2024</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.8031739661773,-149.201819101418</td>
+<td style="text-align: right;">60.80317</td>
+<td style="text-align: right;">-149.2018</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.8034507781268,-149.201317096786</td>
+<td style="text-align: right;">60.80345</td>
+<td style="text-align: right;">-149.2013</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.8035789399961,-149.201250619659</td>
+<td style="text-align: right;">60.80358</td>
+<td style="text-align: right;">-149.2013</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Clam Gulch Creek 1</td>
+<td style="text-align: right;">60.23948</td>
+<td style="text-align: right;">-151.4002</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">0</td>
@@ -1073,16 +1837,25 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Cooper Creek Mouth</td>
+<td style="text-align: right;">60.48407</td>
+<td style="text-align: right;">-149.8810</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
@@ -1092,12 +1865,17 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Forestner Culvert - Downstream</td>
+<td style="text-align: right;">60.52387</td>
+<td style="text-align: right;">-150.8068</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">0</td>
@@ -1109,12 +1887,19 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Funny River Rd Trib 1.1</td>
+<td style="text-align: right;">60.45978</td>
+<td style="text-align: right;">-151.0007</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
@@ -1126,12 +1911,19 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Granite Creek 1.1</td>
+<td style="text-align: right;">60.80138</td>
+<td style="text-align: right;">-149.2035</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">0</td>
@@ -1143,12 +1935,19 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Granite Creek 4.1</td>
+<td style="text-align: right;">60.78960</td>
+<td style="text-align: right;">-149.2090</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">0</td>
@@ -1160,17 +1959,52 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Isbell 1</td>
+<td style="text-align: right;">60.49506</td>
+<td style="text-align: right;">-150.9683</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">KNWR Trib 1</td>
+<td style="text-align: right;">60.45829</td>
+<td style="text-align: right;">-150.8764</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1179,27 +2013,13 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">KNWR Trib 1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">Moose River Trib 1</td>
+<td style="text-align: right;">60.56372</td>
+<td style="text-align: right;">-150.7028</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">7</td>
 <td style="text-align: right;">0</td>
@@ -1211,12 +2031,19 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Moose River Trib 1.2</td>
+<td style="text-align: right;">60.56126</td>
+<td style="text-align: right;">-150.6943</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">0</td>
@@ -1228,14 +2055,23 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Moose River Trib 1.3</td>
+<td style="text-align: right;">60.56302</td>
+<td style="text-align: right;">-150.6974</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">18</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
@@ -1245,12 +2081,17 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Moose River Trib 1.5</td>
+<td style="text-align: right;">60.55808</td>
+<td style="text-align: right;">-150.6917</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">0</td>
@@ -1262,12 +2103,19 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Moose River Trib 2.1</td>
+<td style="text-align: right;">60.55926</td>
+<td style="text-align: right;">-150.7450</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
@@ -1279,12 +2127,19 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Moose River Trib 2.2</td>
+<td style="text-align: right;">60.56039</td>
+<td style="text-align: right;">-150.7531</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">0</td>
@@ -1296,12 +2151,19 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Moose River Trib 2.3</td>
+<td style="text-align: right;">60.56094</td>
+<td style="text-align: right;">-150.7467</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">13</td>
 <td style="text-align: right;">0</td>
@@ -1313,14 +2175,22 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Otter Trail 1</td>
+<td style="text-align: right;">60.54763</td>
+<td style="text-align: right;">-150.7359</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">20</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">0</td>
@@ -1330,12 +2200,18 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Sixmile Trib 2</td>
+<td style="text-align: right;">60.72671</td>
+<td style="text-align: right;">-149.3176</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">58</td>
 <td style="text-align: right;">0</td>
@@ -1347,14 +2223,49 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Slikok Creek Platform</td>
+<td style="text-align: right;">60.48221</td>
+<td style="text-align: right;">-151.1327</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Unnamed Kenai Trib 1.1</td>
+<td style="text-align: right;">60.51832</td>
+<td style="text-align: right;">-150.8653</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">18</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1367,11 +2278,18 @@ Table&nbsp;3.3: Species count by site
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Unnamed Kenai Trib 1.2</td>
+<td style="text-align: right;">60.51828</td>
+<td style="text-align: right;">-150.8619</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1384,6 +2302,8 @@ Table&nbsp;3.3: Species count by site
 </tr>
 <tr class="even">
 <td style="text-align: left;">Upper Ohmer Lake</td>
+<td style="text-align: right;">60.45573</td>
+<td style="text-align: right;">-150.2857</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
@@ -1391,7 +2311,12 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1401,9 +2326,12 @@ Table&nbsp;3.3: Species count by site
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Upper Soldotna Creek 1</td>
+<td style="text-align: right;">60.55580</td>
+<td style="text-align: right;">-150.9228</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">16</td>
 <td style="text-align: right;">0</td>
@@ -1413,34 +2341,74 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">37</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Eagle Rock Stream</td>
+<td style="text-align: left;">60.6206078331563,-151.091485167091</td>
+<td style="text-align: right;">60.62061</td>
+<td style="text-align: right;">-151.0915</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">Eagle Rock Stream</td>
+<td style="text-align: right;">60.54817</td>
+<td style="text-align: right;">-151.1118</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">North Fork Anchor River</td>
+<td style="text-align: right;">59.80044</td>
+<td style="text-align: right;">-151.6368</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">225</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">100</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1449,16 +2417,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Beaver Creek MT #10</td>
+<tr class="odd">
+<td style="text-align: left;">60.523832333471,-150.806871667027</td>
+<td style="text-align: right;">60.52383</td>
+<td style="text-align: right;">-150.8069</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">13</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
@@ -1466,14 +2434,171 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5422709165395,-151.217612716722</td>
+<td style="text-align: right;">60.54227</td>
+<td style="text-align: right;">-151.2176</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">60.5423104164717,-151.218394516921</td>
+<td style="text-align: right;">60.54231</td>
+<td style="text-align: right;">-151.2184</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.7962438333778,-149.196412333064</td>
+<td style="text-align: right;">60.79624</td>
+<td style="text-align: right;">-149.1964</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.796384833452,-149.195572166627</td>
+<td style="text-align: right;">60.79638</td>
+<td style="text-align: right;">-149.1956</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.797248000059,-149.192795333048</td>
+<td style="text-align: right;">60.79725</td>
+<td style="text-align: right;">-149.1928</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Beaver Creek MT #10</td>
+<td style="text-align: right;">60.61714</td>
+<td style="text-align: right;">-151.0923</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">Beaver Creek Trib 1.1</td>
+<td style="text-align: right;">60.57007</td>
+<td style="text-align: right;">-151.1465</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">17</td>
 <td style="text-align: right;">0</td>
@@ -1483,14 +2608,21 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Beaver Creek Trib 1.2</td>
+<td style="text-align: right;">60.57484</td>
+<td style="text-align: right;">-151.1503</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
@@ -1500,9 +2632,15 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Beaver Creek Trib 1.3</td>
+<td style="text-align: right;">60.57522</td>
+<td style="text-align: right;">-151.1508</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1517,9 +2655,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Coal Creek Trib 1</td>
+<td style="text-align: right;">60.38256</td>
+<td style="text-align: right;">-151.1437</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1529,19 +2674,29 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Derks Lake Outlet</td>
+<td style="text-align: right;">60.53088</td>
+<td style="text-align: right;">-150.9716</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1551,9 +2706,13 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">160</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Dolly Varden Way - Upstream</td>
+<td style="text-align: right;">60.52770</td>
+<td style="text-align: right;">-150.9846</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1566,11 +2725,18 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">8</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Forestner Culvert - Upstream</td>
+<td style="text-align: right;">60.52383</td>
+<td style="text-align: right;">-150.8069</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1585,9 +2751,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Kasilof Trib 2</td>
+<td style="text-align: right;">60.32300</td>
+<td style="text-align: right;">-151.2925</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1602,9 +2775,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Lower Beaver Creek</td>
+<td style="text-align: right;">60.56007</td>
+<td style="text-align: right;">-151.1261</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1612,6 +2792,8 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">16</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1619,9 +2801,14 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Mackey Lakes Culvet - Downstream</td>
+<td style="text-align: right;">60.52522</td>
+<td style="text-align: right;">-151.0021</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1629,16 +2816,23 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">7</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">179</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Moose River Trib 1.4</td>
+<td style="text-align: right;">60.56000</td>
+<td style="text-align: right;">-150.6930</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1653,9 +2847,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Moose River Trib 3.1 - Downstream</td>
+<td style="text-align: right;">60.54928</td>
+<td style="text-align: right;">-150.7526</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1665,19 +2866,6 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">No Name Creek (Shqui Tsaina)</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1689,12 +2877,41 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">No Name Creek (Shqui Tsaina)</td>
+<td style="text-align: right;">60.56600</td>
+<td style="text-align: right;">-151.2720</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">North Nikiski Lake 1.1</td>
+<td style="text-align: right;">60.80209</td>
+<td style="text-align: right;">-150.9956</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
@@ -1704,9 +2921,14 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">North Nikiski Lake 1.2</td>
+<td style="text-align: right;">60.79753</td>
+<td style="text-align: right;">-150.9860</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1717,18 +2939,27 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">9</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">49</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Resurrection Pass Bridge</td>
+<td style="text-align: right;">60.48393</td>
+<td style="text-align: right;">-149.9510</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1738,9 +2969,14 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Savena Lake Trib</td>
+<td style="text-align: right;">60.55695</td>
+<td style="text-align: right;">-150.9991</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1753,11 +2989,18 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">18</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Tree Lake</td>
+<td style="text-align: right;">60.55918</td>
+<td style="text-align: right;">-150.9184</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1770,33 +3013,50 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">75</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">West Fork Beaver Creek Bridge - Upstream</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">West Mackey Lake</td>
+<td style="text-align: left;">West Fork Beaver Creek Bridge - Upstream</td>
+<td style="text-align: right;">60.64064</td>
+<td style="text-align: right;">-151.0840</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">West Mackey Lake</td>
+<td style="text-align: right;">60.52338</td>
+<td style="text-align: right;">-151.0073</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1806,14 +3066,21 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">200</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">West Mackey Lake 2</td>
+<td style="text-align: right;">60.52371</td>
+<td style="text-align: right;">-151.0066</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1823,9 +3090,14 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">103</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Unknown Nikiski Lake 1</td>
+<tr class="odd">
+<td style="text-align: left;">60.5422911657167,-151.217940391595</td>
+<td style="text-align: right;">60.54229</td>
+<td style="text-align: right;">-151.2179</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1833,6 +3105,33 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Shqui Tsatnu</td>
+<td style="text-align: right;">60.56605</td>
+<td style="text-align: right;">-151.2706</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1842,7 +3141,10 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Bird Lake</td>
+<td style="text-align: left;">Unknown Nikiski Lake 1</td>
+<td style="text-align: right;">60.77243</td>
+<td style="text-align: right;">-151.0866</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1855,11 +3157,44 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">Bird Lake</td>
+<td style="text-align: right;">60.98049</td>
+<td style="text-align: right;">-150.4137</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">Summit Lake Outlet</td>
+<td style="text-align: right;">60.64234</td>
+<td style="text-align: right;">-149.4940</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1872,11 +3207,42 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5368105858248,-150.754533535057</td>
+<td style="text-align: right;">60.53681</td>
+<td style="text-align: right;">-150.7545</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">McLain Lake NE</td>
+<td style="text-align: right;">60.86992</td>
+<td style="text-align: right;">-150.5788</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1889,11 +3255,18 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">194</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">North Nikiski Lake 2</td>
+<td style="text-align: right;">60.79425</td>
+<td style="text-align: right;">-150.9874</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1906,11 +3279,18 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Snag Lake South</td>
+<td style="text-align: right;">60.81345</td>
+<td style="text-align: right;">-150.6901</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1923,11 +3303,91 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">44</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">60.6191638332369,-151.091797000174</td>
+<td style="text-align: right;">60.61916</td>
+<td style="text-align: right;">-151.0918</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.6221846664509,-151.090153332935</td>
+<td style="text-align: right;">60.62218</td>
+<td style="text-align: right;">-151.0902</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.6222674998185,-151.090121500235</td>
+<td style="text-align: right;">60.62227</td>
+<td style="text-align: right;">-151.0901</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">Bernice Culvert</td>
+<td style="text-align: right;">60.69047</td>
+<td style="text-align: right;">-151.3836</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1942,9 +3402,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">51</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Dolly Varden Way - Downstream</td>
+<td style="text-align: right;">60.52771</td>
+<td style="text-align: right;">-150.9845</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1959,9 +3426,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">20</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">East Mackey Lake</td>
+<td style="text-align: right;">60.53527</td>
+<td style="text-align: right;">-150.9913</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1976,9 +3450,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">99</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Mackey Lakes Crossing - Upstream</td>
+<td style="text-align: right;">60.52515</td>
+<td style="text-align: right;">-151.0023</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1993,9 +3474,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">28</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Salamatof Creek</td>
+<td style="text-align: right;">60.63943</td>
+<td style="text-align: right;">-151.3175</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -2010,9 +3498,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">445</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">South Mackey Pond</td>
+<td style="text-align: right;">60.52231</td>
+<td style="text-align: right;">-151.0076</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -2027,9 +3522,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">168</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Suneva Lake</td>
+<td style="text-align: right;">60.75166</td>
+<td style="text-align: right;">-151.1941</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -2044,9 +3546,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">10</td>
 <td style="text-align: right;">51</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Union Lake 1</td>
+<td style="text-align: right;">60.52505</td>
+<td style="text-align: right;">-151.0340</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -2061,9 +3570,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1009</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Unknown Nikiski Lake 2</td>
+<td style="text-align: right;">60.76791</td>
+<td style="text-align: right;">-151.0720</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -2078,9 +3594,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">7</td>
 <td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">soldotna_creek2</td>
+<td style="text-align: right;">60.54188</td>
+<td style="text-align: right;">-150.9276</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -2095,9 +3618,16 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">35</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Kasilof Trib 1.1</td>
+<td style="text-align: right;">60.33330</td>
+<td style="text-align: right;">-151.2703</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -2112,9 +3642,41 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">West Beck Lake 2</td>
+<td style="text-align: right;">60.72763</td>
+<td style="text-align: right;">-151.1438</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">West Beck Lake 2</td>
+<td style="text-align: left;">60.6223748335068,-151.09008166624</td>
+<td style="text-align: right;">60.62237</td>
+<td style="text-align: right;">-151.0901</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -2130,6 +3692,1062 @@ Table&nbsp;3.3: Species count by site
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
 </tr>
+<tr class="even">
+<td style="text-align: left;">60.4836089833584,-151.058868583291</td>
+<td style="text-align: right;">60.48361</td>
+<td style="text-align: right;">-151.0589</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.4836546668301,-151.058816833144</td>
+<td style="text-align: right;">60.48365</td>
+<td style="text-align: right;">-151.0588</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.4836548677589,-151.057820180184</td>
+<td style="text-align: right;">60.48365</td>
+<td style="text-align: right;">-151.0578</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.4836668332046,-151.058852333666</td>
+<td style="text-align: right;">60.48367</td>
+<td style="text-align: right;">-151.0589</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.48983684136,-149.716090663317</td>
+<td style="text-align: right;">60.48984</td>
+<td style="text-align: right;">-149.7161</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5133439460281,-150.859893271401</td>
+<td style="text-align: right;">60.51334</td>
+<td style="text-align: right;">-150.8599</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5185531665679,-150.865639666713</td>
+<td style="text-align: right;">60.51855</td>
+<td style="text-align: right;">-150.8656</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5190314998128,-150.867780333171</td>
+<td style="text-align: right;">60.51903</td>
+<td style="text-align: right;">-150.8678</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5191188331783,-150.861787833607</td>
+<td style="text-align: right;">60.51912</td>
+<td style="text-align: right;">-150.8618</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5198751668078,-150.860827666621</td>
+<td style="text-align: right;">60.51988</td>
+<td style="text-align: right;">-150.8608</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5199434999825,-150.860761999773</td>
+<td style="text-align: right;">60.51994</td>
+<td style="text-align: right;">-150.8608</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5199826668706,-150.860682166494</td>
+<td style="text-align: right;">60.51998</td>
+<td style="text-align: right;">-150.8607</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5200878332918,-150.86050333348</td>
+<td style="text-align: right;">60.52009</td>
+<td style="text-align: right;">-150.8605</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5201656666832,-150.860427666587</td>
+<td style="text-align: right;">60.52017</td>
+<td style="text-align: right;">-150.8604</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5201821667387,-150.86045083324</td>
+<td style="text-align: right;">60.52018</td>
+<td style="text-align: right;">-150.8605</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5202457920482,-150.860424536857</td>
+<td style="text-align: right;">60.52025</td>
+<td style="text-align: right;">-150.8604</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5202666345661,-150.860350736663</td>
+<td style="text-align: right;">60.52027</td>
+<td style="text-align: right;">-150.8604</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.52127209827,-150.859240390226</td>
+<td style="text-align: right;">60.52127</td>
+<td style="text-align: right;">-150.8592</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5294026665651,-151.081506167079</td>
+<td style="text-align: right;">60.52940</td>
+<td style="text-align: right;">-151.0815</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5294728331745,-151.081384500155</td>
+<td style="text-align: right;">60.52947</td>
+<td style="text-align: right;">-151.0814</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5295859998577,-151.081322833505</td>
+<td style="text-align: right;">60.52959</td>
+<td style="text-align: right;">-151.0813</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5296468334764,-151.081300499591</td>
+<td style="text-align: right;">60.52965</td>
+<td style="text-align: right;">-151.0813</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5417069999622,-151.101298166524</td>
+<td style="text-align: right;">60.54171</td>
+<td style="text-align: right;">-151.1013</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5417881667668,-151.101257499791</td>
+<td style="text-align: right;">60.54179</td>
+<td style="text-align: right;">-151.1013</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5417883333183,-151.101223666542</td>
+<td style="text-align: right;">60.54179</td>
+<td style="text-align: right;">-151.1012</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5418363332576,-151.101235666238</td>
+<td style="text-align: right;">60.54184</td>
+<td style="text-align: right;">-151.1012</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5418780002095,-151.101230166751</td>
+<td style="text-align: right;">60.54188</td>
+<td style="text-align: right;">-151.1012</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5419361666829,-151.101186666732</td>
+<td style="text-align: right;">60.54194</td>
+<td style="text-align: right;">-151.1012</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5425407257567,-151.216868418492</td>
+<td style="text-align: right;">60.54254</td>
+<td style="text-align: right;">-151.2169</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5425688829015,-151.217114913511</td>
+<td style="text-align: right;">60.54257</td>
+<td style="text-align: right;">-151.2171</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.5493051664676,-150.752892499882</td>
+<td style="text-align: right;">60.54931</td>
+<td style="text-align: right;">-150.7529</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.5524128332384,-150.75742716669</td>
+<td style="text-align: right;">60.55241</td>
+<td style="text-align: right;">-150.7574</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.6124098334616,-151.095687167088</td>
+<td style="text-align: right;">60.61241</td>
+<td style="text-align: right;">-151.0957</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.6137856666128,-151.101816000369</td>
+<td style="text-align: right;">60.61379</td>
+<td style="text-align: right;">-151.1018</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.6138270491459,-151.101867428021</td>
+<td style="text-align: right;">60.61383</td>
+<td style="text-align: right;">-151.1019</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.6142543333377,-151.101662000383</td>
+<td style="text-align: right;">60.61425</td>
+<td style="text-align: right;">-151.1017</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.6175083332561,-151.092390667101</td>
+<td style="text-align: right;">60.61751</td>
+<td style="text-align: right;">-151.0924</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.6186671667768,-151.091918500011</td>
+<td style="text-align: right;">60.61867</td>
+<td style="text-align: right;">-151.0919</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.6202111668466,-151.091437499787</td>
+<td style="text-align: right;">60.62021</td>
+<td style="text-align: right;">-151.0914</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.7964421667126,-149.194319500099</td>
+<td style="text-align: right;">60.79644</td>
+<td style="text-align: right;">-149.1943</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.7980731802086,-149.190451667099</td>
+<td style="text-align: right;">60.79807</td>
+<td style="text-align: right;">-149.1905</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60.8003364549796,-149.200931741089</td>
+<td style="text-align: right;">60.80034</td>
+<td style="text-align: right;">-149.2009</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">60.8027937774246,-149.201802788013</td>
+<td style="text-align: right;">60.80279</td>
+<td style="text-align: right;">-149.2018</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA,NA</td>
+<td style="text-align: right;">0.00000</td>
+<td style="text-align: right;">0.0000</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -2143,7 +4761,7 @@ Table&nbsp;3.3: Species count by site
 </section>
 <section id="awc-nominations" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="awc-nominations"><span class="header-section-number">3.2</span> AWC Nominations</h2>
-<p>Fish capture data was evaluated against the 2024 Anadromous Waters Catalog to identify new stream segment nominations. Complete submission materials for 2021 - 2023 may be accessed in the project <a href="https://drive.google.com/drive/folders/1UmQGruxbmRO-ICCd0xbGi5rPp1ZTFCX2?usp=drive_link">Google Drive folder (link)</a>, sent to the ADF&amp;G Habitat Division in Anchorage in the fall of each year. In 2024 we submitted all nominations through the Fish Map App smartphone application from the Alaska Conservation Foundation</p>
+<p>Fish capture data was evaluated against the 2025 Anadromous Waters Catalog to identify new stream segment nominations. Complete submission materials for 2021 - 2023 may be accessed in the project <a href="https://drive.google.com/drive/folders/1UmQGruxbmRO-ICCd0xbGi5rPp1ZTFCX2?usp=drive_link">Google Drive folder (link)</a>, sent to the ADF&amp;G Habitat Division in Anchorage in the fall of each year. In 2024 we submitted all nominations through the Fish Map App smartphone application from the Alaska Conservation Foundation</p>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2154,7 +4772,7 @@ Total Anadromous Waters Nominations
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>As of October 2024, a total length of <strong>22.4 miles</strong> of stream segments and <strong>173 lake acres</strong> were included in our 24 nominations.</p>
+<p>As of October 2025, a total length of approximately <strong>24.5 miles</strong> of stream segments and <strong>173 lake acres</strong> were included in our 25 nominations.</p>
 </div>
 </div>
 <p>Tables <a href="#tbl-awc-noms" class="quarto-xref">Table&nbsp;<span>3.4</span></a> and <a href="#tbl-awc-noms-lakes" class="quarto-xref">Table&nbsp;<span>3.5</span></a> below breaks down each stream segment nomination by length and lake by area.</p>
@@ -2167,7 +4785,7 @@ Table&nbsp;3.4: Lengths of stream segments included in anadromous waters nominat
 <div aria-describedby="tbl-awc-noms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <table class="lightable-paper do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>AWC Stream Nominations 2021 - 2024</caption>
+<caption>AWC Stream Nominations 2021 - 2025</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">nomination_name</th>
@@ -2291,6 +4909,11 @@ Table&nbsp;3.4: Lengths of stream segments included in anadromous waters nominat
 <td style="text-align: left;">2024</td>
 <td style="text-align: right;">2.15</td>
 </tr>
+<tr class="even">
+<td style="text-align: left;">Granite Creek Trib</td>
+<td style="text-align: left;">2025</td>
+<td style="text-align: right;">3.38</td>
+</tr>
 </tbody>
 </table>
 
@@ -2310,7 +4933,7 @@ Table&nbsp;3.5: Lake areas included in anadromous waters nominations.
 <div aria-describedby="tbl-awc-noms-lakes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <table class="lightable-paper do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>AWC Lake Nominations 2021 - 2024</caption>
+<caption>AWC Lake Nominations 2021 - 2025</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">nomination_name</th>
@@ -2344,10 +4967,10 @@ Table&nbsp;3.5: Lake areas included in anadromous waters nominations.
 <div id="fig-awc-noms-map" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-awc-noms-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/2021_2024 Nominations Graphic.jpg" class="img-fluid figure-img">
+<img src="images/2021_2025_awc_noms_graphic.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-awc-noms-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.1: Nominated stream segments highlighted in orange, green, turquoise, and yellow. Prexisting documented andromous waters prior to this project colored in light blue.
+Figure&nbsp;3.1: Nominated stream segments highlighted in orange, green, turquoise, and yellow. Prexisting documented anadromous waters prior to this project colored in light blue.
 </figcaption>
 </figure>
 </div>
@@ -2355,27 +4978,30 @@ Figure&nbsp;3.1: Nominated stream segments highlighted in orange, green, turquoi
 </div>
 <p><br></p>
 <p>For general background on nominations, see the <a href="https://docs.google.com/presentation/d/1uQX9_4T-vJDzp_gzBJFyqtggOg1Fpsng?rtpof=true&amp;usp=drive_fs">slides linked here</a>, presented at Kenai Watershed Forum’s Fireside Chat series held at Kenai River Brewing on November 1, 2023.</p>
+<p>Or, see the presentation below on Kenai Watershed Forum’s YouTube channel</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/u62Md_aYzPk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="volunteer-participation" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="volunteer-participation"><span class="header-section-number">3.3</span> Volunteer participation</h2>
-<p>Volunteer recruitment efforts resulted in a steadily increasing level of participation from the general public. A total of 350 volunteer hours were documented throughout the project, with an initial higher outlay in 2021 to initiate training.</p>
+<p>Volunteer recruitment efforts resulted in a steadily increasing level of participation from the general public. A total of 665 volunteer hours were documented throughout the project, with higher outlays in 2021 and 2025 to initiate training.</p>
 <p><br></p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="results_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="results_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>The level of volunteer participation, along with experience gained, closely tracked the quantity of nominations submitted each year, with a steadily rising number of nominations from 2021 to 2023. 2024 saw very minimal funding resources directed towards fieldwork, thus the number of volunteer hours declined. Despite this reduced funding in 2024, seven nominations were submitted. The result speaks to how sustained financial support, even if fluctuating in amount, is important to keep projects such as this in progress.</p>
+<p>The level of volunteer participation, along with experience gained, mostly tracked the quantity of nominations submitted each year, with a steadily rising number of nominations from 2021 to 2023. 2024 saw very minimal funding resources directed towards fieldwork, thus the number of volunteer hours declined. Despite this reduced funding in 2024, seven nominations were submitted. The result speaks to how sustained financial support, even if fluctuating in amount, is important to keep projects such as this in progress.</p>
+<p>In 2025, several training events were held in collaboration with Cook Inletkeeper as part of our shared <a href="https://www.peninsulaclarion.com/news/cook-inletkeeper-program-promotes-community-engagement/"><code>Backyard Salmonscapes</code></a> program. Volunteers also contributed efforts to our technical mapping efforts in progress, in collaboration with consultants Terrainworks and Romey Riverscape Sciences. <a href="https://www.kenaiwatershed.org/news-media/fish-habitat-mapping-2025/">Click here to read more</a> on our new freshwater fish habitat mapping efforts on Kenai Watershed Forum’s website.</p>
 <p><br></p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="results_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="results_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>

@@ -258,7 +258,7 @@ dat_field_maps <- dat_field_maps %>%
 
 ```
 
-```{r }
+```{r echo = F}
 # change scientific species names to common names
 
 ## ---------------------------------------------- -------------
@@ -289,7 +289,7 @@ dat_field_maps <- left_join(dat_field_maps, species_map) %>%
 
 ```
 
-```{r}
+```{r echo = F}
 # combine datasets from ESRI and Google Sheets
 
 ## ------------------------------------------------------------------
@@ -442,7 +442,7 @@ During fieldwork in summers 2021 - 2025:
 n_sites_coords %>%
   kbl(caption = "Total site visits") %>%
   kable_paper(full_width = F, html_font = "Cambria") %>%
-  scroll_box(height = "500px", width = "350px")
+  scroll_box(height = "500px", width = "500px")
 
 # export csv
 write.csv(n_sites_coords,"output/site_visits_coords.csv", row.names = F)
@@ -689,10 +689,7 @@ arp <- fish_dat %>%
   `Weight (g)` = "",
   `Length (mm) (NO estimates or ranges)` = "",
   `Length method` = ""
-
          ) %>%
-  
-
   
   # order columns to match ARP column structure
   select(

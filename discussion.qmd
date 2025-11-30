@@ -182,6 +182,10 @@ Overall, we found that the end of anadromy model that was developed in southeast
 
 An anecdotal example of model under performance for both Gradient Barrier as well as End-of-Anadromy mapping is evident in the segment of Granite Creek in Turnagain Pass nominated in 2024 (@fig-awc-noms-map). In this figure, a 4.23 km length of Granite Creek is nominated. However, both predictive maps show probable end of anadromous habitat ending near the Hope Highway cutoff, more than 15 stream kilometers downstream from where we observed anadromous fish. Many other similar examples are evident upon examination, highlighting the need to improve existing predictive maps for the Kenai region.
 
+## 2025
+
+The year 2025 was marked by the award of a major grant from the National Coastal Resilience Fund. In spring 2025, we initiated a collabortaion with consultants Terrainworks and Romey Riverscape Sciences to explore using predictive habitat modeling to identify the extent of probable anadromous habitat. Further details about these efforts can be accessed on our website at <https://www.kenaiwatershed.org/news-media/fish-habitat-mapping-2025/>.
+
 ## Media highlights
 
 ### Radio
@@ -200,6 +204,10 @@ From 2021-2023, KDLL Public Radio published three stories about the work discuss
 knitr::include_graphics('images/kdll_story.png')
 
 ```
+
+### Print Media
+
+-   [Cook Inletkeeper Program Promotes Community Engagement](https://www.peninsulaclarion.com/news/cook-inletkeeper-program-promotes-community-engagement/) (Peninsula Clarion, November 1, 2025)
 
 ### Public Lecture
 
