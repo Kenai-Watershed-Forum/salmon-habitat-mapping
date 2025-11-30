@@ -112,7 +112,7 @@ We used Gee minnow traps baited with salmon eggs as the primary capture methods 
 
 ### Backpack Electrofishing
 
-We used electrofishing: single pass techniques to survey for end-of-anadromy locations [@penaluna2021]. We electrofished to delimit last-fish using a spatially continuous, single-pass backpack electrofishing approach similar to that described by Torgerson and validated by Bateman, but sampled all accessible stream habitat [@bateman2005; @torgerson2004]. We optimized electrofishing effectiveness so that units are set at the minimum needed to achieve satisfactory electrofishing in each stream [@reynolds2011]. Detections with electrofishing were made visually by identifying individual fish to the lowest taxonomic unit possible, which was generally to species.
+We used electrofishing: single pass techniques to survey for end-of-anadromy locations [@penaluna2021]. We electrofished to delimit last-fish using a spatially continuous, single-pass backpack electrofishing approach similar to that described by Torgersen and validated by Bateman, but sampled all accessible stream habitat [@bateman2005; @torgersen2004]. We optimized electrofishing effectiveness so that units are set at the minimum needed to achieve satisfactory electrofishing in each stream [@reynolds2011]. Detections with electrofishing were made visually by identifying individual fish to the lowest taxonomic unit possible, which was generally to species.
 
 ### Fish processing
 

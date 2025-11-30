@@ -1,7 +1,7 @@
 # Results
 
 ```{r , include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+knitr::opts_chunk$set(echo = FALSE, warning = F, message = F)
 
 # clear environment
 rm(list=ls())
@@ -429,20 +429,27 @@ During fieldwork in summers 2021 - 2025:
 
 -   Over course of `r n_days` fieldwork days 2021 - 2025 (including the training events), we conducted a total of `r n_events` sampling events at `r n_sites_total` unique sites. See the interactive project map in the Methods section ("Site selection") for a current map of where nominations have occurred.
 
--   Table @tbl-sites summarises total sampling events by individual site. We typically sampled a site only one time each.
+-   Table @tbl-sites-visits summarises total sampling events by individual site. We typically sampled a site only one time each.
 
--   We have captured `r fish_ct` fish comprised of `r spp_ct` unique species. Table @tbl-ct-spp summarizes current fish capture count by species.
+-   We have captured `r fish_ct` fish comprised of `r spp_ct` unique species. Table @tbl-ct-spp-total summarizes current fish capture count by species.
 
--   Table @tbl-site-spp-ct summarizes total fish capture for each species by site.
+-   Table @tbl-site-spp-by-site summarizes total fish capture for each species by site.
 
 ```{r echo = F}
-#| label: tbl-sites
+#| label: tbl-sites-visits
 #| tbl-cap: "Site visit count 2021 - 2025"
 
-n_sites_coords %>%
-  kbl(caption = "Total site visits") %>%
-  kable_paper(full_width = F, html_font = "Cambria") %>%
-  scroll_box(height = "500px", width = "500px")
+tbl_sites <- n_sites_coords
+
+if (knitr::is_html_output()) {
+  tbl_sites %>%
+    kbl(caption = "Total site visits") %>%
+    kableExtra::kable_paper(full_width = FALSE, html_font = "Cambria") %>%
+    kableExtra::scroll_box(height = "500px", width = "500px")
+} else {
+  tbl_sites %>%
+    knitr::kable(caption = "Total site visits")
+}
 
 # export csv
 write.csv(n_sites_coords,"output/site_visits_coords.csv", row.names = F)
@@ -452,30 +459,38 @@ write.csv(n_sites_coords,"output/site_visits_coords.csv", row.names = F)
 <br>
 
 ```{r , echo = F}
-#| label: tbl-ct-spp
+#| label: tbl-ct-spp-total
 #| tbl-cap: "Total fish capture count by species 2021 - 2025"
 
-spp_ct_n %>%
-  kbl(caption = "Total fish capture count by species") %>%
-  kable_paper(full_width = F, html_font = "Cambria")  %>%
-  scroll_box(height = "600px", width = "350px")
-#, 
- #             bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+if (knitr::is_html_output()) {
+  spp_ct_n %>%
+    kbl(caption = "Total fish capture count by species") %>%
+    kableExtra::kable_paper(full_width = FALSE, html_font = "Cambria")  %>%
+    kableExtra::scroll_box(height = "600px", width = "350px")
+} else {
+  spp_ct_n %>%
+    knitr::kable(caption = "Total fish capture count by species")
+}
 
 ```
 
 <br>
 
 ```{r echo = F}
-#| label: tbl-site-spp-ct
+#| label: tbl-site-spp-by-site
 #| tbl-cap: "Species count by site 2021 -2025"
-site_spp_ct %>%
-  kbl(caption = "Total fish capture count by species at each site.") %>%
-  kable_paper(full_width = F, html_font = "Cambria",
 
-              bootstrap_options = c("condensed")) %>%
-  kable_styling(latex_options = c("scale_down","striped")) %>%
-  scroll_box(width = "100%", height = "500px")
+if (knitr::is_html_output()) {
+  site_spp_ct %>%
+    kbl(caption = "Total fish capture count by species at each site.") %>%
+    kableExtra::kable_paper(full_width = FALSE, html_font = "Cambria",
+                            bootstrap_options = c("condensed")) %>%
+    kableExtra::kable_styling(latex_options = c("scale_down","striped")) %>%
+    kableExtra::scroll_box(width = "100%", height = "500px")
+} else {
+  site_spp_ct %>%
+    knitr::kable(caption = "Total fish capture count by species at each site.")
+}
 
 write.csv(site_spp_ct,"output/site_spp_ct.csv", row.names = F)
 
@@ -493,10 +508,10 @@ Fish capture data was evaluated against the 2025 Anadromous Waters Catalog to id
 As of October 2025, a total length of approximately **24.5 miles** of stream segments and **173 lake acres** were included in our 25 nominations.
 :::
 
-Tables @tbl-awc-noms and @tbl-awc-noms-lakes below breaks down each stream segment nomination by length and lake by area.
+Tables @tbl-awc-stream-noms and @tbl-awc-lake-noms below breaks down each stream segment nomination by length and lake by area.
 
 ```{r echo = F}
-#| label: tbl-awc-noms
+#| label: tbl-awc-stream-noms
 #| tbl-cap: "Lengths of stream segments included in anadromous waters nominations."
 
 ### nomination records
@@ -512,16 +527,21 @@ noms_tbl <- read_excel("input/2021_2025_stream_lengths.xlsx") %>%
   arrange(nomination)
 
 # stream table
-noms_tbl %>%
-  kbl(caption = "AWC Stream Nominations 2021 - 2025", digits = 2) %>%
-  kable_paper(full_width = F, html_font = "Cambria")
+if (knitr::is_html_output()) {
+  noms_tbl %>%
+    kbl(caption = "AWC Stream Nominations 2021 - 2025", digits = 2) %>%
+    kableExtra::kable_paper(full_width = FALSE, html_font = "Cambria")
+} else {
+  noms_tbl %>%
+    knitr::kable(caption = "AWC Stream Nominations 2021 - 2025", digits = 2)
+}
 
 ```
 
 <br>
 
 ```{r echo = F}
-#| label: tbl-awc-noms-lakes
+#| label: tbl-awc-lake-noms
 #| tbl-cap: "Lake areas included in anadromous waters nominations."
 
 ### nomination records
@@ -529,9 +549,14 @@ noms_tbl_lakes <- read_excel("input/2021_2025_lake_areas.xlsx") %>%
   clean_names() 
 
 # lakes table
-noms_tbl_lakes %>%
-  kbl(caption = "AWC Lake Nominations 2021 - 2025", digits = 2) %>%
-  kable_paper(full_width = F, html_font = "Cambria")
+if (knitr::is_html_output()) {
+  noms_tbl_lakes %>%
+    kbl(caption = "AWC Lake Nominations 2021 - 2025", digits = 2) %>%
+    kableExtra::kable_paper(full_width = FALSE, html_font = "Cambria")
+} else {
+  noms_tbl_lakes %>%
+    knitr::kable(caption = "AWC Lake Nominations 2021 - 2025", digits = 2)
+}
 
 ```
 
@@ -725,3 +750,4 @@ arp <- fish_dat %>%
 write_csv(arp, "output/aquatic_resource_permit_all.csv")
 
 ```
+
