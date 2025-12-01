@@ -376,8 +376,14 @@ n_sites_total <- fish_all %>%
   as.character()
 
 #### table of number of site visits
+# 12/1/2025 working here to address logic for how to group and count
+
+
 n_sites_coords <- fish_all %>%
-  group_by(site,latitude,longitude) %>%
+  distinct(site_depart_date,latitude,longitude) %>%
+  group_by(latitude,longitude) %>%
+  tally()
+  group_by(site_depart_date,latitude, longitude) %>%
   tally() %>%
   rename(site_visits = n)
 
