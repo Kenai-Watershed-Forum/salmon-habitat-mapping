@@ -27,6 +27,7 @@ library(kableExtra)
 library(janitor)
 library(anytime)
 library(stringr)
+library(xfun)
 
 # set plotting themes
 
@@ -304,7 +305,6 @@ type_compare <- tibble(
   fieldmap  = map_chr(common_cols, ~ class(dat_field_maps[[.x]])[1]),
   fishdat   = map_chr(common_cols, ~ class(fish_dat[[.x]])[1])
 )
-print(type_compare)
 
 ## ------------------------------------------------------------------
 ## 2. Align column types across common fields
@@ -451,8 +451,10 @@ if (knitr::is_html_output()) {
     knitr::kable(caption = "Total site visits")
 }
 
-# export csv
-write.csv(n_sites_coords,"output/site_visits_coords.csv", row.names = F)
+# export csv and embed for download
+dir <- "output/site_visits_coords.csv"
+write.csv(n_sites_coords,dir, row.names = F)
+embed_file(dir, text = "Download Total Site Visits csv file")
 
 ```
 
@@ -466,11 +468,16 @@ if (knitr::is_html_output()) {
   spp_ct_n %>%
     kbl(caption = "Total fish capture count by species") %>%
     kableExtra::kable_paper(full_width = FALSE, html_font = "Cambria")  %>%
-    kableExtra::scroll_box(height = "600px", width = "350px")
+    kableExtra::scroll_box(height = "600px", width = "500px")
 } else {
   spp_ct_n %>%
     knitr::kable(caption = "Total fish capture count by species")
 }
+
+# export csv and embed for download
+dir <- "output/spp_ct_n.csv"
+write.csv(spp_ct_n,dir, row.names = F)
+embed_file(dir, text = "Download total fish capture count by species csv file")
 
 ```
 
@@ -492,7 +499,10 @@ if (knitr::is_html_output()) {
     knitr::kable(caption = "Total fish capture count by species at each site.")
 }
 
-write.csv(site_spp_ct,"output/site_spp_ct.csv", row.names = F)
+# export csv and embed for download
+dir <- "output/site_spp_ct.csv"
+write.csv(site_spp_ct,dir, row.names = F)
+embed_file(dir, text = "Download fish species count by site csv file")
 
 ```
 
@@ -573,9 +583,10 @@ knitr::include_graphics('images/2021_2025_awc_noms_graphic.jpg')
 
 For general background on nominations, see the [slides linked here](https://docs.google.com/presentation/d/1uQX9_4T-vJDzp_gzBJFyqtggOg1Fpsng?rtpof=true&usp=drive_fs), presented at Kenai Watershed Forum's Fireside Chat series held at Kenai River Brewing on November 1, 2023.
 
-Or, see the presentation below on Kenai Watershed Forum's YouTube channel
+Or, see the presentation from the 2024 American Fisheries Society National Meeting below on Kenai Watershed Forum's YouTube channel.
 
-{{< video https://www.youtube.com/watch?v=u62Md_aYzPk >}}
+[![Kenai Watershed Forum Presentation at the 2024 National Meeting of the American Fisheries Society](https://img.youtube.com/vi/u62Md_aYzPk/hqdefault.jpg)](https://www.youtube.com/watch?v=u62Md_aYzPk)
+
 
 ## Volunteer participation
 

@@ -184,7 +184,7 @@ An anecdotal example of model under performance for both Gradient Barrier as wel
 
 ## 2025
 
-The year 2025 was marked by the award of a major grant from the National Coastal Resilience Fund. In spring 2025, we initiated a collabortaion with consultants Terrainworks and Romey Riverscape Sciences to explore using predictive habitat modeling to identify the extent of probable anadromous habitat. Further details about these efforts can be accessed on our website at <https://www.kenaiwatershed.org/news-media/fish-habitat-mapping-2025/>.
+The year 2025 was marked by the award of a major grant from the National Coastal Resilience Fund. In spring 2025, we initiated a collaboration with consultants Terrainworks and Romey Riverscape Sciences to explore using predictive habitat modeling to identify the extent of probable anadromous habitat. Further details about these efforts can be accessed on our website at <https://www.kenaiwatershed.org/news-media/fish-habitat-mapping-2025/>. A full draft-in-progress of methods and scope for this effort is available in a Google Doc; [Mapping Anadromous Habitat in the Kenai Peninsula Borough Project Manual 2025 - 2027 \[DRAFT\]](https://docs.google.com/document/d/1sJe2g893Urh1uhxVKh1RBIGE8733W4yfJP6w0fgwE0Q/edit?tab=t.0).
 
 ## Media highlights
 
