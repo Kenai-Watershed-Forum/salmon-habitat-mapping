@@ -376,15 +376,10 @@ n_sites_total <- fish_all %>%
   as.character()
 
 #### table of number of site visits
-# 12/1/2025 working here to address logic for how to group and count
-
-
 n_sites_coords <- fish_all %>%
   distinct(site_depart_date,latitude,longitude) %>%
   group_by(latitude,longitude) %>%
-  tally()
-  group_by(site_depart_date,latitude, longitude) %>%
-  tally() %>%
+  tally() |>
   rename(site_visits = n)
 
 ### total fish
@@ -494,16 +489,23 @@ embed_file(dir, text = "Download total fish capture count by species csv file")
 #| tbl-cap: "Species count by site 2021 -2025"
 
 if (knitr::is_html_output()) {
+
   site_spp_ct %>%
     kbl(caption = "Total fish capture count by species at each site.") %>%
     kableExtra::kable_paper(full_width = FALSE, html_font = "Cambria",
                             bootstrap_options = c("condensed")) %>%
     kableExtra::kable_styling(latex_options = c("scale_down","striped")) %>%
     kableExtra::scroll_box(width = "100%", height = "500px")
+
 } else {
-  site_spp_ct %>%
-    knitr::kable(caption = "Total fish capture count by species at each site.")
+
+  cat(
+  "Table omitted in DOCX output.\n",
+  "A detailed table is available in the HTML version of this report.\n"
+)
+
 }
+
 
 # export csv and embed for download
 dir <- "output/site_spp_ct.csv"
