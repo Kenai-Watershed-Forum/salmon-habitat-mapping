@@ -17,7 +17,6 @@ library(writexl)
 library(hms)
 library(plotly)
 library(DT)
-library(xlsx)
 library(leaflet)
 library(DT)
 library(ggpubr)
@@ -108,11 +107,11 @@ knitr::include_graphics('images/Fish_Trap_Seminar4.jpg')
 
 ## Objectives
 
--   Submit nominations to increase anadromous stream, river, lake, and wetland coverage in the AWC and corresponding atlas
+- Submit nominations to increase anadromous stream, river, lake, and wetland coverage in the AWC and corresponding atlas
 
--   Revise or corroborate outdated AWC and atlas data, particularly on Kenai River tributaries experiencing increases in zinc concentrations as well as priority corridors identified by the Kenai Mountains to Sea partnership
+- Revise or corroborate outdated AWC and atlas data, particularly on Kenai River tributaries experiencing increases in zinc concentrations as well as priority corridors identified by the Kenai Mountains to Sea partnership
 
--   Explore the feasibility of applying predictive modeling techniques for anadromous habitat within the Kenai Peninsula Borough
+- Explore the feasibility of applying predictive modeling techniques for anadromous habitat within the Kenai Peninsula Borough
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

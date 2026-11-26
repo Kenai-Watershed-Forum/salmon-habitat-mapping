@@ -81,41 +81,41 @@ To follow though on the recommendations above, a dedicated research project is b
 
 1.  **Evaluate existing NetMap coverage for the Kenai Peninsula Borough**
 
-    -   NetMap was commissioned for the Chugach National Forest in 2017, and Kenai Peninsula coverage extends from the Prince William Sound / Turnagain Arm region to the western boundary with Kenai National Wildlife Refuge. The shapefiles are available by contacting Kenai Watershed Forum or Romey Fisheries and Aquatic Sciences.
+    - NetMap was commissioned for the Chugach National Forest in 2017, and Kenai Peninsula coverage extends from the Prince William Sound / Turnagain Arm region to the western boundary with Kenai National Wildlife Refuge. The shapefiles are available by contacting Kenai Watershed Forum or Romey Fisheries and Aquatic Sciences.
 
-    -   LiDAR, a geospatial dataset needed to produce the NetMap stream layers, already has complete coverage for the Kenai Peninsula Borough region.
+    - LiDAR, a geospatial dataset needed to produce the NetMap stream layers, already has complete coverage for the Kenai Peninsula Borough region.
 
-    -   This work is in progress as of Fall 2024, see 2024 Discussion section.
+    - This work is in progress as of Fall 2024, see 2024 Discussion section.
 
 2.  **Develop, communicate, and maintain a prioritized list of fish habitat survey sites shared among multiple agencies**
 
-    -   Once a list of locations of predicted Upper Extent of Anadromy is generated using the NetMap layer, regional experts can use their knowledge of local conservation priorities to prioritize which sites should be surveyed first. This step will involve both a GIS based approach for tasks such as identifying parcel ownership status where sites are located, as well as a consensus/discussion based approach to apply knowledge of local conservation priorities and planning efforts.
+    - Once a list of locations of predicted Upper Extent of Anadromy is generated using the NetMap layer, regional experts can use their knowledge of local conservation priorities to prioritize which sites should be surveyed first. This step will involve both a GIS based approach for tasks such as identifying parcel ownership status where sites are located, as well as a consensus/discussion based approach to apply knowledge of local conservation priorities and planning efforts.
 
-    -   Site survey responsibilities will be assigned to participating organizations. Once complete, preliminary results will be recorded in a shared database to minimize redundant site visits.
+    - Site survey responsibilities will be assigned to participating organizations. Once complete, preliminary results will be recorded in a shared database to minimize redundant site visits.
 
 3.  **Recruit and train participants from agency employees and volunteers**
 
-    -   Entities known to currently be engaged in the work of AWC nominations in the Kenai Peninsula region include the following, but are not limited to:
+    - Entities known to currently be engaged in the work of AWC nominations in the Kenai Peninsula region include the following, but are not limited to:
 
-        -   Alaska Department of Fish and Game Habitat Division
+      - Alaska Department of Fish and Game Habitat Division
 
-        -   Kenai Soil and Water Conservation District
+      - Kenai Soil and Water Conservation District
 
-        -   U.S. Fish and Wildlife Service
+      - U.S. Fish and Wildlife Service
 
-        -   Kenai Watershed Forum
+      - Kenai Watershed Forum
 
-        -   Kachemak Bay National Estuarine Research Reserve
+      - Kachemak Bay National Estuarine Research Reserve
 
-        -   Kenai Peninsula Chapter of Trout Unlimited
+      - Kenai Peninsula Chapter of Trout Unlimited
 
-        -   University of Alaska
+      - University of Alaska
 
-    -   Training sessions would be offered to encourage participation from the general public
+    - Training sessions would be offered to encourage participation from the general public
 
-    -   Employing a consistent, user-friendly, collaborative method of data collection will be critical to implementing this project on a larger scale. ADF&G requires that AWC nominations are supervised by a "qualified biologist," thus careful and systematic review of nomination data prior to submission will be essential. Use of a custom-designed ESRI Survey123 app is likely the most appropriate choice for this task. The smartphone app "[Fish Map App](https://alaskafishmapping.org/)"[^future_directions-10] developed by the [Indiginous Sentinals Network](https://www.sentinelsnetwork.org/) also shows potential to be highly useful in this process; though currently the app is not yet designed to record some essential information for juvenile surveys, such as gear effort.
+    - Employing a consistent, user-friendly, collaborative method of data collection will be critical to implementing this project on a larger scale. ADF&G requires that AWC nominations are supervised by a "qualified biologist," thus careful and systematic review of nomination data prior to submission will be essential. Use of a custom-designed ESRI Survey123 app is likely the most appropriate choice for this task. The smartphone app "[Fish Map App](https://alaskafishmapping.org/)"[^future_directions-10] developed by the [Indiginous Sentinals Network](https://www.sentinelsnetwork.org/) also shows potential to be highly useful in this process; though currently the app is not yet designed to record some essential information for juvenile surveys, such as gear effort.
 
-    -   A high degree of location accuracy (\<1m) is required for ground-truthing NetMap data. Expensive options such as Trimble hand held devices may be inaccessible, thus it is suggested to train participants to use bluetooth accessory receivers (e.g. [Bad Elf GNSS Surveyor](https://bad-elf.com/pages/be-gps-3300-detail)) when recording coordinates.
+    - A high degree of location accuracy (\<1m) is required for ground-truthing NetMap data. Expensive options such as Trimble hand held devices may be inaccessible, thus it is suggested to train participants to use bluetooth accessory receivers (e.g. [Bad Elf GNSS Surveyor](https://bad-elf.com/pages/be-gps-3300-detail)) when recording coordinates.
 
 [^future_directions-10]: <https://alaskafishmapping.org/>
 
